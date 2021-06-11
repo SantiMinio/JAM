@@ -8,8 +8,6 @@ public class AnimatedObject : ActivableBase, IActivable
 {
     [SerializeField] private Animator _anim;
 
-    //[SerializeField] private Image fillImageFeedback;
-
     [SerializeField] private bool stayActivated;
     
     [SerializeField] private float timeToTurnOff;
@@ -22,16 +20,13 @@ public class AnimatedObject : ActivableBase, IActivable
     private void Update()
     {
         if(stayActivated && open) return;
-        
-        
+
         if (!IsActive())
         {
             if(open)
                 Off();
             return;
         }
-
-        //HandleFeedbackBar();
         
         if(open) return;
         
@@ -44,14 +39,6 @@ public class AnimatedObject : ActivableBase, IActivable
             On();
         }
     }
-
-    IEnumerator TimeToClose()
-    {
-        yield return new WaitForSeconds(timeToTurnOff);
-        
-        Off();
-    }
-    
     protected virtual void On()
     {
         open = true;
@@ -64,13 +51,4 @@ public class AnimatedObject : ActivableBase, IActivable
         open = false;
         _anim.Play("off");
     }
-    
-    // void HandleFeedbackBar()
-    // {
-    //     float percentFill = _count / time;
-    //
-    //     if (percentFill > 1) percentFill = 1;
-    //
-    //     fillImageFeedback.fillAmount = percentFill;
-    // }
 }

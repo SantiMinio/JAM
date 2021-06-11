@@ -8,12 +8,16 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Characters" t="Include">
+            <e p="AttackAction.cs" t="Include" />
+            <e p="BlockAction.cs" t="Include" />
+            <e p="CharacterAction.cs" t="Include" />
             <e p="CharacterBase.cs" t="Include" />
             <e p="CharacterController.cs" t="Include" />
             <e p="InputManager.cs" t="Include" />
           </e>
           <e p="Core" t="Include">
             <e p="BinarySerialization.cs" t="Include" />
+            <e p="CameraFollow.cs" t="Include" />
             <e p="Checkpoint.cs" t="Include" />
             <e p="DistanceController.cs" t="Include" />
             <e p="EventManager.cs" t="Include" />
@@ -24,10 +28,16 @@
           <e p="FalopaFran" t="Include">
             <e p="ActivableBase.cs" t="Include" />
             <e p="AnimatedObject.cs" t="Include" />
+            <e p="Breakable.cs" t="Include" />
             <e p="IActivable.cs" t="Include" />
+            <e p="IBreakable.cs" t="Include" />
             <e p="IInteractable.cs" t="Include" />
             <e p="MovingPlatform.cs" t="Include" />
             <e p="StayOnPlatform.cs" t="Include" />
+          </e>
+          <e p="Others" t="Include">
+            <e p="MoveShake.cs" t="Include" />
+            <e p="RotationShake.cs" t="Include" />
           </e>
         </e>
       </e>
