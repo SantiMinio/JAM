@@ -12,9 +12,18 @@
             <e p="CharacterController.cs" t="Include" />
             <e p="InputManager.cs" t="Include" />
           </e>
+          <e p="Core" t="Include">
+            <e p="BinarySerialization.cs" t="Include" />
+            <e p="Checkpoint.cs" t="Include" />
+            <e p="DistanceController.cs" t="Include" />
+            <e p="EventManager.cs" t="Include" />
+            <e p="GameEvents.cs" t="Include" />
+            <e p="Main.cs" t="Include" />
+            <e p="SavedClass.cs" t="Include" />
+          </e>
           <e p="FalopaFran" t="Include">
             <e p="ActivableBase.cs" t="Include" />
-            <e p="Door.cs" t="Include" />
+            <e p="AnimatedObject.cs" t="Include" />
             <e p="IActivable.cs" t="Include" />
             <e p="IInteractable.cs" t="Include" />
             <e p="MovingPlatform.cs" t="Include" />

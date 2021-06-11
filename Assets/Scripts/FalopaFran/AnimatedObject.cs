@@ -4,11 +4,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Door : ActivableBase, IActivable
+public class AnimatedObject : ActivableBase, IActivable
 {
     [SerializeField] private Animator _anim;
 
     //[SerializeField] private Image fillImageFeedback;
+
+    [SerializeField] private bool stayActivated;
+    
+    [SerializeField] private float timeToTurnOff;
     
     [SerializeField] private float time;
 
@@ -17,10 +21,13 @@ public class Door : ActivableBase, IActivable
     private float _count;
     private void Update()
     {
+        if(stayActivated && open) return;
+        
+        
         if (!IsActive())
         {
             if(open)
-                Close();
+                Off();
             return;
         }
 
@@ -34,21 +41,28 @@ public class Door : ActivableBase, IActivable
         
         if (_count >= time)
         {
-            Open();
+            On();
         }
     }
 
-    void Open()
+    IEnumerator TimeToClose()
     {
-        open = true;
-        _anim.Play("open");
+        yield return new WaitForSeconds(timeToTurnOff);
+        
+        Off();
     }
     
-    void Close()
+    protected virtual void On()
+    {
+        open = true;
+        _anim.Play("on");
+    }
+    
+    protected virtual void Off()
     {
         _count = 0;
         open = false;
-        _anim.Play("close");
+        _anim.Play("off");
     }
     
     // void HandleFeedbackBar()

@@ -5,11 +5,18 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JAM/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JAM/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JAM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JAM/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/FranMapTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FranMapTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/ActivableBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/ActivableBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Door.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IActivable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IActivable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Abrir.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Abrir.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Cerrar.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Cerrar.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Door.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Door.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/AnimatedObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Door.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/AnimatedObject.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/PrefabsDelMundo/DoorSystemDouble.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/PrefabsDelMundo/DoorSystemDouble.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/StayOnPlatform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/StayOnPlatform.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +30,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/IActivable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/ActivableBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/IInteractable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/Door.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/AnimatedObject.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -31,8 +38,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/MovingPlatform.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IActivable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/ActivableBase.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/StayOnPlatform.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Door.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/AnimatedObject.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/StayOnPlatform.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tofbT4WhR3ucLCDrRi9SfjB7w1" />

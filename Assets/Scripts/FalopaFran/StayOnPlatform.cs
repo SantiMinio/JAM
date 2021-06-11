@@ -8,7 +8,7 @@ public class StayOnPlatform : MonoBehaviour, IInteractable
 {
     [SerializeField] private LayerMask triggerLayers;
 
-    [SerializeField] private float timeToActivate;
+    //[SerializeField] private float timeToActivate;
 
     [SerializeField] private ActivableBase objetctActivable;
 
