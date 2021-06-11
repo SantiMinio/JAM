@@ -10,13 +10,39 @@ public class Main : MonoBehaviour
 
     public EventManager eventManager = new EventManager();
 
-    [SerializeField] float restartTime = 3;
+    [SerializeField] CharacterBase charOne = null;
+    [SerializeField] CharacterBase charTwo = null;
 
+    [SerializeField] float restartTime = 3;
+    Vector3 checkpointPosition = Vector3.zero;
+
+    const string SaveDataName = "SaveData";
+    SavedClass save;
 
     private void Awake()
     {
         instance = this;
         eventManager.SubscribeToEvent(GameEvents.CharactersSeparate, RestartGame);
+    }
+
+    private void Start()
+    {
+        if (BinarySerialization.IsFileExist(SaveDataName))
+        {
+            save = BinarySerialization.Deserialize<SavedClass>(SaveDataName);
+            checkpointPosition = save.GetCheckPoint();
+        }
+        else
+        {
+            save = new SavedClass();
+            BinarySerialization.Serialize(SaveDataName, save);
+        }
+
+        if(checkpointPosition != Vector3.zero)
+        {
+            charOne.transform.position = checkpointPosition;
+            charTwo.transform.position = checkpointPosition + Vector3.right;
+        }
     }
 
 
@@ -29,5 +55,14 @@ public class Main : MonoBehaviour
     {
         yield return new WaitForSeconds(restartTime);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void SetCheckpoint(Vector3 checkpointPos)
+    {
+        if (checkpointPosition == checkpointPos) return;
+
+        checkpointPosition = checkpointPos;
+        save.SaveCheckPoint(checkpointPosition);
+        BinarySerialization.Serialize(SaveDataName, save);
     }
 }

@@ -186,8 +186,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: e6bbf47f6f7a1c84787149325f628101, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -242,8 +242,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.7288052, y: 0.910448, z: 0.51731545}
+  m_Center: {x: 0.019448578, y: 0.044775993, z: 0.07775676}
 --- !u!114 &4990358710914531665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,6 +318,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 623ccfd61a2148c419717e03dc4ace79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  charOne: {fileID: 4990358710914531665}
+  charTwo: {fileID: 4990358711331196710}
   restartTime: 3
 --- !u!114 &4990358710915692695
 MonoBehaviour:
@@ -407,8 +409,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 18511911fcde6d949bd6d203ebf80f90, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -463,8 +465,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.6996082, y: 0.86281073, z: 0.5887951}
+  m_Center: {x: -0.083854675, y: 0.068594635, z: 0.06221512}
 --- !u!114 &4990358711331196710
 MonoBehaviour:
   m_ObjectHideFlags: 0
