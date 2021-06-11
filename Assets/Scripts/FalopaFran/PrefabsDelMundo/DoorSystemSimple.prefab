@@ -301,7 +301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2717438595064356765}
   m_Layer: 0
-  m_Name: DoorSystem
+  m_Name: DoorSystemSimple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

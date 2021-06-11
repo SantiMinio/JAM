@@ -42,6 +42,7 @@ public class StayOnPlatform : MonoBehaviour, IInteractable
         {
             objetctActivable.Activate();
             fillImageFeedback.gameObject.SetActive(false);
+            fillImageFeedback.fillAmount = 0;
         }
     }
 
