@@ -17,6 +17,10 @@ public class CharacterController : MonoBehaviour
     [SerializeField] UnityEvFloat AxisHorizontalTwo;
     [SerializeField] UnityEvFloat AxisVerticalTwo;
 
+    [SerializeField] UnityEvKeyButton JumpButton;
+    [SerializeField] UnityEvKeyButton ActionCharOneButton;
+    [SerializeField] UnityEvKeyButton ActionCharTwoButton;
+
     private void Update()
     {
         float axisHorizontalOne = Input.GetAxis("HorizontalOne");
@@ -28,5 +32,17 @@ public class CharacterController : MonoBehaviour
         AxisVerticalOne?.Invoke(axisVerticalOne);
         AxisHorizontalTwo?.Invoke(axisHorizontalTwo);
         AxisVerticalTwo?.Invoke(axisVerticalTwo);
+
+        if (InputManager.GetInput(InputName.Jump, KeyEventButon.KeyDown)) JumpButton?.Invoke(KeyEventButon.KeyDown);
+        else if (InputManager.GetInput(InputName.Jump, KeyEventButon.Key)) JumpButton?.Invoke(KeyEventButon.Key);
+        else if (InputManager.GetInput(InputName.Jump, KeyEventButon.KeyUp)) JumpButton?.Invoke(KeyEventButon.KeyUp);
+
+        if (InputManager.GetInput(InputName.ActionPlayerOne, KeyEventButon.KeyDown)) ActionCharOneButton?.Invoke(KeyEventButon.KeyDown);
+        else if (InputManager.GetInput(InputName.ActionPlayerOne, KeyEventButon.Key)) ActionCharOneButton?.Invoke(KeyEventButon.Key);
+        else if (InputManager.GetInput(InputName.ActionPlayerOne, KeyEventButon.KeyUp)) ActionCharOneButton?.Invoke(KeyEventButon.KeyUp);
+
+        if (InputManager.GetInput(InputName.ActionPlayerTwo, KeyEventButon.KeyDown)) ActionCharTwoButton?.Invoke(KeyEventButon.KeyDown);
+        else if (InputManager.GetInput(InputName.ActionPlayerTwo, KeyEventButon.Key)) ActionCharTwoButton?.Invoke(KeyEventButon.Key);
+        else if (InputManager.GetInput(InputName.ActionPlayerTwo, KeyEventButon.KeyUp)) ActionCharTwoButton?.Invoke(KeyEventButon.KeyUp);
     }
 }

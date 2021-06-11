@@ -45,6 +45,8 @@ public static class InputManager
 public class InputName
 {
     public const string Jump = "Input_Jump";
+    public const string ActionPlayerOne = "ActionPlayerOne";
+    public const string ActionPlayerTwo = "ActionPlayerTwo";
 }
 
 [Serializable] public class UnityEvFloat : UnityEvent<float> { }
