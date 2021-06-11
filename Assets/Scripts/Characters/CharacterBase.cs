@@ -6,6 +6,7 @@ public class CharacterBase : MonoBehaviour
 {
     [SerializeField] Rigidbody rb = null;
     [SerializeField] float speed = 5;
+    [SerializeField] CharacterAction action = null;
 
     float xAxis;
     float yAxis;
@@ -24,5 +25,23 @@ public class CharacterBase : MonoBehaviour
     public void MoveX(float x)
     {
         xAxis = x;
+    }
+
+    public void ActionAbility(KeyEventButon eventKey)
+    {
+        switch (eventKey)
+        {
+            case KeyEventButon.KeyDown:
+                action.StartAction();
+                break;
+            case KeyEventButon.Key:
+                action.KeepAction();
+                break;
+            case KeyEventButon.KeyUp:
+                action.EndAction();
+                break;
+            default:
+                break;
+        }
     }
 }

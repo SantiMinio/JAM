@@ -319,39 +319,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 963194228, guid: fb3621f414862ba40a3d48b72a3f8809, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 963194228, guid: fb3621f414862ba40a3d48b72a3f8809, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1630312016363529769, guid: fb3621f414862ba40a3d48b72a3f8809,
-        type: 3}
-      propertyPath: maxZoom
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1630312016363529769, guid: fb3621f414862ba40a3d48b72a3f8809,
-        type: 3}
-      propertyPath: minZoom
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1630312016363529769, guid: fb3621f414862ba40a3d48b72a3f8809,
-        type: 3}
-      propertyPath: offset.y
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1630312016363529769, guid: fb3621f414862ba40a3d48b72a3f8809,
-        type: 3}
-      propertyPath: offset.z
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1630312016363529769, guid: fb3621f414862ba40a3d48b72a3f8809,
-        type: 3}
-      propertyPath: smoothTime
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4990358710439454813, guid: fb3621f414862ba40a3d48b72a3f8809,
         type: 3}
       propertyPath: m_Name
