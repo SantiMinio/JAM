@@ -115,7 +115,6 @@ MonoBehaviour:
     m_Bits: 64
   timeToActivate: 3
   objetctActivable: {fileID: 2717438596420344161}
-  fillImageFeedback: {fileID: 2717438594809521126}
 --- !u!1 &2717438594785096011
 GameObject:
   m_ObjectHideFlags: 0
@@ -3471,6 +3470,7 @@ GameObject:
   - component: {fileID: 2717438596420344163}
   - component: {fileID: 2717438596420344162}
   - component: {fileID: 2717438596420344161}
+  - component: {fileID: 4643272052823621302}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -5043,3 +5043,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0a4aeaf4a383394da77bd9dabffd974, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isActive: 0
+  _anim: {fileID: 4643272052823621302}
+  time: 1
+--- !u!95 &4643272052823621302
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2717438596420344160}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 07a7e298b532fef4581678c78c06ed09, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

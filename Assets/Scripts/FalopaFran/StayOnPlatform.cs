@@ -12,7 +12,7 @@ public class StayOnPlatform : MonoBehaviour, IInteractable
 
     [SerializeField] private ActivableBase objetctActivable;
 
-    [SerializeField] private Image fillImageFeedback;
+    
 
     private float _count;
     private void OnTriggerStay(Collider other)
@@ -25,35 +25,15 @@ public class StayOnPlatform : MonoBehaviour, IInteractable
 
     private void OnTriggerExit(Collider other)
     {
-        _count = 0;
         objetctActivable.Deactivate();
-        fillImageFeedback.gameObject.SetActive(false);
     }
 
     public void OnStay()
     {
-        fillImageFeedback.gameObject.SetActive(true);
-        
-        _count += Time.deltaTime;
-
-        HandleFeedbackBar();
-        
-        if (_count >= timeToActivate)
-        {
-            objetctActivable.Activate();
-            fillImageFeedback.gameObject.SetActive(false);
-            fillImageFeedback.fillAmount = 0;
-        }
+        objetctActivable.Activate();
     }
 
-    void HandleFeedbackBar()
-    {
-        float percentFill = _count / timeToActivate;
-
-        if (percentFill > 1) percentFill = 1;
-
-        fillImageFeedback.fillAmount = percentFill;
-    }
+    
 
     public void OnExecute()
     {
