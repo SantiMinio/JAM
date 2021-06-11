@@ -11,11 +11,15 @@ public static class InputManager
     static Dictionary<string, KeyCode> KeyboardInputs = new Dictionary<string, KeyCode>()
     {
         { InputName.Jump, KeyCode.Space },
+                { InputName.ActionPlayerOne, KeyCode.Space },
+                        { InputName.ActionPlayerTwo, KeyCode.Alpha0 }
     };
 
     static Dictionary<string, KeyCode> JoystickInputs = new Dictionary<string, KeyCode>()
     {
-        { InputName.Jump, KeyCode.Joystick1Button0 }
+        { InputName.Jump, KeyCode.Joystick1Button0 },
+                { InputName.ActionPlayerOne, KeyCode.Joystick1Button6 },
+                        { InputName.ActionPlayerTwo, KeyCode.Joystick1Button7 }
     };
 
     private static Dictionary<KeyEventButon, Func<KeyCode, bool>> ButtonEventDic = new Dictionary<KeyEventButon, Func<KeyCode, bool>>(3)

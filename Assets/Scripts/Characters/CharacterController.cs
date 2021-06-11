@@ -21,8 +21,16 @@ public class CharacterController : MonoBehaviour
     [SerializeField] UnityEvKeyButton ActionCharOneButton;
     [SerializeField] UnityEvKeyButton ActionCharTwoButton;
 
+    bool dead;
+
+    private void Start()
+    {
+        Main.instance.eventManager.SubscribeToEvent(GameEvents.CharactersSeparate, CharacterDead);
+    }
+
     private void Update()
     {
+        if (dead) return;
         float axisHorizontalOne = Input.GetAxis("HorizontalOne");
         float axisVerticalOne = Input.GetAxis("VerticalOne");
         float axisHorizontalTwo = Input.GetAxis("HorizontalTwo");
@@ -45,4 +53,14 @@ public class CharacterController : MonoBehaviour
         else if (InputManager.GetInput(InputName.ActionPlayerTwo, KeyEventButon.Key)) ActionCharTwoButton?.Invoke(KeyEventButon.Key);
         else if (InputManager.GetInput(InputName.ActionPlayerTwo, KeyEventButon.KeyUp)) ActionCharTwoButton?.Invoke(KeyEventButon.KeyUp);
     }
+
+    void CharacterDead()
+    {
+        AxisHorizontalOne?.Invoke(0);
+        AxisVerticalOne?.Invoke(0);
+        AxisHorizontalTwo?.Invoke(0);
+        AxisVerticalTwo?.Invoke(0);
+        dead = true;
+    }
+
 }
