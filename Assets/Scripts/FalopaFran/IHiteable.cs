@@ -12,4 +12,6 @@ public interface IHiteable
 
     Vector3 GetPosition();
     void SetInvulnerability(bool value);
+
+    void InstaKill();
 }

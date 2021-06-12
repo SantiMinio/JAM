@@ -25,6 +25,7 @@ public class Main : MonoBehaviour
     {
         instance = this;
         eventManager.SubscribeToEvent(GameEvents.CharactersSeparate, RestartGame);
+        eventManager.SubscribeToEvent(GameEvents.OneCharDie, RestartGame);
     }
 
     private void Start()

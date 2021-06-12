@@ -794,6 +794,7 @@
             <e p="IActivable.cs" t="Include" />
             <e p="IHiteable.cs" t="Include" />
             <e p="IInteractable.cs" t="Include" />
+            <e p="KillZone.cs" t="Include" />
             <e p="Lightbeam.cs" t="Include" />
             <e p="MovingPlatform.cs" t="Include" />
             <e p="RayTarget.cs" t="Include" />

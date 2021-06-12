@@ -40,7 +40,6 @@ public class ActivableObject : ActivableBase
     }
     protected virtual void On()
     {
-        Debug.Log("asdasdasd");
         open = true;
         _anim.Play("on");
     }

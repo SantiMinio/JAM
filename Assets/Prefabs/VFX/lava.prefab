@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 6055805389395175454}
   - component: {fileID: 1054076480958333760}
   - component: {fileID: 4607113744888925926}
+  - component: {fileID: 6132210354043006747}
+  - component: {fileID: 2544442810248176135}
   m_Layer: 0
   m_Name: lava
   m_TagString: Untagged
@@ -4814,6 +4816,34 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &6132210354043006747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234753145583255533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b3041e3e95945418c06ea428b2538a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerLayers:
+    serializedVersion: 2
+    m_Bits: 3145728
+--- !u!65 &2544442810248176135
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234753145583255533}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 28.769281, y: 2.48, z: 9.3}
+  m_Center: {x: 0, y: -0.7, z: 0}
 --- !u!1 &4844287390545749498
 GameObject:
   m_ObjectHideFlags: 0

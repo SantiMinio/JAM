@@ -16,6 +16,7 @@ public class Hiteable : MonoBehaviour, IHiteable
     [SerializeField] private bool _imInvulnerable;
 
     public event Action onHit;
+    public event Action onDead;
     public Func<Vector3, bool> Block = delegate { return false; } ;
     
     public virtual void Start()
@@ -49,7 +50,7 @@ public class Hiteable : MonoBehaviour, IHiteable
             currentLife = 0;
             if (canIDie)
             {
-                _imDead = true;
+                Dead();
             }
             
         }
@@ -67,6 +68,16 @@ public class Hiteable : MonoBehaviour, IHiteable
     public void SetInvulnerability(bool value)
     {
         _imInvulnerable = value;
+    }
+
+    void Dead()
+    {
+        _imDead = true;
+        onDead?.Invoke();
+    }
+    public void InstaKill()
+    {
+        Dead();
     }
 
     IEnumerator ShakeFeedback()
