@@ -502,11 +502,6 @@ PrefabInstance:
       propertyPath: orthographic size
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 3957966183080323444, guid: da1710f21e4ca5540a82887a8756b30c,
-        type: 3}
-      propertyPath: viewAngle
-      value: 90
-      objectReference: {fileID: 0}
     - target: {fileID: 8672817185362344051, guid: da1710f21e4ca5540a82887a8756b30c,
         type: 3}
       propertyPath: checkpoints.Array.size

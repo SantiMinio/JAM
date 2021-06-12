@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8245841957816015150}
   - component: {fileID: 9187362941556381253}
   - component: {fileID: 3277417902645441650}
+  - component: {fileID: 4915267821770440284}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -64,6 +65,7 @@ MonoBehaviour:
   speed: 5
   action: {fileID: 3277417902645441650}
   anim: {fileID: 3968830468917024867}
+  hiteable: {fileID: 4915267821770440284}
   currentDir: {x: 0, y: 0, z: -1}
 --- !u!54 &9187362941556381253
 Rigidbody:
@@ -96,6 +98,22 @@ MonoBehaviour:
   useCooldown: 2
   attackRadious: 4
   viewAngle: 90
+--- !u!114 &4915267821770440284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644881505203095043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62f8288976ea8cd4a88afe69d163449a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLife: 0
+  maxLife: 1
+  canIDie: 0
+  _imInvulnerable: 0
 --- !u!1 &4153247432969109675
 GameObject:
   m_ObjectHideFlags: 0

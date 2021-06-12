@@ -1,27 +1,21 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public class Hiteable : MonoBehaviour, IHiteable
+public class WorldHittable : MonoBehaviour, IHiteable
 {
     [SerializeField] private int currentLife, maxLife;
     private bool _imDead = false;
     [SerializeField] private bool canIDie = false;
 
-    [SerializeField] private float timeShaking;
-
-    [SerializeField] private MoveShake _moveShake;
-
     [SerializeField] private bool _imInvulnerable;
 
     public event Action onHit;
-    public Func<Vector3, bool> Block = delegate { return false; } ;
-    
+    public Func<Vector3, bool> Block = delegate { return false; };
+
     public virtual void Start()
     {
-        _moveShake = GetComponent<MoveShake>();
-        
         Reset();
     }
     private void Reset()
@@ -36,14 +30,9 @@ public class Hiteable : MonoBehaviour, IHiteable
     {
         if (Block(dir)) return false;
         if (_imInvulnerable) return false;
-        
-        StopAllCoroutines();
-        StartCoroutine(ShakeFeedback());
 
-        
-        
         currentLife--;
-        
+
         if (currentLife <= 0)
         {
             currentLife = 0;
@@ -51,11 +40,11 @@ public class Hiteable : MonoBehaviour, IHiteable
             {
                 _imDead = true;
             }
-            
+
         }
 
         onHit?.Invoke();
-        
+
         return true;
     }
 
@@ -67,19 +56,5 @@ public class Hiteable : MonoBehaviour, IHiteable
     public void SetInvulnerability(bool value)
     {
         _imInvulnerable = value;
-    }
-
-    IEnumerator ShakeFeedback()
-    {
-        float time = 0;
-        do
-        {
-            time += Time.deltaTime;
-            _moveShake.OnShow();
-            yield return new WaitForEndOfFrame();
-        } while (time < timeShaking);
-        
-        if(_imDead) gameObject.SetActive(false);
-        
     }
 }

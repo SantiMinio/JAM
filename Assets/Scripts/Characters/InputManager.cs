@@ -12,6 +12,7 @@ public static class InputManager
     {
         { InputName.Jump, KeyCode.Space },
                 { InputName.ActionPlayerOne, KeyCode.RightControl },
+                                { InputName.ActionPlayerOneAlt, KeyCode.Keypad0 },
                         { InputName.ActionPlayerTwo, KeyCode.LeftShift }
     };
 
@@ -19,6 +20,7 @@ public static class InputManager
     {
         { InputName.Jump, KeyCode.Joystick1Button0 },
                 { InputName.ActionPlayerOne, KeyCode.Joystick1Button6 },
+                                { InputName.ActionPlayerOneAlt, KeyCode.RightControl },
                         { InputName.ActionPlayerTwo, KeyCode.Joystick1Button7 }
     };
 
@@ -50,6 +52,7 @@ public class InputName
 {
     public const string Jump = "Input_Jump";
     public const string ActionPlayerOne = "ActionPlayerOne";
+    public const string ActionPlayerOneAlt = "ActionPlayerOneAlt";
     public const string ActionPlayerTwo = "ActionPlayerTwo";
 }
 

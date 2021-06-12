@@ -7,7 +7,8 @@ public class CharacterBase : MonoBehaviour
     [SerializeField] Rigidbody rb = null;
     [SerializeField] float speed = 5;
     [SerializeField] CharacterAction action = null;
-    [SerializeField] Animator anim;
+    [SerializeField] Animator anim = null;
+    [SerializeField] WorldHittable hiteable = null;
 
     float xAxis;
     float yAxis;

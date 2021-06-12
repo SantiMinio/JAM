@@ -48,6 +48,9 @@ public class CharacterController : MonoBehaviour
         if (InputManager.GetInput(InputName.ActionPlayerOne, KeyEventButon.KeyDown)) ActionCharOneButton?.Invoke(KeyEventButon.KeyDown);
         else if (InputManager.GetInput(InputName.ActionPlayerOne, KeyEventButon.Key)) ActionCharOneButton?.Invoke(KeyEventButon.Key);
         else if (InputManager.GetInput(InputName.ActionPlayerOne, KeyEventButon.KeyUp)) ActionCharOneButton?.Invoke(KeyEventButon.KeyUp);
+        else if (InputManager.GetInput(InputName.ActionPlayerOneAlt, KeyEventButon.KeyDown)) ActionCharOneButton?.Invoke(KeyEventButon.KeyDown);
+        else if (InputManager.GetInput(InputName.ActionPlayerOneAlt, KeyEventButon.Key)) ActionCharOneButton?.Invoke(KeyEventButon.Key);
+        else if (InputManager.GetInput(InputName.ActionPlayerOneAlt, KeyEventButon.KeyUp)) ActionCharOneButton?.Invoke(KeyEventButon.KeyUp);
 
         if (InputManager.GetInput(InputName.ActionPlayerTwo, KeyEventButon.KeyDown)) ActionCharTwoButton?.Invoke(KeyEventButon.KeyDown);
         else if (InputManager.GetInput(InputName.ActionPlayerTwo, KeyEventButon.Key)) ActionCharTwoButton?.Invoke(KeyEventButon.Key);
