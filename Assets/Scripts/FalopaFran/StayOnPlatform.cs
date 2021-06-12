@@ -25,7 +25,6 @@ public class StayOnPlatform : MonoBehaviour, IInteractable
         if ((triggerLayers.value & (1 << other.gameObject.layer)) > 0)
         {
             objectOnTop = false;
-            Debug.Log("naaaaa vos?");
             objetctActivable.Deactivate();
         }
     }

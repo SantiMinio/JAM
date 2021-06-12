@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class AnimateObjectActivator : MonoBehaviour
 {
-     public AnimatedObject targetAnimatedObject;
+     public ActivableObject targetActivableObject;
 
      public void ActivateObject()
      {
-          targetAnimatedObject.Activate();
+          targetActivableObject.Activate();
      }
 
      public void DeactivateObject()
      {
-          targetAnimatedObject.Deactivate();
+          targetActivableObject.Deactivate();
      }
 }

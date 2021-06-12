@@ -12,7 +12,6 @@ public class ActivableBase : MonoBehaviour, IActivable
 
     public void Activate()
     {
-        Debug.Log("activate campeon");
         isActive = true;
     }
 

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AnimatedObject : ActivableBase
+public class ActivableObject : ActivableBase
 {
     [SerializeField] private Animator _anim;
 
@@ -14,7 +14,7 @@ public class AnimatedObject : ActivableBase
 
     public bool open;
 
-    private float _count;
+    protected float _count;
     private void Update()
     {
         if(stayActivated && open) return;
@@ -23,14 +23,11 @@ public class AnimatedObject : ActivableBase
         {
             if (open)
             {
-                Debug.Log("asdasdasdas");
                 Off();
             }
                 
             return;
         }
-        
-        
         
         if(open) return;
         
@@ -43,7 +40,6 @@ public class AnimatedObject : ActivableBase
     }
     protected virtual void On()
     {
-        Debug.Log("me prendo");
         open = true;
         _anim.Play("on");
     }
