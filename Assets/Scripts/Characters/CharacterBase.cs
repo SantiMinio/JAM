@@ -21,7 +21,7 @@ public class CharacterBase : MonoBehaviour
 
         if (movement != Vector3.zero)
         {
-            currentDir = new Vector3(xAxis, 0, yAxis);
+            currentDir = new Vector3(-xAxis, 0, -yAxis);
             anim.SetFloat("SetXDir", xAxis);
             anim.SetFloat("SetZDir", yAxis);
         }
