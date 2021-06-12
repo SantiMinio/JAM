@@ -189,7 +189,7 @@ MonoBehaviour:
   charOne: {fileID: 8049236203600888895}
   charTwo: {fileID: 7636172991831704616}
   checkpointManager: {fileID: 8672817185362344051}
-  restartTime: 1
+  restartTime: 3
 --- !u!114 &694551886661176684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -923,11 +923,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Character dos
-      objectReference: {fileID: 0}
-    - target: {fileID: 5739995608270101553, guid: 6e0f31c4b22f5214b85161446d8d8969,
-        type: 3}
-      propertyPath: m_TagString
-      value: Mirror
       objectReference: {fileID: 0}
     - target: {fileID: 8281584897306251732, guid: 6e0f31c4b22f5214b85161446d8d8969,
         type: 3}
