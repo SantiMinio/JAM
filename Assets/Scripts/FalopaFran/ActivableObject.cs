@@ -21,6 +21,7 @@ public class ActivableObject : ActivableBase
 
         if (!isActive)
         {
+            _count = 0;
             if (open)
             {
                 Off();
