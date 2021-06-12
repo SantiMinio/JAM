@@ -7,7 +7,9 @@ public class RayTarget : Hiteable
 {
     private AnimateObjectActivator _activator;
     
-    bool rayOnMe = false;
+    public bool rayOnMe = false;
+
+    private float lastTimeRayHitted;
     
     public override void Start()
     {
@@ -19,19 +21,25 @@ public class RayTarget : Hiteable
 
     void AnimateObject()
     {
+        StopAllCoroutines();
         _activator.ActivateObject();
 
         rayOnMe = true;
 
+        lastTimeRayHitted = 0;
+        
+        StartCoroutine(IsStillRayOn());
     }
 
-    private void Update()
+    IEnumerator IsStillRayOn()
     {
-        if(!rayOnMe) _activator.DeactivateObject();
-    }
-
-    private void LateUpdate()
-    {
+        do
+        {
+            lastTimeRayHitted += Time.deltaTime;
+            yield return new WaitForEndOfFrame();    
+        } while (lastTimeRayHitted < 1);
+        
         rayOnMe = false;
+        _activator.DeactivateObject();
     }
 }

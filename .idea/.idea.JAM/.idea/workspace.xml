@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86f5f815-5c74-405d-9597-329e30d03dbe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Turret.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Turret.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.JAM/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JAM/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.JAM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JAM/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FranMapTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FranMapTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/ActivableBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/ActivableBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/AnimatedObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/AnimatedObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IInteractable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IInteractable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Lightbeam.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Lightbeam.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/MovingPlatform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/MovingPlatform.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/PrefabsDelMundo/DoorSystemDouble.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/PrefabsDelMundo/DoorSystemDouble.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/RayTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/RayTarget.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/StayOnPlatform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/StayOnPlatform.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +24,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/TurretAim.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/IActivable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/ActivableBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/IInteractable.cs" root0="FORCE_HIGHLIGHTING" />
@@ -26,23 +38,24 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IInteractable.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/MovingPlatform.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IActivable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Door.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/StayOnPlatform.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/AnimatedObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IBreakable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Breakable.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Lightbeam.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/ActivableBase.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Main.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Characters/AttackAction.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/AnimateObjectActivator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IHiteable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Hiteable.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/RayTarget.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Turret.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Lightbeam.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/TurretAim.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IInteractable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/MovingPlatform.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/StayOnPlatform.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/ActivableBase.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/AnimatedObject.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/RayTarget.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tofbT4WhR3ucLCDrRi9SfjB7w1" />

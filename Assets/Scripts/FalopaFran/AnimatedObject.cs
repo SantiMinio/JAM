@@ -4,35 +4,37 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AnimatedObject : ActivableBase, IActivable
+public class AnimatedObject : ActivableBase
 {
     [SerializeField] private Animator _anim;
 
     [SerializeField] private bool stayActivated;
-    
-    [SerializeField] private float timeToTurnOff;
-    
+
     [SerializeField] private float time;
 
-    private bool open;
+    public bool open;
 
     private float _count;
     private void Update()
     {
         if(stayActivated && open) return;
 
-        if (!IsActive())
+        if (!isActive)
         {
-            if(open)
+            if (open)
+            {
+                Debug.Log("asdasdasdas");
                 Off();
+            }
+                
             return;
         }
+        
+        
         
         if(open) return;
         
         _count += Time.deltaTime;
-
-        
         
         if (_count >= time)
         {
@@ -41,6 +43,7 @@ public class AnimatedObject : ActivableBase, IActivable
     }
     protected virtual void On()
     {
+        Debug.Log("me prendo");
         open = true;
         _anim.Play("on");
     }

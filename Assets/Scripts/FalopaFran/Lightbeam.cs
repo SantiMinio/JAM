@@ -15,13 +15,22 @@ public class Lightbeam : MonoBehaviour
     RaycastHit hit;
     Vector3 direction;
 
+    private bool isOn;
+
+    public void SetActive(bool value)
+    {
+        lineRenderer.enabled = value;
+    }
+
     private void Awake()
     {
-        lineRenderer = GetComponent<LineRenderer>(); 
+        lineRenderer = GetComponent<LineRenderer>();
     }
 
     private void Update()
     {
+        if(!lineRenderer.enabled) return; 
+        
         ray = new Ray(lineOrigin.position, transform.forward);
 
         lineRenderer.positionCount = 1;

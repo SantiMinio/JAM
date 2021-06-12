@@ -5,17 +5,18 @@ using UnityEngine;
 public class ActivableBase : MonoBehaviour, IActivable
 {
     public bool isActive;
-    public virtual bool IsActive()
+    public bool IsActive()
     {
         return isActive;
     }
 
-    public virtual void Activate()
+    public void Activate()
     {
+        Debug.Log("activate campeon");
         isActive = true;
     }
 
-    public virtual void Deactivate()
+    public void Deactivate()
     {
         isActive = false;
     }
