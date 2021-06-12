@@ -7,7 +7,8 @@ public class BlockAction : CharacterAction
 {
     [SerializeField] WorldHittable hiteable = null;
     [SerializeField] float blockAngle = 90;
-    [SerializeField] Transform blockCollider;
+    [SerializeField] Transform blockCollider = null;
+    [SerializeField] Animator anim = null;
     bool isBlocking;
 
     private void Start()
@@ -19,6 +20,7 @@ public class BlockAction : CharacterAction
     {
         isBlocking = false;
         blockCollider.gameObject.SetActive(false);
+        anim.SetBool("blocking", false);
     }
 
     protected override void OnKeepAction()
@@ -30,6 +32,7 @@ public class BlockAction : CharacterAction
     {
         isBlocking = true;
         blockCollider.gameObject.SetActive(true);
+        anim.SetBool("blocking", true);
     }
 
     bool Blocking(Vector3 attackDir)
