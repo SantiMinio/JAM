@@ -84,7 +84,7 @@ public class Hiteable : MonoBehaviour, IHiteable
         
         
         StopAllCoroutines();
-        if (currentLife <= 0) return false;
+        //if (currentLife <= 0) return false;
         
         StartCoroutine(ShakeFeedback());
 
