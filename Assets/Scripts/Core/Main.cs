@@ -47,8 +47,8 @@ public class Main : MonoBehaviour
         }
     }
 
-    public CharacterBase GetHusband() => charOne;
-    public CharacterBase GetWife() => charTwo;
+    public CharacterBase GetHusband() => charTwo;
+    public CharacterBase GetWife() => charOne;
 
     public CharacterBase[] GetCharacters() => new CharacterBase[2] { charOne, charTwo };
 

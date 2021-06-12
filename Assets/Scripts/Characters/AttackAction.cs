@@ -25,7 +25,11 @@ public class AttackAction : CharacterAction
         {
             Transform target = targetsInViewRadious[i].transform;
             Vector3 dirToTarget = (target.position - transform.position).normalized;
-            if (Vector3.Angle(Main.instance.GetHusband().currentDir, dirToTarget) < viewAngle / 2)
+
+            Debug.Log(dirToTarget);
+            Debug.Log(Vector3.Angle(Main.instance.GetHusband().currentDir, dirToTarget));
+            Debug.Log(Main.instance.GetHusband().currentDir);
+            if (Vector3.Angle(Main.instance.GetHusband().currentDir, dirToTarget) < viewAngle)
             {
                 float distToTarget = Vector3.Distance(transform.position, target.position);
 
