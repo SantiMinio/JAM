@@ -12,7 +12,8 @@ public class Lucesdelamour : MonoBehaviour
     public float loveMaxRange;
     public float IntensityMultipler;
     public float IntensityMultipler2;
-
+    public float gppmultipler;
+    public Grayscale_Post_Process gpp;
     public DistanceController dc;
     private void Awake()
     {
@@ -27,6 +28,7 @@ public class Lucesdelamour : MonoBehaviour
         luzPibe.transform.position = Main.instance.GetHusband().transform.position + Vector3.up;
         luzPiba.intensity = -dc.GetDistanceBetweenCharacters() * IntensityMultipler + loveMaxRange;
         luzPibe.intensity = -dc.GetDistanceBetweenCharacters() * IntensityMultipler + loveMaxRange;
+       
         if (dc.GetDistanceBetweenCharacters() < 2)
         {
             luzPiba.gameObject.SetActive(false);
