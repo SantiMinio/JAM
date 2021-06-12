@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlockAction : MonoBehaviour
+public class BlockAction : CharacterAction
 {
-    // Start is called before the first frame update
-    void Start()
+    protected override void OnEndAction()
     {
-        
     }
 
-    // Update is called once per frame
-    void Update()
+    protected override void OnKeepAction()
     {
-        
+    }
+
+    protected override void OnStartAction()
+    {
     }
 }

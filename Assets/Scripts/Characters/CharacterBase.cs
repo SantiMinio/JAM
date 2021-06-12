@@ -7,6 +7,7 @@ public class CharacterBase : MonoBehaviour
     [SerializeField] Rigidbody rb = null;
     [SerializeField] float speed = 5;
     [SerializeField] CharacterAction action = null;
+    [SerializeField] Animator anim;
 
     float xAxis;
     float yAxis;
@@ -15,6 +16,9 @@ public class CharacterBase : MonoBehaviour
     {
         Vector3 movement = new Vector3(xAxis * speed, 0, yAxis * speed);
         rb.velocity = movement;
+
+        anim.SetFloat("x", xAxis);
+        anim.SetFloat("z", yAxis);
     }
 
     public void MoveY(float y)

@@ -214,7 +214,19 @@ MonoBehaviour:
       m_Calls: []
   ActionCharOneButton:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   ActionCharTwoButton:
     m_PersistentCalls:
       m_Calls: []
@@ -228,6 +240,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4990358710722790327}
   - component: {fileID: 4990358710722790280}
+  - component: {fileID: 1767910015238702300}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -297,9 +310,28 @@ SpriteRenderer:
   m_Size: {x: 0.2, y: 0.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1767910015238702300
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4990358710722790326}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 17dabd69caf4a254f935e0be75473edc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4990358710914531664
 GameObject:
   m_ObjectHideFlags: 0
@@ -312,6 +344,7 @@ GameObject:
   - component: {fileID: 4990358710914531667}
   - component: {fileID: 4990358710914531665}
   - component: {fileID: 4990358710914531666}
+  - component: {fileID: 793372479773293342}
   m_Layer: 0
   m_Name: Character dos
   m_TagString: Untagged
@@ -361,6 +394,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 4990358710914531666}
   speed: 5
+  action: {fileID: 793372479773293342}
+  anim: {fileID: 4657855107624035366}
 --- !u!54 &4990358710914531666
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -377,6 +412,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &793372479773293342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4990358710914531664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1adb21d9fe2b2404eafd6b31efb9a1bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4990358710915692693
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,6 +498,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4990358711128300194}
   - component: {fileID: 4990358711128300195}
+  - component: {fileID: 4657855107624035366}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -523,6 +571,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &4657855107624035366
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4990358711128300193}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a4249ba5be95f0d46aa2b1d60b4e15cb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4990358711331196707
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,6 +602,7 @@ GameObject:
   - component: {fileID: 4990358711331196708}
   - component: {fileID: 4990358711331196710}
   - component: {fileID: 4990358711331196711}
+  - component: {fileID: 4909302583596632470}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -584,6 +652,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 4990358711331196711}
   speed: 5
+  action: {fileID: 4909302583596632470}
+  anim: {fileID: 1767910015238702300}
 --- !u!54 &4990358711331196711
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -600,3 +670,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &4909302583596632470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4990358711331196707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ecedc6c4479adf4183fad21b41c317f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
