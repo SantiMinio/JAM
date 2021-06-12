@@ -19,7 +19,7 @@ public class AttackAction : CharacterAction
     protected override void OnStartAction()
     {
         List<Transform> targets = new List<Transform>();
-        Collider[] targetsInViewRadious = Physics.OverlapSphere(transform.position, attackRadious).Where(x => x.GetComponent<IBreakable>() != null).ToArray();
+        Collider[] targetsInViewRadious = Physics.OverlapSphere(transform.position, attackRadious).Where(x => x.GetComponent<Hiteable>() != null).ToArray();
 
         for (int i = 0; i < targetsInViewRadious.Length; i++)
         {
@@ -36,9 +36,11 @@ public class AttackAction : CharacterAction
 
         for (int i = 0; i < targets.Count; i++)
         {
-            IBreakable hiteable = targets[i].GetComponent<IBreakable>();
+            Hiteable hiteable = targets[i].GetComponent<Hiteable>();
 
-            if (hiteable != null) hiteable.GetHit();
+            Vector3 attackDir = (hiteable.GetPosition() - transform.position).normalized; 
+            
+            if (hiteable != null) hiteable.GetHit(attackDir);
         }
     }
 }
