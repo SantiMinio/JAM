@@ -20,7 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _AlbedoTextura:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 88edab03b3434f34da6b92fa0acaf842, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _AlphaTex:
@@ -34,8 +34,8 @@ Material:
     m_Floats:
     - PixelSnap: 0
     - _GrayscaleOn: 0
-    - _Pixels: 24
+    - _Pixels: 150
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _ColorTexture: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorTexture: {r: 2.4622889, g: 2.4622889, b: 2.4622889, a: 1}
   m_BuildTextureStacks: []
