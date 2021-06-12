@@ -18,7 +18,7 @@ public class CameraFollow : MonoBehaviour
         _cam = Camera.main;
         ants.AddRange(GameObject.FindObjectsOfType<CharacterBase>());
         float newZoom = Mathf.Lerp(maxZoom, minZoom, GreatestDistance() / zoomLimiter);
-        _cam.orthographicSize = newZoom;
+        _cam.fieldOfView = newZoom;
         Vector3 centerPoint = GetCenterPoint();
         Vector3 newPosition = centerPoint + offset;
         transform.position = newPosition;
@@ -64,6 +64,7 @@ public class CameraFollow : MonoBehaviour
     void Zoom()
     {
         float newZoom = Mathf.Lerp(maxZoom, minZoom, GreatestDistance() / zoomLimiter);
-        _cam.orthographicSize =Mathf.Lerp(_cam.orthographicSize, newZoom,Time.deltaTime);
+        Debug.Log(GreatestDistance() / zoomLimiter);
+        _cam.fieldOfView = Mathf.Lerp(_cam.fieldOfView, newZoom,Time.deltaTime);
     }
 }

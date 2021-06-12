@@ -322,9 +322,9 @@ MonoBehaviour:
   ants: []
   offset: {x: 0, y: 10, z: -7.39}
   smoothTime: 0.53
-  minZoom: 3
-  maxZoom: 1
-  zoomLimiter: 0
+  minZoom: 50
+  maxZoom: 20
+  zoomLimiter: 10
 --- !u!114 &2625418802064987959
 MonoBehaviour:
   m_ObjectHideFlags: 0
