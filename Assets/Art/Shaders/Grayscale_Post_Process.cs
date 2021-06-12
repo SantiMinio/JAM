@@ -9,7 +9,7 @@ public class Grayscale_Post_Process : MonoBehaviour
     Material mat;
     [Range (0, 1)]
     public float grayscale;
-    [Range (1, 3)]
+    [Range (0, 1)]
     public float masOcuro;
 
     private void Awake()
