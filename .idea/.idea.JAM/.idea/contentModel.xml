@@ -757,8 +757,9 @@
         <e p="Art" t="Include">
           <e p="Shaders" t="Include">
             <e p="PixelArtVertexColor.shader" t="Include" />
-            <e p="PostProcess-Glitch.shader" t="Include" />
-            <e p="PostProcess_Glitch.cs" t="Include" />
+            <e p="PixelPospro.shader" t="Include" />
+            <e p="PixelPosproPPSSettings.cs" t="Include" />
+            <e p="PixelShaderCOde.cs" t="Include" />
           </e>
         </e>
         <e p="Scripts" t="Include">
@@ -774,11 +775,13 @@
             <e p="BinarySerialization.cs" t="Include" />
             <e p="CameraFollow.cs" t="Include" />
             <e p="Checkpoint.cs" t="Include" />
+            <e p="CheckpointManager.cs" t="Include" />
             <e p="DistanceController.cs" t="Include" />
             <e p="EventManager.cs" t="Include" />
             <e p="GameEvents.cs" t="Include" />
             <e p="Main.cs" t="Include" />
             <e p="SavedClass.cs" t="Include" />
+            <e p="WorldHittable.cs" t="Include" />
           </e>
           <e p="FalopaFran" t="Include">
             <e p="ActivableBase.cs" t="Include" />
