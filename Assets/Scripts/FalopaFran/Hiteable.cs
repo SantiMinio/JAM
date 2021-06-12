@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Breakable : MonoBehaviour, IBreakable
+public class Hiteable : MonoBehaviour, IHiteable
 {
     [SerializeField] private int currentLife, maxLife;
     private bool _imDead = false;
@@ -11,6 +11,8 @@ public class Breakable : MonoBehaviour, IBreakable
     [SerializeField] private float timeShaking;
 
     private MoveShake _moveShake;
+
+    private bool _imInvulnerable;
     
     private void Start()
     {
@@ -18,28 +20,43 @@ public class Breakable : MonoBehaviour, IBreakable
         
         Reset();
     }
-
-    private void Update()
-    {
-        
-    }
-
     private void Reset()
     {
         currentLife = maxLife;
     }
-
+    public bool ImInvulnerable() => _imInvulnerable;
+    
     public bool ImDead() => _imDead;
-
-
+    
     public void GetHit()
     {
+        StopAllCoroutines();
         StartCoroutine(ShakeFeedback());
         currentLife--;
         if (currentLife <= 0)
         {
             _imDead = true;
         }
+    }
+    
+    public bool GetHit(Vector3 dir)
+    {
+        if (_imInvulnerable) return false;
+        
+        StopAllCoroutines();
+        StartCoroutine(ShakeFeedback());
+        currentLife--;
+        if (currentLife <= 0)
+        {
+            _imDead = true;
+        }
+
+        return true;
+    }
+
+    public void SetInvulnerability(bool value)
+    {
+        _imInvulnerable = value;
     }
 
     IEnumerator ShakeFeedback()
