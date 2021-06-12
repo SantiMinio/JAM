@@ -14,6 +14,8 @@ public class CharacterBase : MonoBehaviour
     [SerializeField] AudioClip hitSound = null;
     [SerializeField] AudioClip[] footStep = null;
 
+    float stepTimer;
+
     float xAxis;
     float yAxis;
 
@@ -39,12 +41,14 @@ public class CharacterBase : MonoBehaviour
                                        rb.velocity.y,
                                        Mathf.Abs(xAxis) == 1 ? yAxis / 1.5f * speed : yAxis * speed);
         rb.velocity = movement;
+        stepTimer += Time.deltaTime;
 
         if (movement != Vector3.zero)
         {
             currentDir = new Vector3(xAxis, 0, yAxis);
             anim.SetFloat("SetXDir", xAxis);
             anim.SetFloat("SetZDir", yAxis);
+            if (stepTimer > 0.2f) { stepTimer = 0; AudioManager.instance.PlaySound(footStep[Random.Range(0, footStep.Length)].name); }
         }
 
         anim.SetFloat("x", xAxis);

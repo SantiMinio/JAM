@@ -73,7 +73,6 @@ MonoBehaviour:
   hitSound: {fileID: 8300000, guid: e31ba2f3a63b0404cba711f5e9d7e0db, type: 3}
   footStep:
   - {fileID: 8300000, guid: 4c566f4b01647eb4493e42065475a7dc, type: 3}
-  - {fileID: 8300000, guid: 75b176df77ee13c4dbf9ac630b2372b8, type: 3}
   currentDir: {x: 0, y: 0, z: -1}
 --- !u!54 &2243943858438837761
 Rigidbody:

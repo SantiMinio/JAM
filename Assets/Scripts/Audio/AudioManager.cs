@@ -58,7 +58,6 @@ public class AudioManager : MonoBehaviour
     /// <param name="soundPoolName"></param>
     public void PlaySound(string soundPoolName, Transform trackingTransform = null)
     {
-        Debug.Log(soundPoolName);
         if (_soundRegistry.ContainsKey(soundPoolName))
         {
             var soundPool = _soundRegistry[soundPoolName];
