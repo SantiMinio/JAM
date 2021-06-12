@@ -4,7 +4,7 @@
     <list default="true" id="86f5f815-5c74-405d-9597-329e30d03dbe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JAM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JAM/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/FranMapRELOADED.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FranMapRELOADED.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/RayTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/RayTarget.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +41,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Turret.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IInteractable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/MovingPlatform.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/RayTarget.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/ActivableBase.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/AnimatedObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/FireTrap.cs" />
@@ -60,6 +59,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/CheckpointManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/TurretAim.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Hiteable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/RayTarget.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tofbT4WhR3ucLCDrRi9SfjB7w1" />
@@ -104,7 +104,7 @@
       <option name="presentableId" value="Default" />
       <updated>1623440454740</updated>
       <workItem from="1623440473720" duration="2877000" />
-      <workItem from="1623510186227" duration="8613000" />
+      <workItem from="1623510186227" duration="9672000" />
     </task>
     <servers />
   </component>
