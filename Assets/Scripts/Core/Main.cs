@@ -13,6 +13,8 @@ public class Main : MonoBehaviour
     [SerializeField] CharacterBase charOne = null;
     [SerializeField] CharacterBase charTwo = null;
 
+    [SerializeField] CheckpointManager checkpointManager = null;
+
     [SerializeField] float restartTime = 3;
     Vector3 checkpointPosition = Vector3.zero;
 
@@ -38,7 +40,7 @@ public class Main : MonoBehaviour
             BinarySerialization.Serialize(SaveDataName, save);
         }
 
-        if(checkpointPosition != Vector3.zero)
+        if(checkpointPosition != Vector3.zero && checkpointManager.CheckIfCheckpoint(checkpointPosition))
         {
             charOne.transform.position = checkpointPosition;
             charTwo.transform.position = checkpointPosition + Vector3.right;

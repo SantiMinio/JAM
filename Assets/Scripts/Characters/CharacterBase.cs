@@ -12,10 +12,19 @@ public class CharacterBase : MonoBehaviour
     float xAxis;
     float yAxis;
 
+    public Vector3 currentDir = new Vector3(0, 0, -1);
+
     private void Update()
     {
         Vector3 movement = new Vector3(xAxis * speed, 0, yAxis * speed);
         rb.velocity = movement;
+
+        if (movement != Vector3.zero)
+        {
+            currentDir = new Vector3(xAxis, 0, yAxis);
+            anim.SetFloat("SetXDir", xAxis);
+            anim.SetFloat("SetZDir", yAxis);
+        }
 
         anim.SetFloat("x", xAxis);
         anim.SetFloat("z", yAxis);
