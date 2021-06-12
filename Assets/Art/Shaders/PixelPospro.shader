@@ -108,7 +108,7 @@ Shader "PixelPospro"
 }
 /*ASEBEGIN
 Version=18900
-2129;334;892;384;1150.971;400.1689;1;True;False
+2129;246;892;472;1156.971;215.1689;1;True;False
 Node;AmplifyShaderEditor.TextureCoordinatesNode;2;-860,-180;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.RangedFloatNode;6;-679,6;Inherit;False;Property;_Pixel;Pixel;0;0;Create;True;0;0;0;False;0;False;0;0;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.TFHCPixelate;4;-466,-14;Inherit;False;3;0;FLOAT2;0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;1;FLOAT2;0
@@ -122,4 +122,4 @@ WireConnection;1;0;3;0
 WireConnection;1;1;4;0
 WireConnection;0;0;1;0
 ASEEND*/
-//CHKSM=43052C76EB0A3CDD7DBD8297D046E06C863DFBAC
+//CHKSM=7D043F9638541E459A6D51D913D7D36706DB3943
