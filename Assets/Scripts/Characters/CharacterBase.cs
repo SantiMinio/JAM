@@ -83,7 +83,7 @@ public class CharacterBase : MonoBehaviour
             if (characters[i] != this) characters[i].Cry();
         }
         dead = true;
-        if (Physics.Raycast(transform.position, -transform.up, 5, 1 << 9))
+        if (Physics.Raycast(transform.position, -transform.up, 1, 1 << 9))
             anim.SetBool("Fall", true);
         else
             anim.SetBool("Dead", true);
