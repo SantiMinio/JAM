@@ -9,6 +9,12 @@ public class AttackAction : CharacterAction
     [SerializeField] float viewAngle = 90;
     [SerializeField] Animator anim = null;
     [SerializeField] Animator slashAnim;
+    [SerializeField] AudioClip slashSound = null;
+
+    private void Start()
+    {
+        AudioManager.instance.GetSoundPool(slashSound.name, AudioManager.SoundDimesion.TwoD, slashSound);
+    }
 
     protected override void OnEndAction()
     {
@@ -20,6 +26,7 @@ public class AttackAction : CharacterAction
 
     protected override void OnStartAction()
     {
+        AudioManager.instance.PlaySound(slashSound.name);
         anim.SetTrigger("attack");
         slashAnim.Play("Slash");
         List<Transform> targets = new List<Transform>();

@@ -488,6 +488,7 @@ GameObject:
   - component: {fileID: 5514389464381974682}
   - component: {fileID: 694551886661176684}
   - component: {fileID: 8672817185362344051}
+  - component: {fileID: 5773163327894034647}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -556,6 +557,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkpoints: []
+--- !u!114 &5773163327894034647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852383593388069841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1dc06f99304e3445875867e1611e50b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fx: {fileID: 1025625244639756035, guid: 00b34bc68275ff84a82cbcce13f11dcb, type: 2}
 --- !u!1 &2744869415882944592
 GameObject:
   m_ObjectHideFlags: 0

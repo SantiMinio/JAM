@@ -9,13 +9,6 @@ using UnityEngine.Audio;
 public class AudioManager : MonoBehaviour
 {
     [SerializeField] private AudioMixerGroup _fx = null;
-    [SerializeField] private AudioMixerGroup _jabali = null;
-    [SerializeField] private AudioMixerGroup _music = null;
-    [SerializeField] private AudioMixerGroup _misc = null;
-    [SerializeField] private AudioMixerGroup _slowmo = null;
-    [SerializeField] private AudioMixerGroup _ambient_FX = null;
-    [SerializeField] private AudioMixerGroup _onFightMusic = null;
-    [SerializeField] private AudioMixerGroup _offFightMusic = null;
 
     private Dictionary<string, SoundPool> _soundRegistry = new Dictionary<string, SoundPool>();
     //private Dictionary<AudioGroups, AudioMixerGroup> _audioMixers = new Dictionary<AudioGroups, AudioMixerGroup>();

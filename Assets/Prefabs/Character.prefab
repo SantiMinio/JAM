@@ -68,6 +68,12 @@ MonoBehaviour:
   action: {fileID: 3277417902645441650}
   anim: {fileID: 3968830468917024867}
   hiteable: {fileID: 4915267821770440284}
+  fallingSound: {fileID: 8300000, guid: 543d52a14ccfcde4cb360e6cbf398b9b, type: 3}
+  lavaSound: {fileID: 8300000, guid: f254f8199b89a1c44b05587f037ceb61, type: 3}
+  hitSound: {fileID: 8300000, guid: e31ba2f3a63b0404cba711f5e9d7e0db, type: 3}
+  footStep:
+  - {fileID: 8300000, guid: 4c566f4b01647eb4493e42065475a7dc, type: 3}
+  - {fileID: 8300000, guid: 75b176df77ee13c4dbf9ac630b2372b8, type: 3}
   currentDir: {x: 0, y: 0, z: -1}
 --- !u!54 &9187362941556381253
 Rigidbody:
@@ -102,6 +108,7 @@ MonoBehaviour:
   viewAngle: 90
   anim: {fileID: 3968830468917024867}
   slashAnim: {fileID: 1746774562842937319}
+  slashSound: {fileID: 8300000, guid: 88f6a95165f4b404daa009d88700a0cb, type: 3}
 --- !u!114 &4915267821770440284
 MonoBehaviour:
   m_ObjectHideFlags: 0
