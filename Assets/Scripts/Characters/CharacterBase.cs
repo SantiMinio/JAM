@@ -77,15 +77,23 @@ public class CharacterBase : MonoBehaviour
 
     void Dead()
     {
-        //Inserte la animación y sonido
         var characters = Main.instance.GetCharacters();
         for (int i = 0; i < characters.Length; i++)
         {
             if (characters[i] != this) characters[i].Cry();
         }
         dead = true;
-        anim.SetBool("Dead", true);
+        if (Physics.Raycast(transform.position, -transform.up, 5, 1 << 9))
+            anim.SetBool("Fall", true);
+        else
+            anim.SetBool("Dead", true);
         Main.instance.eventManager.TriggerEvent(GameEvents.CharactersSeparate);
+    }
+
+    public void DeadBySeparate()
+    {
+        anim.SetBool("Dead", true);
+        dead = true;
     }
 
     public void Cry()

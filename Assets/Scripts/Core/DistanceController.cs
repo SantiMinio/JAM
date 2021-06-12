@@ -32,6 +32,11 @@ public class DistanceController : MonoBehaviour
             if(timer <= 0)
             {
                 Main.instance.eventManager.TriggerEvent(GameEvents.CharactersSeparate);
+                var characters = Main.instance.GetCharacters();
+                for (int i = 0; i < characters.Length; i++)
+                {
+                    characters[i].DeadBySeparate();
+                }
             }
         }
         else
