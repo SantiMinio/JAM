@@ -783,6 +783,7 @@
           <e p="FalopaFran" t="Include">
             <e p="ActivableBase.cs" t="Include" />
             <e p="AnimatedObject.cs" t="Include" />
+            <e p="AnimateObjectActivator.cs" t="Include" />
             <e p="Hiteable.cs" t="Include" />
             <e p="IActivable.cs" t="Include" />
             <e p="IHiteable.cs" t="Include" />

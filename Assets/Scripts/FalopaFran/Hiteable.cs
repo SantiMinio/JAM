@@ -11,11 +11,13 @@ public class Hiteable : MonoBehaviour, IHiteable
 
     [SerializeField] private float timeShaking;
 
-    private MoveShake _moveShake;
+    [SerializeField] private MoveShake _moveShake;
 
     [SerializeField] private bool _imInvulnerable;
+
+    public event Action onHit;
     
-    private void Start()
+    public virtual void Start()
     {
         _moveShake = GetComponent<MoveShake>();
         
@@ -29,12 +31,15 @@ public class Hiteable : MonoBehaviour, IHiteable
     public bool CanIDie() => canIDie;
     public bool ImDead() => _imDead;
 
-    public bool GetHit(Vector3 dir)
+    public virtual bool GetHit(Vector3 dir)
     {
         if (_imInvulnerable) return false;
         
         StopAllCoroutines();
         StartCoroutine(ShakeFeedback());
+
+        
+        
         currentLife--;
         
         if (currentLife <= 0)
@@ -47,6 +52,8 @@ public class Hiteable : MonoBehaviour, IHiteable
             
         }
 
+        onHit?.Invoke();
+        
         return true;
     }
 
