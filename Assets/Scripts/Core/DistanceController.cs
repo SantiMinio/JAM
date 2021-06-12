@@ -11,6 +11,7 @@ public class DistanceController : MonoBehaviour
 
     [SerializeField] Transform charOne = null;
     [SerializeField] Transform charTwo = null;
+    [SerializeField] Grayscale_Post_Process gpp = null;
 
     float characterDistance;
 
@@ -41,8 +42,13 @@ public class DistanceController : MonoBehaviour
         }
         else
         {
-            timer = timeToDead;
+            if (timer >= timeToDead) return;
+            timer += Time.deltaTime;
+            if(timer >= timeToDead)
+                timer = timeToDead;
         }
+        gpp.grayscale = timeToDead - timer;
+        gpp.masOcuro = timeToDead - timer;
         UIManager.instance.SetLife(timer / timeToDead);
     }
 

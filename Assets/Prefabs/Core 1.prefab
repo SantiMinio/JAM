@@ -332,6 +332,7 @@ MonoBehaviour:
   loveMaxRange: 0
   IntensityMultipler: 1.68
   IntensityMultipler2: 1.55
+  gppmultipler: 0
   dc: {fileID: 694551886661176684}
 --- !u!1 &1510822661016172644
 GameObject:
@@ -541,6 +542,7 @@ MonoBehaviour:
   timer: 0
   charOne: {fileID: 925054952935123310}
   charTwo: {fileID: 65425055018782504}
+  gpp: {fileID: 1814612142030710442}
 --- !u!114 &8672817185362344051
 MonoBehaviour:
   m_ObjectHideFlags: 0

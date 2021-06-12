@@ -13,7 +13,6 @@ public class Lucesdelamour : MonoBehaviour
     public float IntensityMultipler;
     public float IntensityMultipler2;
     public float gppmultipler;
-    public Grayscale_Post_Process gpp;
     public DistanceController dc;
     private void Awake()
     {
