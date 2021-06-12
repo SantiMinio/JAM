@@ -44,7 +44,7 @@ Material:
     - _Speed: 0.06
     - _SpeedX: 0.03
     - _SpeedY: 0.03
-    - __dirty: 1
+    - __dirty: 0
     m_Colors:
     - _Color1: {r: 2.6390157, g: 0.15523621, b: 0, a: 1}
     - _Color2: {r: 7.4642644, g: 2.3710017, b: 0, a: 1}

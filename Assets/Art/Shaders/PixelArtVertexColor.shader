@@ -52,7 +52,7 @@ Shader "PixelArtVertexColor"
 }
 /*ASEBEGIN
 Version=18900
-2129;325;892;393;609.7377;68.37848;1.601735;True;False
+2129;266;892.2;452;568.0923;41.14899;1.601735;True;False
 Node;AmplifyShaderEditor.VertexColorNode;1;-608.2524,-27.40931;Inherit;False;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.RangedFloatNode;17;-466.454,186.1422;Inherit;False;Property;_Constraste;Constraste;0;0;Create;True;0;0;0;False;0;False;0.89;1.29;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleContrastOpNode;16;-177.5043,24.79139;Inherit;False;2;1;COLOR;0,0,0,0;False;0;FLOAT;0;False;1;COLOR;0
@@ -68,4 +68,4 @@ WireConnection;29;2;30;0
 WireConnection;28;0;16;0
 WireConnection;28;2;29;0
 ASEEND*/
-//CHKSM=09C3F9A6192427A65C86A4C0EDEC51F081F79E4B
+//CHKSM=10700133F41E45FEBA5EF4C75F0D2B74477059B6
