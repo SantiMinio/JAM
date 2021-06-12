@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86f5f815-5c74-405d-9597-329e30d03dbe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.JAM/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JAM/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.JAM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JAM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FranMapTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FranMapTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Hiteable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Hiteable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IHiteable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IHiteable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Mats/RayReceiver.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Mats/RayReceiver.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/PrefabsDelMundo/DoorSystemSimple.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/PrefabsDelMundo/DoorSystemSimple.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/PrefabsDelMundo/DoorSystemSimple.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/PrefabsDelMundo/DoorSystemSimple.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/RayTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/RayTarget.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Turret.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Turret.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +42,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IHiteable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Hiteable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/RayTarget.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Turret.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tofbT4WhR3ucLCDrRi9SfjB7w1" />

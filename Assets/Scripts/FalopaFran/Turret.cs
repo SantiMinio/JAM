@@ -2,17 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Turret : MonoBehaviour
+public class Turret : ActivableBase
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float xAngle, yAngle, zAngle;
 
-    // Update is called once per frame
     void Update()
     {
+        if(!isActive) return;
         
+        transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
     }
 }
