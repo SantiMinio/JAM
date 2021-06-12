@@ -45,6 +45,10 @@ public class Main : MonoBehaviour
         }
     }
 
+    public CharacterBase GetHusband() => charOne;
+    public CharacterBase GetWife() => charTwo;
+
+    public CharacterBase[] GetCharacters() => new CharacterBase[2] { charOne, charTwo };
 
     void RestartGame()
     {
