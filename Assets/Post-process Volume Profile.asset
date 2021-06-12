@@ -17,8 +17,8 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   intensity:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: -9.7
   intensityX:
     overrideState: 0
     value: 1
@@ -33,7 +33,7 @@ MonoBehaviour:
     value: 0
   scale:
     overrideState: 0
-    value: 1
+    value: 0.63
 --- !u!114 &-1813733017876558059
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -189,7 +189,7 @@ MonoBehaviour:
     value: 1.05
   color:
     overrideState: 1
-    value: {r: 0.18957165, g: 0, b: 0.4245283, a: 1}
+    value: {r: 0.23060808, g: 0, b: 0.5188679, a: 1}
   ambientOnly:
     overrideState: 0
     value: 1
