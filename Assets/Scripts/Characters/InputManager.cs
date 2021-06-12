@@ -11,8 +11,8 @@ public static class InputManager
     static Dictionary<string, KeyCode> KeyboardInputs = new Dictionary<string, KeyCode>()
     {
         { InputName.Jump, KeyCode.Space },
-                { InputName.ActionPlayerOne, KeyCode.RightControl },
-                                { InputName.ActionPlayerOneAlt, KeyCode.Keypad0 },
+                { InputName.ActionPlayerOne, KeyCode.Keypad0 },
+                                { InputName.ActionPlayerOneAlt, KeyCode.RightControl },
                         { InputName.ActionPlayerTwo, KeyCode.LeftShift }
     };
 
@@ -20,7 +20,7 @@ public static class InputManager
     {
         { InputName.Jump, KeyCode.Joystick1Button0 },
                 { InputName.ActionPlayerOne, KeyCode.Joystick1Button6 },
-                                { InputName.ActionPlayerOneAlt, KeyCode.RightControl },
+                                { InputName.ActionPlayerOneAlt, KeyCode.Joystick1Button1 },
                         { InputName.ActionPlayerTwo, KeyCode.Joystick1Button7 }
     };
 
