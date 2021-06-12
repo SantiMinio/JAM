@@ -5,6 +5,7 @@ Shader "PixelArtVertexColor"
 	Properties
 	{
 		_Constraste("Constraste", Float) = 0.89
+		_Polentadelaluz("Polenta de la luz", Range( 0 , 1)) = 0
 		[HideInInspector] __dirty( "", Int ) = 1
 	}
 
@@ -22,6 +23,7 @@ Shader "PixelArtVertexColor"
 		};
 
 		uniform float _Constraste;
+		uniform float _Polentadelaluz;
 
 
 		float4 CalculateContrast( float contrastValue, float4 colorTarget )
@@ -39,7 +41,7 @@ Shader "PixelArtVertexColor"
 			#else //aselc
 			float4 ase_lightColor = _LightColor0;
 			#endif //aselc
-			o.Emission = ( temp_output_16_0 * ase_lightColor.a ).rgb;
+			o.Emission = ( temp_output_16_0 * ase_lightColor.a * _Polentadelaluz ).rgb;
 			o.Alpha = 1;
 		}
 
@@ -50,18 +52,20 @@ Shader "PixelArtVertexColor"
 }
 /*ASEBEGIN
 Version=18900
-2129;229;892;489;472.3297;338.6262;1.371529;True;False
+2129;325;892;393;609.7377;68.37848;1.601735;True;False
 Node;AmplifyShaderEditor.VertexColorNode;1;-608.2524,-27.40931;Inherit;False;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.RangedFloatNode;17;-466.454,186.1422;Inherit;False;Property;_Constraste;Constraste;0;0;Create;True;0;0;0;False;0;False;0.89;1.26;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;17;-466.454,186.1422;Inherit;False;Property;_Constraste;Constraste;0;0;Create;True;0;0;0;False;0;False;0.89;1.29;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleContrastOpNode;16;-177.5043,24.79139;Inherit;False;2;1;COLOR;0,0,0,0;False;0;FLOAT;0;False;1;COLOR;0
 Node;AmplifyShaderEditor.LightColorNode;27;65.08855,163.7894;Inherit;False;0;3;COLOR;0;FLOAT3;1;FLOAT;2
-Node;AmplifyShaderEditor.SimpleMultiplyOpNode;29;344.6342,152.7715;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;FLOAT;0;False;1;COLOR;0
+Node;AmplifyShaderEditor.RangedFloatNode;30;219.961,284.003;Inherit;False;Property;_Polentadelaluz;Polenta de la luz;1;0;Create;True;0;0;0;False;0;False;0;0.21;0;1;0;1;FLOAT;0
+Node;AmplifyShaderEditor.SimpleMultiplyOpNode;29;344.6342,152.7715;Inherit;False;3;3;0;COLOR;0,0,0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;1;COLOR;0
 Node;AmplifyShaderEditor.StandardSurfaceOutputNode;28;602.4734,7.4232;Float;False;True;-1;2;ASEMaterialInspector;0;0;Standard;PixelArtVertexColor;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;Back;0;False;-1;0;False;-1;False;0;False;-1;0;False;-1;False;0;Opaque;0.5;True;True;0;False;Opaque;;Geometry;All;14;all;True;True;True;True;0;False;-1;False;0;False;-1;255;False;-1;255;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;False;2;15;10;25;False;0.5;True;0;0;False;-1;0;False;-1;0;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;Relative;0;;-1;-1;-1;-1;0;False;0;0;False;-1;-1;0;False;-1;0;0;0;False;0.1;False;-1;0;False;-1;False;16;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
 WireConnection;16;1;1;0
 WireConnection;16;0;17;0
 WireConnection;29;0;16;0
 WireConnection;29;1;27;2
+WireConnection;29;2;30;0
 WireConnection;28;0;16;0
 WireConnection;28;2;29;0
 ASEEND*/
-//CHKSM=9CBDB5FFB191CE1D48A9DF22C57F0C563236A17A
+//CHKSM=09C3F9A6192427A65C86A4C0EDEC51F081F79E4B
