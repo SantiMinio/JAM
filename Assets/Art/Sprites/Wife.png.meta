@@ -62,6 +62,42 @@ TextureImporter:
   - first:
       213: -5438945760647121829
     second: Wife_19
+  - first:
+      213: 2042522582730988368
+    second: Wife_20
+  - first:
+      213: -2132169352858350916
+    second: Wife_21
+  - first:
+      213: -4003641853398557027
+    second: Wife_22
+  - first:
+      213: 1326139673955879592
+    second: Wife_23
+  - first:
+      213: 1520684371191631004
+    second: Wife_24
+  - first:
+      213: 7691535282499818074
+    second: Wife_25
+  - first:
+      213: 8714214902577444125
+    second: Wife_26
+  - first:
+      213: -1748823392801802009
+    second: Wife_27
+  - first:
+      213: 549487050789690503
+    second: Wife_28
+  - first:
+      213: 2671917241925325503
+    second: Wife_29
+  - first:
+      213: -7546483257047227508
+    second: Wife_30
+  - first:
+      213: 7374158436059509349
+    second: Wife_31
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -155,7 +191,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 144
+        y: 288
         width: 48
         height: 48
       alignment: 0
@@ -176,7 +212,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 144
+        y: 288
         width: 48
         height: 48
       alignment: 0
@@ -197,7 +233,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 144
+        y: 288
         width: 48
         height: 48
       alignment: 0
@@ -218,7 +254,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 144
+        y: 288
         width: 48
         height: 48
       alignment: 0
@@ -239,7 +275,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 144
+        y: 288
         width: 48
         height: 48
       alignment: 0
@@ -260,7 +296,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
+        y: 240
         width: 48
         height: 48
       alignment: 0
@@ -281,7 +317,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 96
+        y: 240
         width: 48
         height: 48
       alignment: 0
@@ -302,7 +338,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 96
+        y: 240
         width: 48
         height: 48
       alignment: 0
@@ -323,7 +359,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 96
+        y: 240
         width: 48
         height: 48
       alignment: 0
@@ -344,7 +380,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 96
+        y: 240
         width: 48
         height: 48
       alignment: 0
@@ -365,7 +401,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
+        y: 192
         width: 48
         height: 48
       alignment: 0
@@ -386,7 +422,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 48
+        y: 192
         width: 48
         height: 48
       alignment: 0
@@ -407,7 +443,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 48
+        y: 192
         width: 48
         height: 48
       alignment: 0
@@ -428,7 +464,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 48
+        y: 192
         width: 48
         height: 48
       alignment: 0
@@ -449,7 +485,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 48
+        y: 192
         width: 48
         height: 48
       alignment: 0
@@ -470,7 +506,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 144
         width: 48
         height: 48
       alignment: 0
@@ -491,7 +527,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 0
+        y: 144
         width: 48
         height: 48
       alignment: 0
@@ -512,7 +548,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
+        y: 144
         width: 48
         height: 48
       alignment: 0
@@ -533,7 +569,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 0
+        y: 144
         width: 48
         height: 48
       alignment: 0
@@ -554,7 +590,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
+        y: 144
         width: 48
         height: 48
       alignment: 0
@@ -566,6 +602,258 @@ TextureImporter:
       bones: []
       spriteID: b54f200c5abf484b0800000000000000
       internalID: -5438945760647121829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wife_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05bd46d977f785c10800000000000000
+      internalID: 2042522582730988368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wife_21
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cba47e135430962e0800000000000000
+      internalID: -2132169352858350916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wife_22
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9eda4052f43078c0800000000000000
+      internalID: -4003641853398557027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wife_23
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa41bcd105676210800000000000000
+      internalID: 1326139673955879592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wife_24
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c8d50f06e8a1510800000000000000
+      internalID: 1520684371191631004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wife_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5219c28692ddba60800000000000000
+      internalID: 7691535282499818074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wife_26
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d153b84b84c1fe870800000000000000
+      internalID: 8714214902577444125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wife_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8b721d36eeab7e0800000000000000
+      internalID: -1748823392801802009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wife_28
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c1ff6bf8b20a700800000000000000
+      internalID: 549487050789690503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wife_29
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb2533a339e841520800000000000000
+      internalID: 2671917241925325503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wife_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c836440f571854790800000000000000
+      internalID: -7546483257047227508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wife_31
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 562f6c21706465660800000000000000
+      internalID: 7374158436059509349
       vertices: []
       indices: 
       edges: []
