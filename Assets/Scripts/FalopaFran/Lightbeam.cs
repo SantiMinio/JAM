@@ -9,6 +9,8 @@ public class Lightbeam : MonoBehaviour
     [SerializeField] float maxLength = 100f;
 
     [SerializeField] private Transform lineOrigin;
+
+    [SerializeField] private Hiteable.DamageType damageType;
     
     LineRenderer lineRenderer;
     Ray ray;
@@ -16,6 +18,7 @@ public class Lightbeam : MonoBehaviour
     Vector3 direction;
 
     private bool isOn;
+    
 
     public void SetActive(bool value)
     {
@@ -48,7 +51,7 @@ public class Lightbeam : MonoBehaviour
 
                     Vector3 myAttackDir = (transform.position - hiteable.GetPosition()).normalized;
 
-                    hiteable.GetHit(myAttackDir);
+                    hiteable.GetHit(myAttackDir, damageType);
                 }
                 
                 

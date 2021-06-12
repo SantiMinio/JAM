@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86f5f815-5c74-405d-9597-329e30d03dbe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.JAM/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JAM/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JAM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JAM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Modulos/Puente.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Modulos/Puente.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/VFX/lava.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/VFX/lava.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FranMapTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FranMapTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/GameEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameEvents.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Main.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/WorldHittable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/WorldHittable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/ActivableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/ActivableObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/AnimateObjectActivator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/AnimateObjectActivator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Hiteable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Hiteable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IHiteable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IHiteable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Lightbeam.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Lightbeam.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/PrefabsDelMundo/Turret.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/PrefabsDelMundo/Turret.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,13 +42,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IBreakable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Breakable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Characters/AttackAction.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/AnimateObjectActivator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Turret.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IInteractable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/MovingPlatform.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/RayTarget.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/TurretAim.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Lightbeam.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/ActivableBase.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/AnimatedObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/FireTrap.cs" />
@@ -60,13 +54,15 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Bullet.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/StayOnPlatform.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/HeavyPusheableThing.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IHiteable.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Hiteable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/GameEvents.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Main.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/ActivableObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/KillZone.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/AnimateObjectActivator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Hiteable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IHiteable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/WorldHittable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Lightbeam.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tofbT4WhR3ucLCDrRi9SfjB7w1" />
@@ -111,7 +107,7 @@
       <option name="presentableId" value="Default" />
       <updated>1623440454740</updated>
       <workItem from="1623440473720" duration="2877000" />
-      <workItem from="1623510186227" duration="5403000" />
+      <workItem from="1623510186227" duration="6501000" />
     </task>
     <servers />
   </component>

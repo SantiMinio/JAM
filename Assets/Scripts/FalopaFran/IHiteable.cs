@@ -9,6 +9,7 @@ public interface IHiteable
     bool CanIDie();
     bool ImDead();
     bool GetHit(Vector3 dir);
+    bool GetHit(Vector3 dir, Hiteable.DamageType damageType);
 
     Vector3 GetPosition();
     void SetInvulnerability(bool value);

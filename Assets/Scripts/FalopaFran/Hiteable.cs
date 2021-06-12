@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Hiteable : MonoBehaviour, IHiteable
 {
+    [SerializeField] private List<DamageType> inmunity;
+    
     [SerializeField] private int currentLife, maxLife;
     private bool _imDead = false;
     [SerializeField] private bool canIDie = false;
@@ -18,6 +20,11 @@ public class Hiteable : MonoBehaviour, IHiteable
     public event Action onHit;
     public event Action onDead;
     public Func<Vector3, bool> Block = delegate { return false; } ;
+    
+    public enum DamageType
+    {
+        laser
+    }
     
     public virtual void Start()
     {
@@ -37,6 +44,36 @@ public class Hiteable : MonoBehaviour, IHiteable
     {
         if (Block(dir)) return false;
         if (_imInvulnerable) return false;
+        
+        
+        StopAllCoroutines();
+        StartCoroutine(ShakeFeedback());
+
+        
+        
+        currentLife--;
+        
+        if (currentLife <= 0)
+        {
+            currentLife = 0;
+            if (canIDie)
+            {
+                Dead();
+            }
+            
+        }
+
+        onHit?.Invoke();
+        
+        return true;
+    }
+    
+    public virtual bool GetHit(Vector3 dir,  DamageType type)
+    {
+        if (Block(dir)) return false;
+        if (_imInvulnerable) return false;
+
+        if (inmunity.Contains(type)) return false;
         
         StopAllCoroutines();
         StartCoroutine(ShakeFeedback());

@@ -8,11 +8,13 @@ public class AnimateObjectActivator : MonoBehaviour
 
      public void ActivateObject()
      {
-          targetActivableObject.Activate();
+          if(targetActivableObject != null)
+               targetActivableObject.Activate();
      }
 
      public void DeactivateObject()
      {
-          targetActivableObject.Deactivate();
+          if(targetActivableObject != null)
+               targetActivableObject.Deactivate();
      }
 }
