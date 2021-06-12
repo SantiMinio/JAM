@@ -756,10 +756,16 @@
         </e>
         <e p="Art" t="Include">
           <e p="Shaders" t="Include">
+            <e p="Grayscale_Post_Process.cs" t="Include" />
+            <e p="Lava.shader" t="Include" />
+            <e p="Pixel_Particle_Shader.shader" t="Include" />
             <e p="PixelArtVertexColor.shader" t="Include" />
             <e p="PixelPospro.shader" t="Include" />
             <e p="PixelPosproPPSSettings.cs" t="Include" />
             <e p="PixelShaderCOde.cs" t="Include" />
+            <e p="Post-process" t="Include">
+              <e p="Grayscale.shader" t="Include" />
+            </e>
           </e>
         </e>
         <e p="Scripts" t="Include">
@@ -778,6 +784,7 @@
             <e p="CharacterBase.cs" t="Include" />
             <e p="CharacterController.cs" t="Include" />
             <e p="InputManager.cs" t="Include" />
+            <e p="Lucesdelamour.cs" t="Include" />
           </e>
           <e p="Core" t="Include">
             <e p="BinarySerialization.cs" t="Include" />
