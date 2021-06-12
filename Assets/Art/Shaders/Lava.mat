@@ -10,7 +10,7 @@ Material:
   m_Name: Lava
   m_Shader: {fileID: 4800000, guid: f8548b33eb47dea48a90b58717751ba6, type: 3}
   m_ShaderKeywords: 
-  m_LightmapFlags: 4
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -49,5 +49,5 @@ Material:
     - _Color1: {r: 2.6390157, g: 0.15523621, b: 0, a: 1}
     - _Color2: {r: 7.4642644, g: 2.3710017, b: 0, a: 1}
     - _DirectionPanner: {r: 1, g: 1, b: 0, a: 0}
-    - _TillingAlbedo: {r: 3, g: 1, b: 0, a: 0}
+    - _TillingAlbedo: {r: 3, g: 13.48, b: 0, a: 0}
   m_BuildTextureStacks: []

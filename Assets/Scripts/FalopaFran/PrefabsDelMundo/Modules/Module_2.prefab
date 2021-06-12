@@ -6521,6 +6521,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: lava (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 234753145583255533, guid: 92e63202e1339c746bd84c8a293c6f0d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2544442810248176135, guid: 92e63202e1339c746bd84c8a293c6f0d,
         type: 3}
       propertyPath: m_IsTrigger
