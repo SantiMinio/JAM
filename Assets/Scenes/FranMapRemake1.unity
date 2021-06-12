@@ -22194,7 +22194,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh48340
+  m_Name: pb_Mesh45798
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -23183,6 +23183,11 @@ PrefabInstance:
     - target: {fileID: 60676545189788444, guid: 31f9d6a0a9e09a54f9672b079ce4b2fe,
         type: 3}
       propertyPath: targetAnimatedObject
+      value: 
+      objectReference: {fileID: 5514385244109477652}
+    - target: {fileID: 60676545189788444, guid: 31f9d6a0a9e09a54f9672b079ce4b2fe,
+        type: 3}
+      propertyPath: targetActivableObject
       value: 
       objectReference: {fileID: 5514385244109477652}
     - target: {fileID: 60676545189788446, guid: 31f9d6a0a9e09a54f9672b079ce4b2fe,
@@ -40674,6 +40679,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1327744446}
     m_Modifications:
+    - target: {fileID: 5514385244079774003, guid: b656c63c1f8b76e43844d37c1a528d12,
+        type: 3}
+      propertyPath: stayActivated
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5514385244937691086, guid: b656c63c1f8b76e43844d37c1a528d12,
         type: 3}
       propertyPath: m_Name
