@@ -41,11 +41,9 @@ public class Lightbeam : MonoBehaviour
         {
             if(Physics.Raycast(ray.origin, ray.direction, out hit, remainingLength))
             {
-                Debug.Log("aca entra");
                 var hiteable = hit.collider.GetComponent<IHiteable>();
                 if (hiteable != null)
                 {
-                    Debug.Log("seguro aca no");
                     if(hiteable.ImInvulnerable()) return;
 
                     Vector3 myAttackDir = (transform.position - hiteable.GetPosition()).normalized;

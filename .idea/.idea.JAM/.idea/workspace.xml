@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86f5f815-5c74-405d-9597-329e30d03dbe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FranMapTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FranMapTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Anim/MovingPlatform/Down.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Anim/MovingPlatform/Down.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Anim/MovingPlatform/Up.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Anim/MovingPlatform/Up.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Lightbeam.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Lightbeam.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
