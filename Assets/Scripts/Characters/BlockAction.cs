@@ -37,7 +37,10 @@ public class BlockAction : CharacterAction
             float blockRange = Vector3.Dot(Main.instance.GetWife().currentDir, attackDir);
 
             if (blockRange <= blockAngle)
+            {
+                Main.instance.GetWife().gameObject.tag = "Mirror";
                 return true;
+            }
             else
                 return false;
         }

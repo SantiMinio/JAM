@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1adb21d9fe2b2404eafd6b31efb9a1bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useCooldown: 2
+  useCooldown: 1
   hiteable: {fileID: 5643669778745882644}
   blockAngle: 90
 --- !u!114 &5643669778745882644
