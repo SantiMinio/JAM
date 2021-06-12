@@ -22,7 +22,7 @@ public class RayTarget : Hiteable
     void AnimateObject()
     {
         StopAllCoroutines();
-        _activator.ActivateObject();
+        _activator.ActivateObject(); 
 
         rayOnMe = true;
 

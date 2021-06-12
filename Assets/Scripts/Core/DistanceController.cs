@@ -12,26 +12,35 @@ public class DistanceController : MonoBehaviour
     [SerializeField] Transform charOne = null;
     [SerializeField] Transform charTwo = null;
 
+    float characterDistance;
 
+    private void Start()
+    {
+        timer = timeToDead;
+    }
 
     private void Update()
     {
-        if (timer >= timeToDead) return;
+        if (timer <= 0) return;
 
-        float distance = Vector3.Distance(charOne.position, charTwo.position);
+        characterDistance = Vector3.Distance(charOne.position, charTwo.position);
 
-        if(distance > maxDistanceToDead)
+        if(characterDistance > maxDistanceToDead)
         {
-            timer += Time.deltaTime;
+            timer -= Time.deltaTime;
 
-            if(timer >= timeToDead)
+            if(timer <= 0)
             {
                 Main.instance.eventManager.TriggerEvent(GameEvents.CharactersSeparate);
             }
         }
         else
         {
-            timer = 0;
+            timer = timeToDead;
         }
+        UIManager.instance.SetLife(timer / timeToDead);
     }
+
+    public float GetDistanceBetweenCharacters() => characterDistance;
+    public float GetMaxDistanceBetweenCharacters() => maxDistanceToDead;
 }
