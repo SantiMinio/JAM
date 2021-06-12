@@ -32,11 +32,17 @@ public class CharacterBase : MonoBehaviour
 
     public void MoveY(float y)
     {
+        if (y < -0.3f) y = -1;
+        else if (y > 0.3f) y = 1;
+        else y = 0;
         yAxis = y;
     }
 
     public void MoveX(float x)
     {
+        if (x < -0.3f) x = -1;
+        else if (x > 0.3f) x = 1;
+        else x = 0;
         xAxis = x;
     }
 

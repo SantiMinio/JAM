@@ -59,7 +59,6 @@ public class CameraFollow : MonoBehaviour
         {
             bounds.Encapsulate(ants[i].transform.position);
         }
-        Debug.Log(bounds.size.x);
         return bounds.size.x;
     }
     void Zoom()
