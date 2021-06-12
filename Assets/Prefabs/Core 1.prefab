@@ -189,7 +189,7 @@ MonoBehaviour:
   charOne: {fileID: 8049236203600888895}
   charTwo: {fileID: 7636172991831704616}
   checkpointManager: {fileID: 8672817185362344051}
-  restartTime: 3
+  restartTime: 1
 --- !u!114 &694551886661176684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -812,6 +812,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4213445723986428784, guid: 2ea084bfab48e654e8d8f52dbb2e11a8,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4213445723986428784, guid: 2ea084bfab48e654e8d8f52dbb2e11a8,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4915267821770440284, guid: 2ea084bfab48e654e8d8f52dbb2e11a8,
+        type: 3}
+      propertyPath: canIDie
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8019518953163956525, guid: 2ea084bfab48e654e8d8f52dbb2e11a8,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -864,6 +879,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2403277537821608743}
     m_Modifications:
+    - target: {fileID: 1432547824758782180, guid: 6e0f31c4b22f5214b85161446d8d8969,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432547824758782180, guid: 6e0f31c4b22f5214b85161446d8d8969,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3878655266436330380, guid: 6e0f31c4b22f5214b85161446d8d8969,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -888,6 +913,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -245.965
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643669778745882644, guid: 6e0f31c4b22f5214b85161446d8d8969,
+        type: 3}
+      propertyPath: canIDie
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5739995608270101553, guid: 6e0f31c4b22f5214b85161446d8d8969,
         type: 3}
