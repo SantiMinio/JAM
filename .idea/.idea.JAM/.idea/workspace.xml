@@ -5,10 +5,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JAM/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JAM/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JAM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JAM/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/FranMapTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FranMapTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Breakable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Hiteable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Breakable.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Hiteable.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IBreakable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IHiteable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IBreakable.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IHiteable.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Hiteable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Hiteable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IHiteable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IHiteable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,23 +22,28 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/IActivable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/ActivableBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/IInteractable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/RayTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/AnimatedObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/Hiteable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Others/MoveShake.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/Turret.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/Lightbeam.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IInteractable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/MovingPlatform.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IActivable.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/ActivableBase.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Door.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/StayOnPlatform.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/AnimatedObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IBreakable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Breakable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IHiteable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Lightbeam.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Hiteable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/ActivableBase.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/RayTarget.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tofbT4WhR3ucLCDrRi9SfjB7w1" />

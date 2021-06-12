@@ -7,12 +7,13 @@ public class Hiteable : MonoBehaviour, IHiteable
 {
     [SerializeField] private int currentLife, maxLife;
     private bool _imDead = false;
+    [SerializeField] private bool canIDie = false;
 
     [SerializeField] private float timeShaking;
 
     private MoveShake _moveShake;
 
-    private bool _imInvulnerable;
+    [SerializeField] private bool _imInvulnerable;
     
     private void Start()
     {
@@ -25,20 +26,9 @@ public class Hiteable : MonoBehaviour, IHiteable
         currentLife = maxLife;
     }
     public bool ImInvulnerable() => _imInvulnerable;
-    
+    public bool CanIDie() => canIDie;
     public bool ImDead() => _imDead;
-    
-    public void GetHit()
-    {
-        StopAllCoroutines();
-        StartCoroutine(ShakeFeedback());
-        currentLife--;
-        if (currentLife <= 0)
-        {
-            _imDead = true;
-        }
-    }
-    
+
     public bool GetHit(Vector3 dir)
     {
         if (_imInvulnerable) return false;
@@ -46,12 +36,23 @@ public class Hiteable : MonoBehaviour, IHiteable
         StopAllCoroutines();
         StartCoroutine(ShakeFeedback());
         currentLife--;
+        
         if (currentLife <= 0)
         {
-            _imDead = true;
+            currentLife = 0;
+            if (canIDie)
+            {
+                _imDead = true;
+            }
+            
         }
 
         return true;
+    }
+
+    public Vector3 GetPosition()
+    {
+        return transform.position;
     }
 
     public void SetInvulnerability(bool value)
