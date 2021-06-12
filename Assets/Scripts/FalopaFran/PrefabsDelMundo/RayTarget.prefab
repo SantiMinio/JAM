@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae53b7f47f7aa91459ee89144d1d239d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  torot: {fileID: 0}
+  torot: {fileID: 1082300599409634024}
   shakeAmmount: 0.01
   shakeTime: 0.2
 --- !u!65 &60676545189788445
