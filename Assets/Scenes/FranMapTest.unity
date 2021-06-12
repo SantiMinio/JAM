@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 16139284}
   - component: {fileID: 16139283}
   - component: {fileID: 16139282}
+  - component: {fileID: 16139288}
   m_Layer: 0
   m_Name: Rompible
   m_TagString: Untagged
@@ -158,6 +159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentLife: 0
   maxLife: 3
+  timeShaking: 0.7
 --- !u!64 &16139283
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1291,6 +1293,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &16139288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16139281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae53b7f47f7aa91459ee89144d1d239d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torot: {fileID: 16139287}
+  shakeAmmount: 0.1
+  shakeTime: 0.05
 --- !u!43 &16430834
 Mesh:
   m_ObjectHideFlags: 0
@@ -9642,8 +9659,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1714785806}
-  m_LocalRotation: {x: -0.27280208, y: -0.0051980447, z: 0.0014720344, w: -0.962055}
-  m_LocalPosition: {x: 11.785317, y: 5.9997444, z: -2.4351196}
+  m_LocalRotation: {x: 0.24240917, y: 0.1480579, z: -0.037418228, w: 0.95807964}
+  m_LocalPosition: {x: 83.73792, y: 4.7801294, z: -1.3395472}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
