@@ -789,6 +789,7 @@
             <e p="GameEvents.cs" t="Include" />
             <e p="Main.cs" t="Include" />
             <e p="SavedClass.cs" t="Include" />
+            <e p="UIManager.cs" t="Include" />
             <e p="WorldHittable.cs" t="Include" />
           </e>
           <e p="FalopaFran" t="Include">

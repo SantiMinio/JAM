@@ -281,7 +281,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 38
+  field of view: 50
   orthographic: 0
   orthographic size: 3.71
   m_Depth: -1
@@ -320,11 +320,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ants: []
-  offset: {x: 0, y: 10, z: -7.39}
+  offset: {x: 0, y: 13, z: -8}
   smoothTime: 0.53
-  minZoom: 50
-  maxZoom: 20
-  zoomLimiter: 10
+  minZoom: 60
+  maxZoom: 40
+  zoomLimiter: 15.68
 --- !u!114 &2625418802064987959
 MonoBehaviour:
   m_ObjectHideFlags: 0

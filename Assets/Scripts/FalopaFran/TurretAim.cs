@@ -14,6 +14,8 @@ public class TurretAim : ActivableBase
     
     [SerializeField] private float radius;
 
+    [SerializeField] private bool followTarget;
+    
     private Lightbeam _lightbeam;
 
     private void Start()
@@ -23,7 +25,8 @@ public class TurretAim : ActivableBase
 
     private void Update()
     {
-        FollowClosestCharacter();
+        if(followTarget)
+         FollowClosestCharacter();
         
         
         if (!isActive)
