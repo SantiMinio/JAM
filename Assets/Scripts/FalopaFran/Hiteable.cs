@@ -75,7 +75,11 @@ public class Hiteable : MonoBehaviour, IHiteable
 
         if (inmunity.Contains(type)) return false;
         
+        
+        
         StopAllCoroutines();
+        if (currentLife <= 0) return false;
+        
         StartCoroutine(ShakeFeedback());
 
         
