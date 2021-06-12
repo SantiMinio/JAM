@@ -112,7 +112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerLayers:
     serializedVersion: 2
-    m_Bits: 192
+    m_Bits: 3145728
   objetctActivable: {fileID: 0}
   objectOnTop: 0
 --- !u!1 &6477928830271607537
