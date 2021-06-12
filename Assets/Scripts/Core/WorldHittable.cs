@@ -31,6 +31,7 @@ public class WorldHittable : MonoBehaviour, IHiteable
 
     public virtual bool GetHit(Vector3 dir)
     {
+        if (_imDead) return false;
         if (Block(dir)) return false;
         if (_imInvulnerable) return false;
 
