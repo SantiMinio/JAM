@@ -1168,6 +1168,8 @@ MonoBehaviour:
   timeShaking: 0.7
   _moveShake: {fileID: 0}
   _imInvulnerable: 0
+  destroySound: {fileID: 8300000, guid: 934384f7d639a5c4c9f4b3fbcf0e65ee, type: 3}
+  hitSound: {fileID: 8300000, guid: e31ba2f3a63b0404cba711f5e9d7e0db, type: 3}
 --- !u!114 &3579970148049558623
 MonoBehaviour:
   m_ObjectHideFlags: 0

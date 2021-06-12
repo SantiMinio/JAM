@@ -82,6 +82,8 @@ MonoBehaviour:
   timeShaking: 0.5
   _moveShake: {fileID: 0}
   _imInvulnerable: 0
+  destroySound: {fileID: 8300000, guid: 934384f7d639a5c4c9f4b3fbcf0e65ee, type: 3}
+  hitSound: {fileID: 8300000, guid: e31ba2f3a63b0404cba711f5e9d7e0db, type: 3}
   rayOnMe: 0
 --- !u!114 &60676545189788444
 MonoBehaviour:

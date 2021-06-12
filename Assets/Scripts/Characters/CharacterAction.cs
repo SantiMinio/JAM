@@ -16,7 +16,6 @@ public abstract class CharacterAction : MonoBehaviour
 
     public void StartAction()
     {
-        Debug.Log("hmmmm");
         if (startCooldown) return;
         OnActionStart();
         OnStartAction();
@@ -32,7 +31,6 @@ public abstract class CharacterAction : MonoBehaviour
 
     public void EndAction()
     {
-        Debug.Log("?");
         if (!actioning) return;
         OnActionEnd();
         OnEndAction();
