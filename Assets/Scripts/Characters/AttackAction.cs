@@ -7,6 +7,7 @@ public class AttackAction : CharacterAction
 {
     [SerializeField] float attackRadious = 4;
     [SerializeField] float viewAngle = 90;
+    [SerializeField] Animator anim = null;
 
     protected override void OnEndAction()
     {
@@ -18,6 +19,7 @@ public class AttackAction : CharacterAction
 
     protected override void OnStartAction()
     {
+        anim.SetTrigger("attack");
         List<Transform> targets = new List<Transform>();
         Collider[] targetsInViewRadious = Physics.OverlapSphere(transform.position, attackRadious).Where(x => x.GetComponent<Hiteable>() != null).ToArray();
 

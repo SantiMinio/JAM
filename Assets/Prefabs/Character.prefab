@@ -95,9 +95,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ecedc6c4479adf4183fad21b41c317f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useCooldown: 2
+  useCooldown: 0.5
   attackRadious: 4
   viewAngle: 90
+  anim: {fileID: 3968830468917024867}
 --- !u!114 &4915267821770440284
 MonoBehaviour:
   m_ObjectHideFlags: 0
