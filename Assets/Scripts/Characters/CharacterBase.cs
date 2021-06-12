@@ -21,7 +21,6 @@ public class CharacterBase : MonoBehaviour
         Vector3 movement = new Vector3(Mathf.Abs(yAxis) == 1 ? xAxis / 1.5f * speed : xAxis * speed,
                                        rb.velocity.y,
                                        Mathf.Abs(xAxis) == 1 ? yAxis / 1.5f * speed : yAxis * speed);
-        Debug.Log(movement);
         rb.velocity = movement;
 
         if (movement != Vector3.zero)

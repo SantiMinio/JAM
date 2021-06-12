@@ -7,6 +7,7 @@ public class BlockAction : CharacterAction
 {
     [SerializeField] WorldHittable hiteable = null;
     [SerializeField] float blockAngle = 90;
+    [SerializeField] Transform blockCollider;
     bool isBlocking;
 
     private void Start()
@@ -17,15 +18,18 @@ public class BlockAction : CharacterAction
     protected override void OnEndAction()
     {
         isBlocking = false;
+        blockCollider.gameObject.SetActive(false);
     }
 
     protected override void OnKeepAction()
     {
+        blockCollider.forward = Main.instance.GetWife().currentDir;
     }
 
     protected override void OnStartAction()
     {
         isBlocking = true;
+        blockCollider.gameObject.SetActive(true);
     }
 
     bool Blocking(Vector3 attackDir)
@@ -38,11 +42,14 @@ public class BlockAction : CharacterAction
 
             if (blockRange <= blockAngle)
             {
-                Main.instance.GetWife().gameObject.tag = "Mirror";
+                blockCollider.gameObject.tag = "Mirror";
                 return true;
             }
             else
+            {
+                blockCollider.gameObject.tag = "";
                 return false;
+            }
         }
         else
             return false;
