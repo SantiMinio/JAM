@@ -14,9 +14,6 @@ public class FireTrap : ActivableObject
     protected override void On()
     {
         open = true;
-        
-        // feedbackParticles.Play();
-        // HitCloseCharacters();
         StartCoroutine(WaitUntilActivateTrap());
     }
 

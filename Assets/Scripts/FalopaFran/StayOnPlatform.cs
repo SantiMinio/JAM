@@ -9,6 +9,8 @@ public class StayOnPlatform : MonoBehaviour, IInteractable
     [SerializeField] private LayerMask triggerLayers;
     [SerializeField] private ActivableBase objetctActivable;
 
+    [SerializeField] private List<ActivableBase> objetctsActivables = new List<ActivableBase>();
+    
     public bool objectOnTop;
     
     private void OnTriggerStay(Collider other)
@@ -26,11 +28,25 @@ public class StayOnPlatform : MonoBehaviour, IInteractable
         {
             objectOnTop = false;
             objetctActivable.Deactivate();
+            DeactivateObjects();
         }
     }
 
     public void OnStay()
     {
         objetctActivable.Activate();
+        
+        foreach (var objects in objetctsActivables)
+        {
+            objects.Activate();    
+        }
+    }
+
+    void DeactivateObjects()
+    {
+        foreach (var objects in objetctsActivables)
+        {
+            objects.Deactivate();    
+        }
     }
 }
