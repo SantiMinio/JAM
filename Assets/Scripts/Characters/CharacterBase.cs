@@ -15,9 +15,14 @@ public class CharacterBase : MonoBehaviour
 
     public Vector3 currentDir = new Vector3(0, 0, -1);
 
+    private void Start()
+    {
+        hiteable.onDead += Dead;
+    }
+
     private void Update()
     {
-        
+        if (dead) return;
         Vector3 movement = new Vector3(Mathf.Abs(yAxis) == 1 ? xAxis / 1.5f * speed : xAxis * speed,
                                        rb.velocity.y,
                                        Mathf.Abs(xAxis) == 1 ? yAxis / 1.5f * speed : yAxis * speed);
@@ -66,5 +71,26 @@ public class CharacterBase : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    bool dead;
+
+    void Dead()
+    {
+        //Inserte la animación y sonido
+        var characters = Main.instance.GetCharacters();
+        for (int i = 0; i < characters.Length; i++)
+        {
+            if (characters[i] != this) characters[i].Cry();
+        }
+        dead = true;
+        anim.SetBool("Dead", true);
+        Main.instance.eventManager.TriggerEvent(GameEvents.CharactersSeparate);
+    }
+
+    public void Cry()
+    {
+        //inserte llanto
+        anim.SetBool("Cry", true);
     }
 }
