@@ -763,6 +763,14 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Audio" t="Include">
+            <e p="ASourceCreator.cs" t="Include" />
+            <e p="AudioManager.cs" t="Include" />
+            <e p="Extensions.cs" t="Include" />
+            <e p="ScreenLimits.cs" t="Include" />
+            <e p="SingleObjectPool.cs" t="Include" />
+            <e p="SoundPool.cs" t="Include" />
+          </e>
           <e p="Characters" t="Include">
             <e p="AttackAction.cs" t="Include" />
             <e p="BlockAction.cs" t="Include" />

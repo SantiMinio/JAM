@@ -7,7 +7,10 @@
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Modulos/Puente.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Modulos/Puente.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/VFX/lava.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/VFX/lava.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/FranMapTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FranMapTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/GameEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Main.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/WorldHittable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/WorldHittable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/ActivableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/ActivableObject.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Hiteable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Hiteable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IHiteable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IHiteable.cs" afterDir="false" />
     </list>
@@ -42,7 +45,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Door.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IBreakable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Breakable.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Main.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Characters/AttackAction.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/AnimateObjectActivator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Turret.cs" />
@@ -57,12 +59,14 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Shooter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Bullet.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/StayOnPlatform.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/ActivableObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/HeavyPusheableThing.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/WorldHittable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IHiteable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Hiteable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/GameEvents.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Main.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/ActivableObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/KillZone.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/WorldHittable.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tofbT4WhR3ucLCDrRi9SfjB7w1" />
@@ -107,7 +111,7 @@
       <option name="presentableId" value="Default" />
       <updated>1623440454740</updated>
       <workItem from="1623440473720" duration="2877000" />
-      <workItem from="1623510186227" duration="4534000" />
+      <workItem from="1623510186227" duration="5403000" />
     </task>
     <servers />
   </component>

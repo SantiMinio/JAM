@@ -1169,7 +1169,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentLife: 0
   maxLife: 3
+  canIDie: 1
   timeShaking: 0.7
+  _moveShake: {fileID: 0}
+  _imInvulnerable: 0
 --- !u!114 &3579970148049558623
 MonoBehaviour:
   m_ObjectHideFlags: 0
