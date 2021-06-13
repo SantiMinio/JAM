@@ -83,7 +83,6 @@ public class WorldHittable : MonoBehaviour, IHiteable
     {
         _imDead = true;
         onDead?.Invoke();
-        Main.instance.eventManager.TriggerEvent(GameEvents.OneCharDie);
     }
     
     public void InstaKill()
