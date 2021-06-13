@@ -5,7 +5,7 @@ Shader "PixelArtVertexColor"
 	Properties
 	{
 		_Constraste("Constraste", Float) = 0.89
-		_Polentadelaluz("Polenta de la luz", Range( 0 , 1)) = 0
+		_Polentadelaluz("Polenta de la luz", Range( -10 , 1)) = 0
 		_Gloss("Gloss", Range( 0 , 1)) = 0
 		[HideInInspector] __dirty( "", Int ) = 1
 	}
@@ -55,14 +55,14 @@ Shader "PixelArtVertexColor"
 }
 /*ASEBEGIN
 Version=18900
-1940;374;1360;695;304.6035;300.4458;1;True;False
+1920;208;1360;707;459.6035;284.4458;1;True;False
 Node;AmplifyShaderEditor.VertexColorNode;1;-608.2524,-27.40931;Inherit;False;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.RangedFloatNode;17;-466.454,186.1422;Inherit;False;Property;_Constraste;Constraste;0;0;Create;True;0;0;0;False;0;False;0.89;1.29;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.LightColorNode;27;65.08855,163.7894;Inherit;False;0;3;COLOR;0;FLOAT3;1;FLOAT;2
 Node;AmplifyShaderEditor.SimpleContrastOpNode;16;-175.4759,-113.139;Inherit;True;2;1;COLOR;0,0,0,0;False;0;FLOAT;0;False;1;COLOR;0
-Node;AmplifyShaderEditor.RangedFloatNode;30;-58.039,286.003;Inherit;False;Property;_Polentadelaluz;Polenta de la luz;1;0;Create;True;0;0;0;False;0;False;0;0.21;0;1;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;30;-58.039,286.003;Inherit;False;Property;_Polentadelaluz;Polenta de la luz;1;0;Create;True;0;0;0;False;0;False;0;0.21;-10;1;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;29;278.6342,117.7715;Inherit;False;3;3;0;COLOR;0,0,0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;1;COLOR;0
-Node;AmplifyShaderEditor.RangedFloatNode;31;183.3965,-18.4458;Inherit;False;Property;_Gloss;Gloss;2;0;Create;True;0;0;0;False;0;False;0;0.5;0;1;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;31;183.3965,-18.4458;Inherit;False;Property;_Gloss;Gloss;2;0;Create;True;0;0;0;False;0;False;0;0.4;0;1;0;1;FLOAT;0
 Node;AmplifyShaderEditor.StandardSurfaceOutputNode;28;653.7335,-120.8965;Float;False;True;-1;2;ASEMaterialInspector;0;0;Standard;PixelArtVertexColor;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;Back;0;False;-1;0;False;-1;False;0;False;-1;0;False;-1;False;0;Opaque;0.5;True;True;0;False;Opaque;;Geometry;All;14;all;True;True;True;True;0;False;-1;False;0;False;-1;255;False;-1;255;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;False;2;15;10;25;False;0.5;True;0;0;False;-1;0;False;-1;0;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;Relative;0;;-1;-1;-1;-1;0;False;0;0;False;-1;-1;0;False;-1;0;0;0;False;0.1;False;-1;0;False;-1;False;16;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
 WireConnection;16;1;1;0
 WireConnection;16;0;17;0
@@ -73,4 +73,4 @@ WireConnection;28;0;16;0
 WireConnection;28;2;29;0
 WireConnection;28;4;31;0
 ASEEND*/
-//CHKSM=DC357FF925DD360CCD370E3D7810767933AC8764
+//CHKSM=F079DBD54D9A0D68C6F92EC58F99D479A1CC2331
