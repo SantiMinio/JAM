@@ -61,8 +61,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.78998995, y: 1.679873, z: 1}
-  m_Center: {x: 0.105005026, y: 0.3399365, z: 0}
+  m_Size: {x: 0.56055975, y: 1.679873, z: 1}
+  m_Center: {x: 0.21972013, y: 0.3399365, z: 0}
 --- !u!114 &60676545189788446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84,6 +84,7 @@ MonoBehaviour:
   _imInvulnerable: 0
   destroySound: {fileID: 8300000, guid: 934384f7d639a5c4c9f4b3fbcf0e65ee, type: 3}
   hitSound: {fileID: 8300000, guid: e31ba2f3a63b0404cba711f5e9d7e0db, type: 3}
+  rockParticle: {fileID: 0}
   rayOnMe: 0
 --- !u!114 &60676545189788444
 MonoBehaviour:
