@@ -8,32 +8,28 @@ public class FinishGameTrigger : MonoBehaviour
     [SerializeField] private LayerMask triggerLayers;
 
     [SerializeField] private float feedbackTime;
-    Grayscale_Post_Process pp;
+    [SerializeField] Animator anim = null;
 
     private void Start()
     {
-        pp = FindObjectOfType<Grayscale_Post_Process>();
-        pp.heartEffect = 0;
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if ((triggerLayers.value & (1 << other.gameObject.layer)) > 0)
         {
-            Debug.Log("entro");
             Main.instance.eventManager.TriggerEvent(GameEvents.HotelArrive);
             StartCoroutine(WaitToFeedback());
-            UIManager.instance.gameObject.gameObject.SetActive(false);
         }
     }
 
     IEnumerator WaitToFeedback()
     {
         float timer = 0;
+        anim.SetBool("fade", true);
         while (timer < feedbackTime)
         {
             timer += Time.deltaTime;
-            pp.heartEffect = timer / feedbackTime;
             yield return new WaitForEndOfFrame();
         }
 

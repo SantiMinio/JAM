@@ -4246,9 +4246,7 @@ MonoBehaviour:
   settingsScreen: {fileID: 189100110}
   tutoImg: {fileID: 949731572}
   tuto:
-  - {fileID: 21300000, guid: f68689908ba12304295457083c292241, type: 3}
-  - {fileID: 21300000, guid: 226484f94b6ca58438ec7e0ce90b2b95, type: 3}
-  - {fileID: 21300000, guid: 472c3c43a4930ce42a00ec3269bda318, type: 3}
+  - {fileID: 21300000, guid: 6d06c2775e4a9d4498315ab11f514142, type: 3}
   exitSound: {fileID: 0}
   cameraPos:
   - {fileID: 304284852}
@@ -30707,8 +30705,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 291064552}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
-        m_MethodName: Play
-        m_Mode: 1
+        m_MethodName: DisplayTuto
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
