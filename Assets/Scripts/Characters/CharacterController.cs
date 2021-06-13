@@ -26,6 +26,7 @@ public class CharacterController : MonoBehaviour
     private void Start()
     {
         Main.instance.eventManager.SubscribeToEvent(GameEvents.CharactersSeparate, CharacterDead);
+        Main.instance.eventManager.SubscribeToEvent(GameEvents.HotelArrive, CharacterDead);
     }
 
     private void Update()

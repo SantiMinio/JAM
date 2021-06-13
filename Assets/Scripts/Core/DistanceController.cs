@@ -49,7 +49,7 @@ public class DistanceController : MonoBehaviour
         }
         var value = Mathf.Lerp(1,0,timer/timeToDead);
         gpp.grayscale = value;
-        gpp.masOcuro = value;
+        gpp.masOcuro = Mathf.Lerp(1, 0.5f, timer / timeToDead);
         UIManager.instance.SetLife(timer / timeToDead);
     }
 
