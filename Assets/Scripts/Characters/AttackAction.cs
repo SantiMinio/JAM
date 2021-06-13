@@ -49,11 +49,15 @@ public class AttackAction : CharacterAction
 
         for (int i = 0; i < targets.Count; i++)
         {
-            Hiteable hiteable = targets[i].GetComponent<Hiteable>();
+            Vector3 hitPos = Vector3.zero;
 
-            Vector3 attackDir = (hiteable.GetPosition() - transform.position).normalized; 
+            RaycastHit hit;
+            if (Physics.Raycast(Main.instance.GetHusband().transform.position, dir, out hit, attackRadious))
+                hitPos = hit.point;
+
+            Hiteable hiteable = targets[i].GetComponent<Hiteable>();
             
-            if (hiteable != null) hiteable.GetHit(attackDir);
+            if (hiteable != null) hiteable.GetHit(hitPos);
         }
 
         slashAnim.transform.localPosition = new Vector3(-dir.x / 2, 0, -dir.z / 2);
