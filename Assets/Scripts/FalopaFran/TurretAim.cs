@@ -11,7 +11,7 @@ public class TurretAim : ActivableBase
     [SerializeField] private Transform rotatePart;
     public float smoothTime = 0.3F;
     public Vector3 velocity = Vector3.zero;
-    
+
     [SerializeField] private float radius;
 
     [SerializeField] private bool followTarget;
@@ -45,7 +45,7 @@ public class TurretAim : ActivableBase
         var closestChar = Physics
             .OverlapSphere(transform.position, radius)
             .Select(x=> x.GetComponent<Rigidbody>())
-            .Where(x => x != null)
+            .Where(x => x != null && x.gameObject.tag == "rayTarget")
             .OrderBy(x => Vector3.Distance(x.transform.position, transform.position));
         
         if(!closestChar.Any()) return;

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1625181876792820894}
   m_Layer: 21
   m_Name: Barril
-  m_TagString: Untagged
+  m_TagString: rayTarget
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
