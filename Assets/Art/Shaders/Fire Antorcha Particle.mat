@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Lava Particle
+  m_Name: Fire Antorcha Particle
   m_Shader: {fileID: 4800000, guid: 545a4fc2aaa2041449567f5f7a474f04, type: 3}
   m_ShaderKeywords: _ALPHATEST_ON
   m_LightmapFlags: 4
