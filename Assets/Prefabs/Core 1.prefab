@@ -780,6 +780,8 @@ MonoBehaviour:
   pixeles: 45
   scale: 15
   speed: 0.5
+  heartEffect: 0
+  pixelHeart: 5
 --- !u!1 &4360794736705813261
 GameObject:
   m_ObjectHideFlags: 0
