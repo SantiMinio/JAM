@@ -70,7 +70,6 @@ public class Hiteable : MonoBehaviour, IHiteable
             if (canIDie)
             {
                 Dead();
-                destroyedRock.Play();
                 AudioManager.instance.PlaySound(destroySound.name);
             }
             
@@ -143,8 +142,13 @@ public class Hiteable : MonoBehaviour, IHiteable
             _moveShake.OnShow();
             yield return new WaitForEndOfFrame();
         } while (time < timeShaking);
-        
-        if(_imDead) gameObject.SetActive(false);
+
+        if (_imDead)
+        {
+            gameObject.SetActive(false);
+            destroyedRock.Play();
+        }
+            
         
     }
 }
