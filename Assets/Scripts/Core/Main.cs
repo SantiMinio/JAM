@@ -10,6 +10,8 @@ public class Main : MonoBehaviour
 
     public EventManager eventManager = new EventManager();
 
+    public DJ_Handler djHandler;
+
     [SerializeField] CharacterBase charOne = null;
     [SerializeField] CharacterBase charTwo = null;
 

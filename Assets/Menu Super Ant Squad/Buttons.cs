@@ -18,8 +18,13 @@ public class Buttons : MonoBehaviour
     [SerializeField] Transform[] cameraPos = new Transform[0];
     [SerializeField] float cameraSpeed = 3;
 
+    [SerializeField] Animator textPressKey = null;
+    [SerializeField] Animator fade = null;
+
     int currentIndex = -1;
     int cameraIndex;
+
+    bool enterPressed;
 
     private void Awake()
     {
@@ -93,6 +98,18 @@ public class Buttons : MonoBehaviour
     {
         Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, cameraPos[cameraIndex].position, Time.deltaTime * cameraSpeed);
         Camera.main.transform.rotation = Quaternion.Lerp(Camera.main.transform.rotation, cameraPos[cameraIndex].rotation, Time.deltaTime * cameraSpeed);
+
+        if(!enterPressed && Input.anyKey)
+        {
+            enterPressed = true;
+            StartCoroutine(TextAnimWait());
+            textPressKey.Play("Play");
+        }
     }
 
+    IEnumerator TextAnimWait()
+    {
+        yield return new WaitForSeconds(1f);
+        fade.Play("FadeOut");
+    }
 }

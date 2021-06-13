@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Menu Super Ant Squad/Nivel decordado.unity
-    guid: e7e47202c84b2ef46b403d8caee033de
+    path: Assets/Scenes/FranMapRemake1 1.unity
+    guid: c967cc2442017c84b8c619f49c0ce2f4
   - enabled: 1
     path: Assets/Scenes/FranMapRemake1.unity
     guid: 875a27d7d8da5014b952c7b13c9bfb34

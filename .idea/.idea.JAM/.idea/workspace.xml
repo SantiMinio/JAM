@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="86f5f815-5c74-405d-9597-329e30d03dbe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JAM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JAM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/VFX/lava.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/VFX/lava.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/KillZone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/KillZone.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/GameEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameEvents.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,12 +19,15 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/IInteractable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/Hiteable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/Turret.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/TriggerMusicChange.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/Lightbeam.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/Shooter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/FinishGameTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/KillZone.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/HeavyPusheableThing.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/IActivable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/DJ_Handler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/RayTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FalopaFran/ActivableObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Others/MoveShake.cs" root0="FORCE_HIGHLIGHTING" />
@@ -47,8 +49,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Shooter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Bullet.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/HeavyPusheableThing.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/GameEvents.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Main.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/ActivableObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/AnimateObjectActivator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/IHiteable.cs" />
@@ -62,6 +62,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/FireTrap.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Hiteable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/KillZone.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Main.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/TriggerMusicChange.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/DJ_Handler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/GameEvents.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/FinishGameTrigger.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tofbT4WhR3ucLCDrRi9SfjB7w1" />
@@ -106,7 +111,7 @@
       <option name="presentableId" value="Default" />
       <updated>1623440454740</updated>
       <workItem from="1623440473720" duration="2877000" />
-      <workItem from="1623510186227" duration="20385000" />
+      <workItem from="1623510186227" duration="24288000" />
     </task>
     <servers />
   </component>

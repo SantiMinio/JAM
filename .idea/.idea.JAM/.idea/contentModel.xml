@@ -813,6 +813,8 @@
             <e p="AnimateObjectActivator.cs" t="Include" />
             <e p="Bullet.cs" t="Include" />
             <e p="ButtonCircuit.cs" t="Include" />
+            <e p="DJ_Handler.cs" t="Include" />
+            <e p="FinishGameTrigger.cs" t="Include" />
             <e p="FireTrap.cs" t="Include" />
             <e p="HeavyPusheableThing.cs" t="Include" />
             <e p="Hiteable.cs" t="Include" />
@@ -825,6 +827,7 @@
             <e p="RayTarget.cs" t="Include" />
             <e p="Shooter.cs" t="Include" />
             <e p="StayOnPlatform.cs" t="Include" />
+            <e p="TriggerMusicChange.cs" t="Include" />
             <e p="Turret.cs" t="Include" />
             <e p="TurretAim.cs" t="Include" />
           </e>
