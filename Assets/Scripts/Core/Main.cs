@@ -33,18 +33,7 @@ public class Main : MonoBehaviour
 
     private void Start()
     {
-       
-
-        if (BinarySerialization.IsFileExist(SaveDataName))
-        {
-            save = BinarySerialization.Deserialize<SavedClass>(SaveDataName);
-            checkpointPosition = save.GetCheckPoint();
-        }
-        else
-        {
-            save = new SavedClass();
-            BinarySerialization.Serialize(SaveDataName, save);
-        }
+        checkpointPosition = SaveData.saveData.checkpointPosition;
 
         if(checkpointPosition != Vector3.zero && checkpointManager.CheckIfCheckpoint(checkpointPosition))
         {
@@ -93,7 +82,7 @@ public class Main : MonoBehaviour
         if (checkpointPosition == checkpointPos) return;
 
         checkpointPosition = checkpointPos;
-        save.SaveCheckPoint(checkpointPosition);
-        BinarySerialization.Serialize(SaveDataName, save);
+        SaveData.saveData.checkpointPosition = checkpointPosition;
+        //BinarySerialization.Serialize(SaveDataName, save);
     }
 }
