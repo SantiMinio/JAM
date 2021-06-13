@@ -467,6 +467,8 @@ MonoBehaviour:
   maxLength: 40
   lineOrigin: {fileID: 3726524982252714410}
   damageType: 0
+  endpoint_feedback_pf: {fileID: 0}
+  endpoint_feedback: {fileID: 0}
 --- !u!114 &3726524983442095323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -505,7 +507,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 921443b2930f55242972ea2119a0657f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.000000007450581
+      value: 0.26
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 921443b2930f55242972ea2119a0657f,
         type: 3}
