@@ -16,11 +16,8 @@ public class Grayscale_Post_Process : MonoBehaviour
     public float pixeles;
     public float scale;
     public float speed;
-    [Range(0, 1)]
-    public float heartEffect;
-    public float pixelHeart;
 
-    private void Awake()
+    private void Start()
     {
         mat = new Material(shader);
     }
@@ -36,7 +33,5 @@ public class Grayscale_Post_Process : MonoBehaviour
         mat.SetFloat("_ScaleNoise", scale);
         mat.SetFloat("_Effect", fade_in_out);
         mat.SetFloat("_Speed", speed);
-        mat.SetFloat("_HeartEffect", heartEffect);
-        mat.SetFloat("_PixelHeart", pixelHeart);
     }
 }
