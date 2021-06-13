@@ -23,6 +23,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 198c8572a7366de4880f7b2a2e7c516d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _AlbedoTexture1:
+        m_Texture: {fileID: 2800000, guid: 198c8572a7366de4880f7b2a2e7c516d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _FlowTexture:
         m_Texture: {fileID: 2800000, guid: ddeaa52be50776e4bba0e2cb1dba44f5, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -32,13 +36,14 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _Depth: 0.94
     - _DepthDistance: 0.047058824
     - _DepthDistance1: -0.01
     - _FallOff1: 0.4
     - _Float0: 4.12
-    - _Float1: 0.7625506
-    - _Float2: 0
-    - _FlowwMap: 0.030423818
+    - _Float1: 1
+    - _Float2: 1.93
+    - _FlowwMap: 0.064
     - _NOiseScale: 5.38
     - _Pixels: 100
     - _Speed: 0.06
@@ -46,8 +51,9 @@ Material:
     - _SpeedY: 0.03
     - __dirty: 0
     m_Colors:
-    - _Color1: {r: 2.6390157, g: 0.15523621, b: 0, a: 1}
+    - _Color1: {r: 0.24528301, g: 0, b: 0, a: 1}
     - _Color2: {r: 7.4642644, g: 2.3710017, b: 0, a: 1}
+    - _DepthColor: {r: 5.2780313, g: 0.6890292, b: 0, a: 1}
     - _DirectionPanner: {r: 1, g: 1, b: 0, a: 0}
     - _TillingAlbedo: {r: 3, g: 13.48, b: 0, a: 0}
   m_BuildTextureStacks: []
