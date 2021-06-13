@@ -4834,6 +4834,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 3145728
   feedbackTouchLava: {fileID: 8532110445199336160}
+  fryObjectSound: {fileID: 5427436090352381313}
 --- !u!65 &2544442810248176135
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14720,6 +14721,12 @@ Transform:
 --- !u!198 &8532110445199336160 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 6376077735714785492, guid: d1d68edae947c98429d3bae948e3860a,
+    type: 3}
+  m_PrefabInstance: {fileID: 3320355609077819956}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &5427436090352381313 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7297631897391826869, guid: d1d68edae947c98429d3bae948e3860a,
     type: 3}
   m_PrefabInstance: {fileID: 3320355609077819956}
   m_PrefabAsset: {fileID: 0}

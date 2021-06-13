@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86f5f815-5c74-405d-9597-329e30d03dbe" name="Default Changelist" comment="" />
+    <list default="true" id="86f5f815-5c74-405d-9597-329e30d03dbe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/KillZone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/KillZone.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,12 +60,12 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Lightbeam.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/FireTrap.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Hiteable.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/KillZone.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Main.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/TriggerMusicChange.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/DJ_Handler.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/GameEvents.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/FinishGameTrigger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FalopaFran/KillZone.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tofbT4WhR3ucLCDrRi9SfjB7w1" />
@@ -108,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1623440454740</updated>
       <workItem from="1623440473720" duration="2877000" />
-      <workItem from="1623510186227" duration="25447000" />
+      <workItem from="1623510186227" duration="25923000" />
     </task>
     <servers />
   </component>
