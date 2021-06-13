@@ -11,6 +11,8 @@ public class Lightbeam : MonoBehaviour
     [SerializeField] private Transform lineOrigin;
 
     [SerializeField] private Hiteable.DamageType damageType;
+
+    [SerializeField] private ParticleSystem endpoint_feedback_pf, endpoint_feedback;
     
     LineRenderer lineRenderer;
     Ray ray;
@@ -23,11 +25,14 @@ public class Lightbeam : MonoBehaviour
     public void SetActive(bool value)
     {
         lineRenderer.enabled = value;
+        endpoint_feedback.gameObject.SetActive(value);
     }
 
     private void Awake()
     {
         lineRenderer = GetComponent<LineRenderer>();
+        endpoint_feedback = Instantiate(endpoint_feedback_pf, transform);
+        //endpoint_feedback.gameObject.SetActive(false);
     }
 
     private void Update()
@@ -60,6 +65,8 @@ public class Lightbeam : MonoBehaviour
                 remainingLength -= Vector3.Distance(ray.origin, hit.point);
                 ray = new Ray(hit.point, Vector3.Reflect(ray.direction, hit.normal));
 
+                endpoint_feedback.transform.position = hit.point;
+                
                 if (hit.collider.tag != "Mirror")
                     break;
             }

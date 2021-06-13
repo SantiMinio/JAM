@@ -182,6 +182,9 @@ MonoBehaviour:
   maxLength: 40
   lineOrigin: {fileID: 186271190876782999}
   damageType: 0
+  endpoint_feedback_pf: {fileID: 8938124219392226814, guid: fbfdcbc1e747dc441acad0aa2e84f932,
+    type: 3}
+  endpoint_feedback: {fileID: 0}
 --- !u!114 &186271190499656098
 MonoBehaviour:
   m_ObjectHideFlags: 0
