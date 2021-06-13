@@ -15,6 +15,8 @@ public class Main : MonoBehaviour
 
     [SerializeField] CheckpointManager checkpointManager = null;
 
+    [SerializeField] Grayscale_Post_Process pp = null;
+
     [SerializeField] float restartTime = 3;
     Vector3 checkpointPosition = Vector3.zero;
 
@@ -26,10 +28,13 @@ public class Main : MonoBehaviour
         instance = this;
         eventManager.SubscribeToEvent(GameEvents.CharactersSeparate, RestartGame);
         eventManager.SubscribeToEvent(GameEvents.OneCharDie, RestartGame);
+        StartCoroutine(StartGame());
     }
 
     private void Start()
     {
+       
+
         if (BinarySerialization.IsFileExist(SaveDataName))
         {
             save = BinarySerialization.Deserialize<SavedClass>(SaveDataName);
@@ -48,6 +53,18 @@ public class Main : MonoBehaviour
         }
     }
 
+    IEnumerator StartGame()
+    {
+        pp.fade_in_out = 0;
+        while (pp.fade_in_out<1)
+        {
+            pp.fade_in_out += Time.deltaTime;
+            yield return new WaitForEndOfFrame();
+        }
+
+        pp.fade_in_out = 1;
+    }
+
     public CharacterBase GetHusband() => charTwo;
     public CharacterBase GetWife() => charOne;
 
@@ -61,6 +78,13 @@ public class Main : MonoBehaviour
     IEnumerator DelayToRestart()
     {
         yield return new WaitForSeconds(restartTime);
+
+        while (pp.fade_in_out > 0)
+        {
+            pp.fade_in_out -= Time.deltaTime;
+            
+            yield return new WaitForEndOfFrame();
+        }
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
