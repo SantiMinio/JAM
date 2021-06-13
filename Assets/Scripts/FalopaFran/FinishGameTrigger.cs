@@ -13,6 +13,7 @@ public class FinishGameTrigger : MonoBehaviour
     private void Start()
     {
         pp = FindObjectOfType<Grayscale_Post_Process>();
+        pp.heartEffect = 0;
     }
 
     private void OnTriggerEnter(Collider other)
