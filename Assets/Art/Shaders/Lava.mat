@@ -36,7 +36,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Depth: 0.94
+    - _Depth: 0.44
     - _DepthDistance: 0.047058824
     - _DepthDistance1: -0.01
     - _FallOff1: 0.4
