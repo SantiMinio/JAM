@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 3685130393341808129}
   - component: {fileID: 6010445470114110166}
   - component: {fileID: 8699150826491622639}
-  m_Layer: 0
-  m_Name: Object017
+  m_Layer: 2
+  m_Name: B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92,8 +92,8 @@ GameObject:
   - component: {fileID: 5861802351021646095}
   - component: {fileID: 8787261429677845205}
   - component: {fileID: 2792592564454867645}
-  m_Layer: 0
-  m_Name: Cylinder008
+  m_Layer: 2
+  m_Name: A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -171,7 +171,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6270612180847772215}
-  m_Layer: 0
+  - component: {fileID: 3416914262869712652}
+  - component: {fileID: 8813310884305156723}
+  - component: {fileID: 4209099899882314643}
+  m_Layer: 2
   m_Name: boton_demonio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,3 +197,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3416914262869712652
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6651359401789298829}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.29, y: 0.6, z: 0.3}
+  m_Center: {x: 0, y: 0.45, z: 0}
+--- !u!95 &8813310884305156723
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6651359401789298829}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 73c8a12a48145c949b7c770cccfefac9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4209099899882314643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6651359401789298829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ba0cb6f1507cf94cbcdd77e90081ffb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 8813310884305156723}
