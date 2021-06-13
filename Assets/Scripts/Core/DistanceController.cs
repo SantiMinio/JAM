@@ -47,8 +47,7 @@ public class DistanceController : MonoBehaviour
             if(timer >= timeToDead)
                 timer = timeToDead;
         }
-
-        var value = Mathf.Clamp(timeToDead - timer, 0, 1);
+        var value = Mathf.Lerp(1,0,timer/timeToDead);
         gpp.grayscale = value;
         gpp.masOcuro = value;
         UIManager.instance.SetLife(timer / timeToDead);
