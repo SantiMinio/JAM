@@ -145,7 +145,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 3145728
   objetctActivable: {fileID: 0}
+  objetctsActivables: []
   objectOnTop: 0
+  button_mat_pressed: {fileID: 2100000, guid: fc6ec85022f997544817176a19746d2a, type: 2}
+  buttonObject: {fileID: 1909887834691842091}
 --- !u!1 &6477928830271607537
 GameObject:
   m_ObjectHideFlags: 0

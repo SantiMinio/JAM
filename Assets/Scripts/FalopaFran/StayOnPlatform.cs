@@ -12,7 +12,7 @@ public class StayOnPlatform : MonoBehaviour, IInteractable
     [SerializeField] private List<ActivableBase> objetctsActivables = new List<ActivableBase>();
     
     public bool objectOnTop;
-    
+
     private void OnTriggerStay(Collider other)
     {
         if ((triggerLayers.value & (1 << other.gameObject.layer)) > 0)
@@ -44,6 +44,7 @@ public class StayOnPlatform : MonoBehaviour, IInteractable
 
     void DeactivateObjects()
     {
+
         foreach (var objects in objetctsActivables)
         {
             objects.Deactivate();    
