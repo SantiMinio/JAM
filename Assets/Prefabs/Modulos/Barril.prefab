@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 7635964190018306937}
   - component: {fileID: 1625181876792820894}
   - component: {fileID: 3244898291756895268}
-  - component: {fileID: 735775675301513699}
   m_Layer: 21
   m_Name: Barril
   m_TagString: rayTarget
@@ -129,20 +128,3 @@ MonoBehaviour:
   torot: {fileID: 7091867220514717290}
   shakeAmmount: 0.2
   shakeTime: 0.2
---- !u!114 &735775675301513699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 477870808459213379}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62f8288976ea8cd4a88afe69d163449a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentLife: 0
-  maxLife: 1
-  canIDie: 1
-  _imInvulnerable: 0
-  inmunity: 

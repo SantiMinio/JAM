@@ -19,6 +19,7 @@ public class Hiteable : MonoBehaviour, IHiteable
     [SerializeField] AudioClip destroySound = null;
     [SerializeField] AudioClip hitSound = null;
     [SerializeField] ParticleSystem rockParticle = null;
+    [SerializeField] ParticleSystem destroyedRock = null;
 
     public event Action onHit;
     public event Action onDead;
@@ -69,6 +70,7 @@ public class Hiteable : MonoBehaviour, IHiteable
             if (canIDie)
             {
                 Dead();
+                destroyedRock.Play();
                 AudioManager.instance.PlaySound(destroySound.name);
             }
             
