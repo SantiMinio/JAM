@@ -12,6 +12,7 @@ public class FinishGameTrigger : MonoBehaviour
     {
         if ((triggerLayers.value & (1 << other.gameObject.layer)) > 0)
         {
+            Debug.Log("entro");
             Main.instance.eventManager.TriggerEvent(GameEvents.HotelArrive);
             StartCoroutine(WaitToFeedback());
         }
@@ -21,6 +22,6 @@ public class FinishGameTrigger : MonoBehaviour
     {
         yield return new WaitForSeconds(feedbackTime);
 
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("FranMapRemake1 1");
     }
 }
