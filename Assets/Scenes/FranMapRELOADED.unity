@@ -4220,7 +4220,7 @@ PrefabInstance:
     - target: {fileID: 2403277537821608743, guid: da1710f21e4ca5540a82887a8756b30c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 48.25
+      value: -14.8
       objectReference: {fileID: 0}
     - target: {fileID: 2403277537821608743, guid: da1710f21e4ca5540a82887a8756b30c,
         type: 3}
@@ -4230,7 +4230,7 @@ PrefabInstance:
     - target: {fileID: 2403277537821608743, guid: da1710f21e4ca5540a82887a8756b30c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 193.47
+      value: 58.1
       objectReference: {fileID: 0}
     - target: {fileID: 2403277537821608743, guid: da1710f21e4ca5540a82887a8756b30c,
         type: 3}
@@ -4272,7 +4272,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: rayTarget
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1500773472, guid: da1710f21e4ca5540a82887a8756b30c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: da1710f21e4ca5540a82887a8756b30c, type: 3}
 --- !u!43 &1575945437
 Mesh:
