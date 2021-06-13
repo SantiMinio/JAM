@@ -18,6 +18,7 @@ public class Hiteable : MonoBehaviour, IHiteable
     [SerializeField] private bool _imInvulnerable;
     [SerializeField] AudioClip destroySound = null;
     [SerializeField] AudioClip hitSound = null;
+    [SerializeField] ParticleSystem rockParticle = null;
 
     public event Action onHit;
     public event Action onDead;
@@ -54,7 +55,7 @@ public class Hiteable : MonoBehaviour, IHiteable
         StopAllCoroutines();
         StartCoroutine(ShakeFeedback());
 
-        
+        if (rockParticle != null) rockParticle.Play();
         
         currentLife--;
         
