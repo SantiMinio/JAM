@@ -23,6 +23,30 @@ TextureImporter:
   - first:
       213: 2736190045690266729
     second: Personas de Fondo_6
+  - first:
+      213: -5932989895098345570
+    second: Personas de Fondo_7
+  - first:
+      213: 587968093172587624
+    second: Personas de Fondo_8
+  - first:
+      213: -4527171015628088176
+    second: Personas de Fondo_9
+  - first:
+      213: -5244635199561806577
+    second: Personas de Fondo_10
+  - first:
+      213: 6938341548757333584
+    second: Personas de Fondo_11
+  - first:
+      213: -1513323952494255082
+    second: Personas de Fondo_12
+  - first:
+      213: -4098378532666632144
+    second: Personas de Fondo_13
+  - first:
+      213: 1452032824190011270
+    second: Personas de Fondo_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -116,7 +140,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
+        y: 96
         width: 48
         height: 48
       alignment: 0
@@ -137,7 +161,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 48
+        y: 96
         width: 48
         height: 48
       alignment: 0
@@ -158,7 +182,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 48
+        y: 96
         width: 48
         height: 48
       alignment: 0
@@ -179,7 +203,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 48
+        y: 96
         width: 48
         height: 48
       alignment: 0
@@ -200,7 +224,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 48
+        y: 96
         width: 48
         height: 48
       alignment: 0
@@ -221,7 +245,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 48
         width: 48
         height: 48
       alignment: 0
@@ -242,7 +266,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 0
+        y: 48
         width: 48
         height: 48
       alignment: 0
@@ -254,6 +278,174 @@ TextureImporter:
       bones: []
       spriteID: 964045f7956e8f520800000000000000
       internalID: 2736190045690266729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personas de Fondo_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e975eaeef19c9ada0800000000000000
+      internalID: -5932989895098345570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personas de Fondo_8
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86cd0d49dd1e82800800000000000000
+      internalID: 587968093172587624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personas de Fondo_9
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09c1b0082f14c21c0800000000000000
+      internalID: -4527171015628088176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personas de Fondo_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0dcb91c2105737b0800000000000000
+      internalID: -5244635199561806577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personas de Fondo_11
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 056b300b0e0f94060800000000000000
+      internalID: 6938341548757333584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personas de Fondo_12
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6146d7512e79ffae0800000000000000
+      internalID: -1513323952494255082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personas de Fondo_13
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038915d4072af17c0800000000000000
+      internalID: -4098378532666632144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personas de Fondo_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6878d001928a62410800000000000000
+      internalID: 1452032824190011270
       vertices: []
       indices: 
       edges: []
