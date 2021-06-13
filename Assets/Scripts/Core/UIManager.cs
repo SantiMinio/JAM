@@ -7,6 +7,7 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager instance { get; private set; }
     [SerializeField] Image lifeBar = null;
+    [SerializeField] Image lifeBarTwo = null;
 
     private void Awake()
     {
@@ -16,5 +17,6 @@ public class UIManager : MonoBehaviour
     public void SetLife(float lifePercent)
     {
         lifeBar.fillAmount = lifePercent;
+        lifeBarTwo.fillAmount = lifePercent;
     }
 }
