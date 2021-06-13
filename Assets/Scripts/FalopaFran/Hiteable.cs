@@ -55,7 +55,11 @@ public class Hiteable : MonoBehaviour, IHiteable
         StopAllCoroutines();
         StartCoroutine(ShakeFeedback());
 
-        if (rockParticle != null) rockParticle.Play();
+        if (rockParticle != null)
+        {
+            rockParticle.transform.position = dir;
+            rockParticle.Play();
+        }
         
         currentLife--;
         
