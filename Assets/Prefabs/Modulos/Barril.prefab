@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 4444515798817342244}
   - component: {fileID: 7635964190018306937}
   - component: {fileID: 1625181876792820894}
-  - component: {fileID: 8739239486303434579}
   - component: {fileID: 3244898291756895268}
+  - component: {fileID: 735775675301513699}
   m_Layer: 21
   m_Name: Barril
   m_TagString: rayTarget
@@ -114,28 +114,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8739239486303434579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 477870808459213379}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6536d93d1dd67243b78c6f13aceeace, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inmunity: 00000000
-  currentLife: 0
-  maxLife: 3
-  canIDie: 1
-  timeShaking: 0
-  _moveShake: {fileID: 0}
-  _imInvulnerable: 0
-  destroySound: {fileID: 8300000, guid: 934384f7d639a5c4c9f4b3fbcf0e65ee, type: 3}
-  hitSound: {fileID: 8300000, guid: e31ba2f3a63b0404cba711f5e9d7e0db, type: 3}
-  rockParticle: {fileID: 0}
 --- !u!114 &3244898291756895268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,3 +129,20 @@ MonoBehaviour:
   torot: {fileID: 7091867220514717290}
   shakeAmmount: 0.2
   shakeTime: 0.2
+--- !u!114 &735775675301513699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477870808459213379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62f8288976ea8cd4a88afe69d163449a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLife: 0
+  maxLife: 1
+  canIDie: 1
+  _imInvulnerable: 0
+  inmunity: 

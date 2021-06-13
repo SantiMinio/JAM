@@ -116,7 +116,7 @@ MonoBehaviour:
   stayActivated: 0
   time: 0
   open: 0
-  feedbackParticles: {fileID: 0}
+  feedbackParticles: {fileID: 2156907934784259594}
   timeToActivateTrap: 1
   radiusEffect: 0.7
 --- !u!114 &2178364634305589611
@@ -184,9 +184,9 @@ ParticleSystem:
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
-  looping: 1
+  looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
