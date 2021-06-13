@@ -42,7 +42,7 @@ public class CharacterBase : MonoBehaviour
                                        Mathf.Abs(xAxis) == 1 ? yAxis / 1.5f * speed : yAxis * speed);
         rb.velocity = movement;
         stepTimer += Time.deltaTime;
-
+        movement.y = 0;
         if (movement != Vector3.zero)
         {
             currentDir = new Vector3(xAxis, 0, yAxis);

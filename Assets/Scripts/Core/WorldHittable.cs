@@ -54,6 +54,7 @@ public class WorldHittable : MonoBehaviour, IHiteable
 
     public bool GetHit(Vector3 dir, Hiteable.DamageType damageType)
     {
+        if (_imDead) return false;
         if (Block(dir)) return false;
         if (_imInvulnerable) return false;
 
