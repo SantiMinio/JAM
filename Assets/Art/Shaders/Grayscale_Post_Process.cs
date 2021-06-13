@@ -11,6 +11,11 @@ public class Grayscale_Post_Process : MonoBehaviour
     public float grayscale;
     [Range (0, 1)]
     public float masOcuro;
+    [Range(0, 1)]
+    public float fade_in_out;
+    public float pixeles;
+    public float scale;
+    public float speed;
 
     private void Awake()
     {
@@ -24,5 +29,9 @@ public class Grayscale_Post_Process : MonoBehaviour
     {
         mat.SetFloat("_Grayscale", grayscale);
         mat.SetFloat("_MasOcuro", masOcuro);
+        mat.SetFloat("_Pixeles", pixeles);
+        mat.SetFloat("_ScaleNoise", scale);
+        mat.SetFloat("_Effect", fade_in_out);
+        mat.SetFloat("_Speed", speed);
     }
 }

@@ -770,6 +770,10 @@ MonoBehaviour:
   shader: {fileID: 4800000, guid: cd906c2489694da4388d70be08a29f49, type: 3}
   grayscale: 0
   masOcuro: 0
+  fade_in_out: 1
+  pixeles: 45
+  scale: 15
+  speed: 0.5
 --- !u!82 &1500773472
 AudioSource:
   m_ObjectHideFlags: 0
