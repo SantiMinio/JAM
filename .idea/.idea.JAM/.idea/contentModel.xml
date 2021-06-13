@@ -814,6 +814,7 @@
             <e p="Bullet.cs" t="Include" />
             <e p="ButtonCircuit.cs" t="Include" />
             <e p="DJ_Handler.cs" t="Include" />
+            <e p="FinishGameTrigger.cs" t="Include" />
             <e p="FireTrap.cs" t="Include" />
             <e p="HeavyPusheableThing.cs" t="Include" />
             <e p="Hiteable.cs" t="Include" />
