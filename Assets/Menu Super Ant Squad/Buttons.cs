@@ -15,7 +15,11 @@ public class Buttons : MonoBehaviour
     [SerializeField] Sprite[] tuto = new Sprite[0];
      
     [SerializeField] AudioClip exitSound = null;
+    [SerializeField] Transform[] cameraPos = new Transform[0];
+    [SerializeField] float cameraSpeed = 3;
+
     int currentIndex = -1;
+    int cameraIndex;
 
     private void Awake()
     {
@@ -54,18 +58,23 @@ public class Buttons : MonoBehaviour
     }
     public void Credits()
     {
-        if (names[0].activeSelf)
+        mainScene.SetActive(false);
+        for (int i = 0; i < names.Length; i++)
         {
+            names[i].SetActive(true);
+        }
+    }
+
+    public void GoToCredits()
+    {
+        cameraIndex += 1;
+        if (cameraIndex >= cameraPos.Length)
+        {
+            cameraIndex = 0;
+            mainScene.SetActive(true);
             for (int i = 0; i < names.Length; i++)
             {
                 names[i].SetActive(false);
-            }
-        }
-        else
-        {
-            for (int i = 0; i < names.Length; i++)
-            {
-                names[i].SetActive(true);
             }
         }
     }
@@ -78,6 +87,12 @@ public class Buttons : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         Application.Quit();
+    }
+
+    private void Update()
+    {
+        Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, cameraPos[cameraIndex].position, Time.deltaTime * cameraSpeed);
+        Camera.main.transform.rotation = Quaternion.Lerp(Camera.main.transform.rotation, cameraPos[cameraIndex].rotation, Time.deltaTime * cameraSpeed);
     }
 
 }

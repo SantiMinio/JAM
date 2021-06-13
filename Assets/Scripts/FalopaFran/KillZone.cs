@@ -6,10 +6,15 @@ using UnityEngine;
 public class KillZone : MonoBehaviour
 {
     [SerializeField] private LayerMask triggerLayers;
+    
+    [SerializeField] private ParticleSystem feedbackTouchLava;
     private void OnTriggerEnter(Collider other)
     {
         if ((triggerLayers.value & (1 << other.gameObject.layer)) > 0)
         {
+            feedbackTouchLava.transform.position =  other.transform.position;
+            feedbackTouchLava.Play();
+            
             var posibleHitable = other.GetComponent<IHiteable>();
 
             if (posibleHitable != null)

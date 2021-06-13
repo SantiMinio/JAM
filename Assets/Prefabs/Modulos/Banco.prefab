@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2517963159019310727}
   - component: {fileID: 5685329299192855268}
   - component: {fileID: 2319085060391511866}
-  m_Layer: 0
+  m_Layer: 21
   m_Name: Banco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
