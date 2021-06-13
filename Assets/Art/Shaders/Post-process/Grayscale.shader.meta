@@ -2,7 +2,8 @@ fileFormatVersion: 2
 guid: cd906c2489694da4388d70be08a29f49
 ShaderImporter:
   externalObjects: {}
-  defaultTextures: []
+  defaultTextures:
+  - _Corazon_puto: {fileID: 2800000, guid: bf691899b50982342a09c9a33c312a79, type: 3}
   nonModifiableTextures: []
   preprocessorOverride: 0
   userData: 
