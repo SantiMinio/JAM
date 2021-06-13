@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 840546881003651316}
   - component: {fileID: 1709866834645144476}
   - component: {fileID: 5106091613935224108}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pinches
   m_TagString: Untagged
   m_Icon: {fileID: 0}

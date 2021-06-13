@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 356856956295569125}
   - component: {fileID: 752622165796875067}
   - component: {fileID: 3630406733035583904}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hellwall
   m_TagString: Untagged
   m_Icon: {fileID: 0}

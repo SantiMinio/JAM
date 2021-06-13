@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 243889488586734622}
   - component: {fileID: 6063649302280754642}
   - component: {fileID: 4709433565511541402}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HelltileCorner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
