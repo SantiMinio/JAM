@@ -1173,6 +1173,7 @@ MonoBehaviour:
   destroySound: {fileID: 8300000, guid: 934384f7d639a5c4c9f4b3fbcf0e65ee, type: 3}
   hitSound: {fileID: 8300000, guid: e31ba2f3a63b0404cba711f5e9d7e0db, type: 3}
   rockParticle: {fileID: 5241109112079121951}
+  destroyedRock: {fileID: 6738614876353886888}
 --- !u!114 &3579970148049558623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1249,7 +1250,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86f5f815-5c74-405d-9597-329e30d03dbe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.JAM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JAM/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/FranMapRemake1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FranMapRemake1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/FireTrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/FireTrap.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +106,7 @@
       <option name="presentableId" value="Default" />
       <updated>1623440454740</updated>
       <workItem from="1623440473720" duration="2877000" />
-      <workItem from="1623510186227" duration="17471000" />
+      <workItem from="1623510186227" duration="18289000" />
     </task>
     <servers />
   </component>
