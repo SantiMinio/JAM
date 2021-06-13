@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86f5f815-5c74-405d-9597-329e30d03dbe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Modulos/Barril.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Modulos/Barril.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Hiteable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FalopaFran/Hiteable.cs" afterDir="false" />
-    </list>
+    <list default="true" id="86f5f815-5c74-405d-9597-329e30d03dbe" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,7 +102,7 @@
       <option name="presentableId" value="Default" />
       <updated>1623440454740</updated>
       <workItem from="1623440473720" duration="2877000" />
-      <workItem from="1623510186227" duration="14780000" />
+      <workItem from="1623510186227" duration="15101000" />
     </task>
     <servers />
   </component>
