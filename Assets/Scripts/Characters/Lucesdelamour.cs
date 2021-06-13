@@ -25,15 +25,15 @@ public class Lucesdelamour : MonoBehaviour
     {
         luzPiba.transform.position = Main.instance.GetWife().transform.position + Vector3.up ;
         luzPibe.transform.position = Main.instance.GetHusband().transform.position + Vector3.up;
-        luzPiba.intensity = -dc.GetDistanceBetweenCharacters() * IntensityMultipler + loveMaxRange;
-        luzPibe.intensity = -dc.GetDistanceBetweenCharacters() * IntensityMultipler + loveMaxRange;
+        luzPiba.intensity = -dc.GetDistanceBetweenCharacters() + IntensityMultipler + loveMaxRange;
+        luzPibe.intensity = -dc.GetDistanceBetweenCharacters() + IntensityMultipler + loveMaxRange;
        
         if (dc.GetDistanceBetweenCharacters() < 2)
         {
             luzPiba.gameObject.SetActive(false);
             luzPibe.gameObject.SetActive(false);
             LoveLight.gameObject.SetActive(true);
-            LoveLight.intensity= -dc.GetDistanceBetweenCharacters() * IntensityMultipler2 + loveMaxRange;
+            LoveLight.intensity= -dc.GetDistanceBetweenCharacters() + IntensityMultipler2 + loveMaxRange;
         }
         else
         {
