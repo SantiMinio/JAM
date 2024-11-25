@@ -48,7 +48,7 @@ TextureImporter:
       213: 1452032824190011270
     second: Personas de Fondo_14
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -65,10 +65,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -107,6 +109,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -118,6 +122,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -130,6 +135,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -460,9 +466,24 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Personas de Fondo_0: -3722159779956859473
+      Personas de Fondo_1: -5404522593896609620
+      Personas de Fondo_10: -5244635199561806577
+      Personas de Fondo_11: 6938341548757333584
+      Personas de Fondo_12: -1513323952494255082
+      Personas de Fondo_13: -4098378532666632144
+      Personas de Fondo_14: 1452032824190011270
+      Personas de Fondo_2: 9155350789524917590
+      Personas de Fondo_3: -900983111049765547
+      Personas de Fondo_4: 7578623640605978064
+      Personas de Fondo_5: 7727039270823128580
+      Personas de Fondo_6: 2736190045690266729
+      Personas de Fondo_7: -5932989895098345570
+      Personas de Fondo_8: 587968093172587624
+      Personas de Fondo_9: -4527171015628088176
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -165,7 +165,7 @@ TextureImporter:
       213: -4080031840287892999
     second: Wife_53
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -182,10 +182,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -224,6 +226,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -235,6 +239,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -247,6 +252,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1396,9 +1402,63 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Wife_0: -29314994655810216
+      Wife_1: -7604697500733736449
+      Wife_10: -5645056207720680810
+      Wife_11: 274686738508050750
+      Wife_12: -153663811335128546
+      Wife_13: 4202465575069080679
+      Wife_14: -4756235008524711860
+      Wife_15: -5618717759796748701
+      Wife_16: 5022653571656493223
+      Wife_17: 7877717805187243987
+      Wife_18: -2294789923575705068
+      Wife_19: -5438945760647121829
+      Wife_2: -2471753433901101289
+      Wife_20: 2042522582730988368
+      Wife_21: -2132169352858350916
+      Wife_22: -4003641853398557027
+      Wife_23: 1326139673955879592
+      Wife_24: 1520684371191631004
+      Wife_25: 7691535282499818074
+      Wife_26: 8714214902577444125
+      Wife_27: -1748823392801802009
+      Wife_28: 549487050789690503
+      Wife_29: 2671917241925325503
+      Wife_3: -6211153228690342083
+      Wife_30: -7546483257047227508
+      Wife_31: 7374158436059509349
+      Wife_32: -1839324466546260180
+      Wife_33: 9112536494386780162
+      Wife_34: 7842732324304668214
+      Wife_35: -8246392294285513555
+      Wife_36: -3417626680162956182
+      Wife_37: 2777749865360293583
+      Wife_38: 5193407618766156638
+      Wife_39: 8788950827083819204
+      Wife_4: 103768446328640837
+      Wife_40: 1467200745806812738
+      Wife_41: -8065754704123660653
+      Wife_42: -7279038011366347473
+      Wife_43: 2175023143093930622
+      Wife_44: 1377617492789377989
+      Wife_45: 5792835936879017968
+      Wife_46: -4614515050125468288
+      Wife_47: -2657554936527176210
+      Wife_48: 2572429932423722351
+      Wife_49: 8535483602992561320
+      Wife_5: 8940119131152050701
+      Wife_50: -5472810501025873295
+      Wife_51: -7226334974822776488
+      Wife_52: 5930018238053958071
+      Wife_53: -4080031840287892999
+      Wife_6: -4549500600934049171
+      Wife_7: -8951146197769460674
+      Wife_8: -698440000914919036
+      Wife_9: 275833729625973209
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

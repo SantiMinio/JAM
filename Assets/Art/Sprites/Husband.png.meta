@@ -156,7 +156,7 @@ TextureImporter:
       213: -6127182639419664789
     second: Husband_50
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -173,10 +173,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -215,6 +217,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -226,6 +230,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -238,6 +243,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1324,9 +1330,60 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Husband_0: 8403113420175783407
+      Husband_1: 1038825959326049330
+      Husband_10: -6125085233498873175
+      Husband_11: -5894159570076526720
+      Husband_12: 5882734486979765445
+      Husband_13: 1693224152498204625
+      Husband_14: -1328440354049736607
+      Husband_15: -6098536318098854523
+      Husband_16: -1873666086224791932
+      Husband_17: -7877987122426389559
+      Husband_18: -7333831900569760690
+      Husband_19: 8565560473908279971
+      Husband_2: -6110334019728190739
+      Husband_20: 6527705333662864059
+      Husband_21: 7266984634306529774
+      Husband_22: 1568369935337852968
+      Husband_23: 4803894748743493712
+      Husband_24: 3231623579904426634
+      Husband_25: -5002303568981473002
+      Husband_26: 1157596174543262270
+      Husband_27: 1428441584171425323
+      Husband_28: -1486468645498928303
+      Husband_29: -6206808509210907205
+      Husband_3: 3021625059065130732
+      Husband_30: 2694165927933865438
+      Husband_31: 639959162009345046
+      Husband_32: 564403367124005457
+      Husband_33: 4142413785360763169
+      Husband_34: -2871828810303563144
+      Husband_35: -3570972366891236586
+      Husband_36: 5421718540136100797
+      Husband_37: -7858877809940722870
+      Husband_38: -7566491137907129057
+      Husband_39: -6511625980765520083
+      Husband_4: -2666673570919483417
+      Husband_40: 443095247257805154
+      Husband_41: -2943446754564160518
+      Husband_42: -2402536522776470408
+      Husband_43: 7427577889987696186
+      Husband_44: -145984200446830204
+      Husband_45: -2111157608260760955
+      Husband_46: -2937643101583789993
+      Husband_47: 4024761739647281306
+      Husband_48: -1523660168609930301
+      Husband_49: -4367825846692732583
+      Husband_5: 2022719457675099108
+      Husband_50: -6127182639419664789
+      Husband_6: 4870638735849909090
+      Husband_7: 69754605421452341
+      Husband_8: -370698738232614945
+      Husband_9: -3636738227418815825
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
