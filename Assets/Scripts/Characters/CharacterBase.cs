@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -53,41 +54,36 @@ public class CharacterBase : MonoBehaviour
         anim.SetFloat("z", yAxis);
     }
 
-    public void MoveY(float y)
+    public void MoveY(UnityEngine.InputSystem.InputAction.CallbackContext callback)
     {
-        if (y < -0.3f) y = -1;
-        else if (y > 0.3f) y = 1;
-        else y = 0;
-        yAxis = y;
+        yAxis = callback.ReadValue<float>();
     }
 
-    public void MoveX(float x)
+    public void MoveX(UnityEngine.InputSystem.InputAction.CallbackContext callback)
     {
-        if (x < -0.3f) x = -1;
-        else if (x > 0.3f) x = 1;
-        else x = 0;
-        xAxis = x;
+        xAxis = callback.ReadValue<float>();
     }
 
-    public void ActionAbility(KeyEventButon eventKey)
+    public void ActionAbility(UnityEngine.InputSystem.InputAction.CallbackContext callback)
     {
-        switch (eventKey)
+        switch (callback.phase)
         {
-            case KeyEventButon.KeyDown:
+            case UnityEngine.InputSystem.InputActionPhase.Disabled:
+                break;
+            case UnityEngine.InputSystem.InputActionPhase.Waiting:
+                break;
+            case UnityEngine.InputSystem.InputActionPhase.Started:
                 action.StartAction();
                 break;
-            case KeyEventButon.Key:
+            case UnityEngine.InputSystem.InputActionPhase.Performed:
                 action.KeepAction();
                 break;
-            case KeyEventButon.KeyUp:
+            case UnityEngine.InputSystem.InputActionPhase.Canceled:
                 action.EndAction();
-                break;
-            default:
                 break;
         }
     }
-
-    bool dead;
+        bool dead;
 
     void Dead()
     {

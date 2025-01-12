@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3277417902645441650}
   - component: {fileID: 4915267821770440284}
   - component: {fileID: 5639558122209801518}
+  - component: {fileID: 7637203084749631247}
   m_Layer: 20
   m_Name: Character
   m_TagString: Untagged
@@ -145,6 +146,129 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7637203084749631247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644881505203095043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 59196c343dbd8024d8df66bf4b2abb1a,
+    type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8245841957816015150}
+        m_TargetAssemblyTypeName: CharacterBase, Assembly-CSharp
+        m_MethodName: MoveX
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: e3f77c01-5b4f-41fd-af0e-b931dbe4555d
+    m_ActionName: Player/xAxisHusband[/Keyboard/a,/Keyboard/d,/Keyboard/leftArrow,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ded052b7-9f61-4001-84c7-09826a8af30f
+    m_ActionName: Player/xAxisWife[/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8245841957816015150}
+        m_TargetAssemblyTypeName: CharacterBase, Assembly-CSharp
+        m_MethodName: MoveY
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 67c77d65-d581-416e-b093-27af702b6a45
+    m_ActionName: Player/zAxisHusband[/Keyboard/s,/Keyboard/w,/Keyboard/downArrow,/Keyboard/upArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 898d0326-fedb-4463-9140-3533f06e4a45
+    m_ActionName: Player/zAxisWife[/Keyboard/s,/Keyboard/w]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8245841957816015150}
+        m_TargetAssemblyTypeName: CharacterBase, Assembly-CSharp
+        m_MethodName: ActionAbility
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 8e084988-f525-4fe5-9076-81056019b54f
+    m_ActionName: Player/ActionHusband[/Keyboard/space,/Keyboard/rightCtrl]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ffdf8484-bf40-4425-9d96-32b600cddafd
+    m_ActionName: Player/ActionWife[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 39b39b14-39ae-4a96-8b02-82ce19242833
+    m_ActionName: Player/InteractInput[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 82924c1e-1818-4e70-8b33-a5b8777f893a
+    m_ActionName: Player/PauseInput[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: aff0b804-dfbe-488e-be56-52c665697d0f
+    m_ActionName: Player/CancelAction[/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: eb2e2db0-41f5-44c3-9943-b8f6bc54f3e3
+    m_ActionName: Player/Close[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: eba58172-91b4-441e-b38c-db747dbe383c
+    m_ActionName: Player/ChangePageLeft
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b3ab9d3e-8383-4d19-821f-3ed093675eb2
+    m_ActionName: Player/ChangePageRight
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 095a3a7c-8fbc-4425-835e-1f624b9178f1
+    m_ActionName: Player/SkipInput[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8bdf6279-7bcb-41f7-add7-452c8cf58e44
+    m_ActionName: Player/SubmitDialog[/Mouse/leftButton]
+  m_NeverAutoSwitchControlSchemes: 1
+  m_DefaultControlScheme: Keyboard
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &2388529829406454224
 GameObject:
   m_ObjectHideFlags: 0
