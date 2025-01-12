@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditorInternal;
 using UnityEngine;
 
 public class FireTrap : ActivableObject
@@ -22,6 +23,12 @@ public class FireTrap : ActivableObject
         float _count = 0;
         do
         {
+            if (paused)
+            {
+                yield return new WaitForEndOfFrame();
+                continue;
+            }
+
             _count += Time.deltaTime;
             yield return new WaitForEndOfFrame();
         } while (_count <= timeToActivateTrap);

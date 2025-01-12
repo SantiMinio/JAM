@@ -14,6 +14,7 @@ public class Shooter : ActivableObject
     
     private void Start()
     {
+        PauseManager.instance.AddToPause(this);
         StartCoroutine(ShootRutine());
     }
 
@@ -21,6 +22,12 @@ public class Shooter : ActivableObject
     {
         do
         {
+            if (paused)
+            {
+                yield return new WaitForEndOfFrame();
+                continue;
+            }
+
             yield return new WaitForSeconds(shootIntervalTime);
             Shoot();    
         } while (!isActive);

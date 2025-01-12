@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(LineRenderer))]
-public class Lightbeam : MonoBehaviour
+public class Lightbeam : MonoBehaviour, IPause
 {
     [SerializeField] int reflections = 0;
     [SerializeField] float maxLength = 100f;
@@ -20,7 +20,23 @@ public class Lightbeam : MonoBehaviour
     Vector3 direction;
 
     private bool isOn;
-    
+
+    bool paused;
+
+    private void Start()
+    {
+        PauseManager.instance.AddToPause(this);
+    }
+
+    public void Pause()
+    {
+        paused = true;
+    }
+
+    public void Resume()
+    {
+        paused = false;
+    }
 
     public void SetActive(bool value)
     {
@@ -37,6 +53,8 @@ public class Lightbeam : MonoBehaviour
 
     private void Update()
     {
+        if (paused) return;
+
         if(!lineRenderer.enabled) return; 
         
         ray = new Ray(lineOrigin.position, transform.forward);

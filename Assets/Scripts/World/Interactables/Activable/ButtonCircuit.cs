@@ -17,11 +17,12 @@ public class ButtonCircuit : ActivableBase
         _animateObjectActivator = GetComponent<AnimateObjectActivator>();
     }
 
-    private void Update()
+    protected override void OnUpdate()
     {
+        base.OnUpdate();
         allTrue = CheckCircuit();
-        
-        if(allTrue) _animateObjectActivator.ActivateObject();
+
+        if (allTrue) _animateObjectActivator.ActivateObject();
         else
         {
             _animateObjectActivator.DeactivateObject();

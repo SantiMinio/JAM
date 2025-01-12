@@ -23,12 +23,14 @@ public class TurretAim : ActivableBase
         _lightbeam = GetComponent<Lightbeam>();
     }
 
-    private void Update()
+    protected override void OnUpdate()
     {
-        if(followTarget)
-         FollowClosestCharacter();
-        
-        
+        base.OnUpdate();
+
+        if (followTarget)
+            FollowClosestCharacter();
+
+
         if (!isActive)
         {
             SetActive(true);
@@ -37,7 +39,6 @@ public class TurretAim : ActivableBase
 
         if (isOn)
             SetActive(false);
-
     }
 
     private void FollowClosestCharacter()

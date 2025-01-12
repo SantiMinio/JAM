@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RayTarget : Hiteable
+public class RayTarget : Hiteable, IPause
 {
     private AnimateObjectActivator _activator;
     
@@ -15,7 +15,7 @@ public class RayTarget : Hiteable
     {
         base.Start();
         _activator = GetComponent<AnimateObjectActivator>();
-
+        PauseManager.instance.AddToPause(this);
         onHit += AnimateObject;
     }
 
@@ -35,11 +35,28 @@ public class RayTarget : Hiteable
     {
         do
         {
+            if (paused)
+            {
+                yield return new WaitForEndOfFrame();
+                continue;
+            }
             lastTimeRayHitted += Time.deltaTime;
             yield return new WaitForEndOfFrame();    
         } while (lastTimeRayHitted < 1);
         
         rayOnMe = false;
         _activator.DeactivateObject();
+    }
+
+    bool paused;
+
+    public void Pause()
+    {
+        paused = true;
+    }
+
+    public void Resume()
+    {
+        paused = false;
     }
 }

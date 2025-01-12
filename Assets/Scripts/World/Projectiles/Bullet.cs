@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class Bullet : MonoBehaviour, IPause
 {
     private Rigidbody _rb;
 
@@ -15,6 +15,10 @@ public class Bullet : MonoBehaviour
     private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
+    }
+    private void Start()
+    {
+        PauseManager.instance.AddToPause(this);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -34,6 +38,7 @@ public class Bullet : MonoBehaviour
 
     private void Update()
     {
+        if (paused) return;
         _count += Time.deltaTime;
 
         if (_count >= lifeTime)
@@ -44,6 +49,20 @@ public class Bullet : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (paused) return;
         _rb.velocity = transform.forward * speed;
+    }
+
+    bool paused;
+
+    public void Pause()
+    {
+        paused = true;
+        _rb.velocity = Vector3.zero;
+    }
+
+    public void Resume()
+    {
+        paused = false;
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public abstract class CharacterAction : MonoBehaviour
+public abstract class CharacterAction : MonoBehaviour, IPause
 {
     public Action OnActionStart = delegate { };
     public Action OnActionKeep = delegate { };
@@ -24,7 +24,7 @@ public abstract class CharacterAction : MonoBehaviour
 
     public void KeepAction()
     {
-        if (!actioning) return;
+        if (!actioning || paused) return;
         OnActionKeep();
         OnKeepAction();
     }
@@ -38,9 +38,14 @@ public abstract class CharacterAction : MonoBehaviour
         startCooldown = true;
     }
 
+    private void Start()
+    {
+        PauseManager.instance.AddToPause(this);
+    }
 
     private void Update()
     {
+        if(paused) return;
         if (startCooldown)
         {
             cooldown += Time.deltaTime;
@@ -54,4 +59,15 @@ public abstract class CharacterAction : MonoBehaviour
     protected abstract void OnStartAction();
     protected abstract void OnKeepAction();
     protected abstract void OnEndAction();
+
+    bool paused;
+    public void Pause()
+    {
+        paused = true;
+    }
+
+    public void Resume()
+    {
+        paused = false;
+    }
 }

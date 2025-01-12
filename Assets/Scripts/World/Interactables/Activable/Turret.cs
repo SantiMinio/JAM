@@ -6,10 +6,11 @@ public class Turret : ActivableBase
 {
     public float xAngle, yAngle, zAngle;
 
-    void Update()
+    protected override void OnUpdate()
     {
-        if(!isActive) return;
-        
+        base.OnUpdate();
+        if (!isActive) return;
+
         transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
     }
 }

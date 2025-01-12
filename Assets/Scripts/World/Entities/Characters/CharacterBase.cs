@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterBase : MonoBehaviour
+public class CharacterBase : MonoBehaviour, IPause
 {
     [SerializeField] Rigidbody rb = null;
     [SerializeField] float speed = 5;
@@ -26,11 +26,12 @@ public class CharacterBase : MonoBehaviour
     private void Start()
     {
         hiteable.onDead += Dead;
+        PauseManager.instance.AddToPause(this);
     }
 
     private void Update()
     {
-        if (dead) return;
+        if (dead || paused) return;
 
         Vector3 movement = new Vector3(Mathf.Abs(yAxis) == 1 ? xAxis / 1.5f * speed : xAxis * speed,
                                        rb.velocity.y,
@@ -87,6 +88,7 @@ public class CharacterBase : MonoBehaviour
 
     void Dead()
     {
+        PauseManager.instance.RemoveToPause(this);
         var characters = Main.instance.GetCharacters();
         for (int i = 0; i < characters.Length; i++)
         {
@@ -117,5 +119,22 @@ public class CharacterBase : MonoBehaviour
     {
         //inserte llanto
         anim.SetBool("Cry", true);
+    }
+
+    bool paused;
+    float animSpeed;
+
+    public void Pause()
+    {
+        paused = true;
+        animSpeed = anim.speed;
+        anim.speed = 0;
+        rb.velocity = Vector3.zero;
+    }
+
+    public void Resume()
+    {
+        paused = false;
+        anim.speed = animSpeed;
     }
 }

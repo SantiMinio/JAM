@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DistanceController : MonoBehaviour
+public class DistanceController : MonoBehaviour, IPause
 {
     [SerializeField] float maxDistanceToDead = 10;
     [SerializeField] float timeToDead = 3;
@@ -18,11 +18,12 @@ public class DistanceController : MonoBehaviour
     private void Start()
     {
         timer = timeToDead;
+        PauseManager.instance.AddToPause(this);
     }
 
     private void Update()
     {
-        if (timer <= 0) return;
+        if (paused || timer <= 0) return;
 
         characterDistance = Vector3.Distance(charOne.position, charTwo.position);
 
@@ -55,4 +56,16 @@ public class DistanceController : MonoBehaviour
 
     public float GetDistanceBetweenCharacters() => characterDistance;
     public float GetMaxDistanceBetweenCharacters() => maxDistanceToDead;
+
+    bool paused;
+
+    public void Pause()
+    {
+        paused = true;
+    }
+
+    public void Resume()
+    {
+        paused = false;
+    }
 }

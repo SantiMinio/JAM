@@ -32,7 +32,7 @@ public class InputSwitcher : MonoBehaviour
         transform.parent = null;
         instance = this;
         DontDestroyOnLoad(this);
-
+        FindNewInput();
         //if (inputs[i].currentControlScheme == joystickScheme)
         //{
         //    OnChangeJoystick?.Invoke();

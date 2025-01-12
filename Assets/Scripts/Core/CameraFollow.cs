@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraFollow : MonoBehaviour
+public class CameraFollow : MonoBehaviour, IPause
 {
     public List<CharacterBase> ants = new List<CharacterBase>();
     private Camera _cam;
@@ -22,12 +22,13 @@ public class CameraFollow : MonoBehaviour
         Vector3 centerPoint = GetCenterPoint();
         Vector3 newPosition = centerPoint + offset;
         transform.position = newPosition;
+        PauseManager.instance.AddToPause(this);
     }
 
     // Update is called once per frame
     void LateUpdate()
     {
-        if (ants.Count == 0)
+        if (paused || ants.Count == 0)
             return;
         Move();
         Zoom();
@@ -65,5 +66,17 @@ public class CameraFollow : MonoBehaviour
     {
         float newZoom = Mathf.Lerp(maxZoom, minZoom, GreatestDistance() / zoomLimiter);
         _cam.fieldOfView = Mathf.Lerp(_cam.fieldOfView, newZoom,Time.deltaTime);
+    }
+
+    bool paused;
+
+    public void Pause()
+    {
+        paused = true;
+    }
+
+    public void Resume()
+    {
+        paused = false;
     }
 }

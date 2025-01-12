@@ -42,7 +42,7 @@ public class SetMainButton : MonoSingleton<SetMainButton>
         InputSwitcher.instance.OnChangeKeyboard += OnKeyboard;
         lastInteract = EventSystem.current.firstSelectedGameObject;
         InputSwitcher.instance.AddToAction("Close", CloseScreen);
-        SceneLoader.Instance.OnStartLoadScene += DeleteReferences;
+        //SceneLoader.Instance.OnStartLoadScene += DeleteReferences;
     }
 
     void DeleteReferences()
