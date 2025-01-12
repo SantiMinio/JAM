@@ -3,13 +3,12 @@
 namespace Tools.Sound
 {
     using UnityEngine;
-    using Tools.Extensions;
 
     public static class ASourceCreator
     {
-        public static AudioSource Create2DSource(AudioClip ac, string name, AudioMixerGroup mixerGroup, bool loop = false, bool playOnAwake = false)
+        public static AudioSource Create2DSource(GameObject parent, AudioClip ac, string name, AudioMixerGroup mixerGroup, bool loop = false, bool playOnAwake = false)
         {
-            Transform cam = Camera.main.transform;
+            Transform cam = AudioManager.Instance.transform;
 
             var source = cam
                 .gameObject
@@ -26,7 +25,7 @@ namespace Tools.Sound
         }
         public static AudioSource Create3DSource(AudioClip ac, string name, AudioMixerGroup mixerGroup, bool loop = false, bool playOnAwake = false)
         {
-            Transform cam = Camera.main.transform;
+            Transform cam = AudioManager.Instance.transform;
 
             var source = cam
                 .gameObject
@@ -49,6 +48,17 @@ namespace Tools.Sound
         public static void PlayIfNotPlaying(this AudioSource ac)
         {
             if (!ac.isPlaying) ac.Play();
+        }
+
+        public static T CreateDefaultSubObject<T>(this GameObject owner, string name) where T : Component
+        {
+            GameObject go = new GameObject();
+            go.name = name;
+            T back = go.AddComponent<T>();
+            go.transform.SetParent(owner.transform);
+            go.transform.localPosition = Vector3.zero;
+            go.transform.localScale = new Vector3(1, 1, 1);
+            return back;
         }
     }
 }

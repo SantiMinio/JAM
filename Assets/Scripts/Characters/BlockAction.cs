@@ -10,12 +10,12 @@ public class BlockAction : CharacterAction
     [SerializeField] Transform blockCollider = null;
     [SerializeField] Animator anim = null;
     [SerializeField] AudioClip blockSound = null;
+    [SerializeField] string shieldAriseSound = null;
     bool isBlocking;
 
     private void Start()
     {
         hiteable.Block = Blocking;
-        AudioManager.instance.GetSoundPool(blockSound.name, AudioManager.SoundDimesion.TwoD, blockSound);
     }
 
     protected override void OnEndAction()
@@ -32,7 +32,7 @@ public class BlockAction : CharacterAction
 
     protected override void OnStartAction()
     {
-        AudioManager.instance.PlaySound(blockSound.name);
+        SoundFX.PlaySound(shieldAriseSound);
         isBlocking = true;
         blockCollider.gameObject.SetActive(true);
         anim.SetBool("blocking", true);

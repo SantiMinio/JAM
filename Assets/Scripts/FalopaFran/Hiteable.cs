@@ -16,8 +16,8 @@ public class Hiteable : MonoBehaviour, IHiteable
     [SerializeField] private MoveShake _moveShake;
 
     [SerializeField] private bool _imInvulnerable;
-    [SerializeField] AudioClip destroySound = null;
-    [SerializeField] AudioClip hitSound = null;
+    [SerializeField] string hitableDestroySound = "Hitable_BreakWall";
+    [SerializeField] string hitableGetHitSound = "Hitable_GetHit";
     [SerializeField] ParticleSystem rockParticle = null;
     [SerializeField] ParticleSystem destroyedRock = null;
 
@@ -33,8 +33,6 @@ public class Hiteable : MonoBehaviour, IHiteable
     public virtual void Start()
     {
         _moveShake = GetComponent<MoveShake>();
-        AudioManager.instance.GetSoundPool(hitSound.name, AudioManager.SoundDimesion.TwoD, hitSound);
-        AudioManager.instance.GetSoundPool(destroySound.name, AudioManager.SoundDimesion.TwoD, destroySound);
 
         Reset();
     }
@@ -51,7 +49,7 @@ public class Hiteable : MonoBehaviour, IHiteable
         if (Block(dir)) return false;
         if (_imInvulnerable) return false;
 
-        AudioManager.instance.PlaySound(hitSound.name);
+        SoundFX.PlaySound(hitableGetHitSound);
         
         StopAllCoroutines();
         StartCoroutine(ShakeFeedback());
@@ -70,7 +68,7 @@ public class Hiteable : MonoBehaviour, IHiteable
             if (canIDie)
             {
                 Dead();
-                AudioManager.instance.PlaySound(destroySound.name);
+                SoundFX.PlaySound(hitableDestroySound);
             }
             
         }

@@ -7,7 +7,7 @@ using Object = UnityEngine.Object;
 
 namespace DevelopTools
 {
-    public abstract class SingleObjectPool<T> : MonoBehaviour where T : Component
+    public abstract class SingleObjectPool<T> :  MonoBehaviour, IEnumerable<T> where T : Component
     {
         public bool extendible = true;
         /// <summary>
@@ -16,26 +16,19 @@ namespace DevelopTools
         [Header("Si es un sonido, dejar vacio el prefab")]
         [SerializeField] protected T prefab = null;
         /// <summary>
-        /// Instancia del pool
-        /// </summary>
-        ///
-        public static SingleObjectPool<T> Instance { get; private set; }
-        /// <summary>
         /// Cola donde se guardan los objetos pooleados
         /// </summary>
         protected Queue<T> objects = new Queue<T>();
 
         protected List<T> currentlyUsingObj = new List<T>();
+        public List<T> Currents { get { return currentlyUsingObj; } } 
+
+        public int InUse => currentlyUsingObj.Count;
 
         #region Auto exponential size
         bool auto_exp;
         int auto_size = 0;
         #endregion
-
-        private void Awake()
-        {
-            Instance = this;
-        }
 
         /// <summary>
         /// Le pido un objeto del pool y lo prendo.
@@ -45,20 +38,27 @@ namespace DevelopTools
         public T Get()
         {
             T obj = null;
-            if (objects.Count == 0 && !extendible)
+
+            if (objects.Count == 0)
             {
-                return obj;
-            }
-            if(objects.Count == 0)
-            {
-                AddObject(auto_exp ? auto_size : 1);
+                if (!extendible)
+                {
+                    return obj;
+                }
+                else
+                {
+                    AddObject(auto_exp ? auto_size : 1);
+                }
             }
             
             obj = objects.Dequeue();
             obj.gameObject.SetActive(true);
             currentlyUsingObj.Add(obj);
+            OnGetObject(obj);
             return obj;
         }
+
+        protected virtual void OnGetObject(T obj) {  }
 
        /// <summary>
        /// Initialize con configuracion previa
@@ -94,6 +94,19 @@ namespace DevelopTools
                 objects.Enqueue(newObject);
                 if (auto_exp && objects.Count > auto_size) auto_size = objects.Count;
             }
+        }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            foreach (var item in objects)
+            {
+                yield return item;
+            }
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
         }
     }    
 

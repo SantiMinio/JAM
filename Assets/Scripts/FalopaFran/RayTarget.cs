@@ -21,7 +21,6 @@ public class RayTarget : Hiteable
 
     void AnimateObject()
     {
-        Debug.Log("recibe el golpe");
         StopAllCoroutines();
         _activator.ActivateObject(); 
 
@@ -37,7 +36,6 @@ public class RayTarget : Hiteable
         do
         {
             lastTimeRayHitted += Time.deltaTime;
-            Debug.Log("que pasa");
             yield return new WaitForEndOfFrame();    
         } while (lastTimeRayHitted < 1);
         

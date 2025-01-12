@@ -7,27 +7,24 @@ using UnityEngine.Audio;
 
 public class SoundPool : SingleObjectPool<AudioSource>
 {
-   
-   [SerializeField] private AudioClip _audioClip;
-   [SerializeField] private bool _loop = false;
-   [SerializeField] private bool playOnAwake = false;
    public bool soundPoolPlaying = false;
-   private AudioMixerGroup _audioMixer;
-    AudioManager.SoundDimesion dimension;
+   public AudioManager.SoundDimesion dimension;
 
-   public void Configure(AudioClip audioClip, AudioManager.SoundDimesion _dimension, AudioMixerGroup mixer,bool loop = false) 
-   {
-      _audioClip = audioClip;
-      _loop = loop;
-        extendible = false;
-        dimension = _dimension;
-        _audioMixer = mixer;
-   }
+    public AudioSource GetObject(AudioClip clip, AudioMixerGroup mixer, bool loop = false)
+    {
+        var audio = Get();
+        audio.clip = clip;
+        audio.outputAudioMixerGroup = mixer;
+        audio.loop = loop;
+
+        return audio;
+    }
+
    protected override void AddObject(int prewarm = 3)
    {
       //var newAudio = ASourceCreator.Create2DSource(_audioClip, _audioClip.name, _audioMixer, _loop, playOnAwake);
-      var newAudio = dimension == AudioManager.SoundDimesion.ThreeD? ASourceCreator.Create3DSource(_audioClip, _audioClip.name, _audioMixer, _loop, playOnAwake) :
-            ASourceCreator.Create2DSource(_audioClip, _audioClip.name, _audioMixer, _loop, playOnAwake);
+      var newAudio = dimension == AudioManager.SoundDimesion.ThreeD? ASourceCreator.Create3DSource(null, name, null, false, false) :
+            ASourceCreator.Create2DSource(gameObject, null, name, null, false, false);
         newAudio.gameObject.SetActive(false);
       newAudio.transform.SetParent(transform);
       objects.Enqueue(newAudio);
@@ -72,8 +69,14 @@ public class SoundPool : SingleObjectPool<AudioSource>
                 i -= 1;
                 continue;
             }
-
-            currentlyUsingObj[i].Play();
+            if (!currentlyUsingObj[i].isPlaying)
+                currentlyUsingObj[i].Play();
         }
+    }
+
+    public bool IsThisObjectFromThisPool(AudioSource audioSource)
+    {
+        if (currentlyUsingObj.Contains(audioSource)) return true;
+        else return false;
     }
 }
