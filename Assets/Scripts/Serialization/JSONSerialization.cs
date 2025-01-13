@@ -64,7 +64,7 @@ public static class JSONSerialization
         return pathDocuments;
     }
 
-    private static string keyWord = "BirdyGames2023EncryptPassword";
+    private static string keyWord = "LaLunaDeMielInfernal2026GameAwards";
 
     private static string EncryptDecrypt(string Data)
     {

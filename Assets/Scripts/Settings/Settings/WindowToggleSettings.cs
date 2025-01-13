@@ -10,7 +10,7 @@ public class WindowToggleSettings : ToggleSettings
 
     private void Start()
     {
-        if (toggle.isOn)
+        if (!toggle.isOn)
         {
             dropdown.SetResolutionValue();
             group.alpha = 1;
@@ -26,8 +26,8 @@ public class WindowToggleSettings : ToggleSettings
 
     protected override void ChangeValue(bool value)
     {
-        Screen.fullScreen = !value;
-        if (!value)
+        Screen.fullScreen = value;
+        if (value)
         {
             Screen.SetResolution(Screen.mainWindowDisplayInfo.width, Screen.mainWindowDisplayInfo.height, true);
             group.alpha = 0;

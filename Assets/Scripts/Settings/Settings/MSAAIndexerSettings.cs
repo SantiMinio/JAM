@@ -14,7 +14,7 @@ public class MSAAIndexerSettings : DropdownSettings
 
     protected override void Awake()
     {
-        dropdown.SetItems(new string[] { "settings.Off", "MSAA 2x", "MSAA 4x", "MSAA 8x" }, GetMSAIndex(QualitySettings.antiAliasing));
+        dropdown.SetItems(new string[] { "Off", "MSAA 2x", "MSAA 4x", "MSAA 8x" }, GetMSAIndex(QualitySettings.antiAliasing));
         base.Awake();
     }
 

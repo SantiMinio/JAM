@@ -104,10 +104,21 @@ public class InputSwitcher : MonoBehaviour
         for (int i = 0; i < inputs.Length; i++)
         {
             inputs[i].user.UnpairDevices();
+            InputUser.PerformPairingWithDevice(Keyboard.current, inputs[i].user);
+            inputs[i].user.ActivateControlScheme(keyboardBothScheme);
         }
-            InputUser.PerformPairingWithDevice(Keyboard.current, inputs[0].user);
-            inputs[0].user.ActivateControlScheme(keyboardBothScheme);
-        InputUser.PerformPairingWithDevice(Keyboard.current, inputs[1].user);
-        inputs[1].user.ActivateControlScheme(keyboardBothScheme);
+        //    InputUser.PerformPairingWithDevice(Keyboard.current, inputs[0].user);
+        //    inputs[0].user.ActivateControlScheme(keyboardBothScheme);
+        //InputUser.PerformPairingWithDevice(Keyboard.current, inputs[1].user);
+        //inputs[1].user.ActivateControlScheme(keyboardBothScheme);
+    }
+
+    public void SetPlayerSchema(string schema, InputDevice device, int player)
+    {
+        if (player >= inputs.Length) return;
+
+        inputs[player].user.UnpairDevices();
+        InputUser.PerformPairingWithDevice(device, inputs[player].user);
+        inputs[player].user.ActivateControlScheme(schema);
     }
 }

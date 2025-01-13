@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 using TMPro;
+using System;
 
 public class CustomDropdown : MonoBehaviour
 {
@@ -24,6 +25,8 @@ public class CustomDropdown : MonoBehaviour
     bool Opened = false;
 
     public int CurrentSelectedItem { get; private set; }
+
+    public event Action OnOpenDropdown;
 
     private void Awake()
     {
@@ -71,6 +74,7 @@ public class CustomDropdown : MonoBehaviour
     public void Open()
     {
         dropdownItems.Open();
+        OnOpenDropdown?.Invoke();
         SetMainButton.Instance.PushScreen(dropdownItems, Close);
         Opened = true;
         if(items.Length > 0)SetMainButton.Instance.SetButtonInteract(items[0].gameObject);

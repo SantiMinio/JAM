@@ -6,7 +6,7 @@ public class VsyncIndexerSettings : DropdownSettings
 {
     protected override void Awake()
     {
-        dropdown.SetItems(new string[] { "settings.Off", "Vsync 1" }, QualitySettings.vSyncCount);
+        dropdown.SetItems(new string[] { "Off", "Vsync 1" }, QualitySettings.vSyncCount);
         base.Awake();
     }
 
