@@ -45,7 +45,7 @@ public class Buttons : MonoBehaviour
         }
         else if(currentIndex >= tuto.Length)
         {
-            SceneManager.LoadScene(1);
+            SceneLoader.Load(1);
             return;
         }
 

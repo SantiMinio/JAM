@@ -17,6 +17,6 @@ public class UI_Pause : MonoBehaviour
 
     public void Action_MainMenu()
     {
-
+        SceneLoader.Load(0);
     }
 }
