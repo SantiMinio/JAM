@@ -47,7 +47,7 @@ public class InputSwitcher : MonoBehaviour
 
     private void Start()
     {
-        FindNewInput();
+        //FindNewInput();
 
 
 

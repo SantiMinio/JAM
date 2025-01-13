@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class UI_Pause : MonoBehaviour
 {
+    [SerializeField] SettingsMenu settings = null;
 
     public void Action_Resume()
     {
@@ -12,7 +13,7 @@ public class UI_Pause : MonoBehaviour
 
     public void Action_Settings()
     {
-
+        settings.Open();
     }
 
     public void Action_MainMenu()

@@ -21,6 +21,5 @@ public class SoundSliderSettings : SliderSettings
         if (value > 0)
             logValue = Mathf.Log10(value) * 20;
         mixer.SetFloat(exposedVolumeParam, logValue);
-        Settings.Instance.SaveSettings();
     }
 }

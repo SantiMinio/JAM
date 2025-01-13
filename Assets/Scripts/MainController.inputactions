@@ -480,7 +480,7 @@
                     "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard;Joystick;BothGamepad",
+                    "groups": "Keyboard;Joystick;BothGamepad;BothKeyboard",
                     "action": "Close",
                     "isComposite": false,
                     "isPartOfComposite": false

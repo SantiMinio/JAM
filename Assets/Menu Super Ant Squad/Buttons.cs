@@ -10,7 +10,7 @@ public class Buttons : MonoBehaviour
     public GameObject[] names = new GameObject[4];
     [SerializeField] GameObject mainScene = null;
     [SerializeField] GameObject levelSelector = null;
-    [SerializeField] GameObject settingsScreen = null;
+    [SerializeField] SettingsMenu settingsScreen = null;
     [SerializeField] Image tutoImg = null;
     [SerializeField] Sprite[] tuto = new Sprite[0];
      
@@ -52,13 +52,19 @@ public class Buttons : MonoBehaviour
         tutoImg.sprite = tuto[currentIndex];
     }
 
+    public void CloseOptions()
+    {
+        settingsScreen.Close();
+        mainScene.SetActive(true);
+    }
+
     public void Play()
     {
         SceneManager.LoadScene(1);
     }
     public void Options()
     {
-        settingsScreen.SetActive(true);
+        settingsScreen.Open();
         mainScene.SetActive(false);
     }
     public void Credits()

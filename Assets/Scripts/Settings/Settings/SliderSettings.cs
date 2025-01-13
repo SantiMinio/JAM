@@ -28,6 +28,7 @@ public abstract class SliderSettings : SettingThing
     {
         SaveData(Settings.Instance.GetData());
         ChangeValue(value);
+        Settings.Instance.SaveSettings();
     }
 
     public override void SaveData(SettingsData data)

@@ -27,6 +27,7 @@ public abstract class DropdownSettings : SettingThing
     {
         SaveData(Settings.Instance.GetData());
         ChangeValue(index);
+        Settings.Instance.SaveSettings();
     }
 
     public override void SaveData(SettingsData data)
