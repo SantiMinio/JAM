@@ -17,10 +17,13 @@ public class AttackAction : CharacterAction
 
     protected override void OnEndAction()
     {
+        anim.SetBool("Attack2", false);
+
     }
 
     protected override void OnKeepAction()
     {
+        anim.SetBool("Attack2", true);
     }
 
     protected override void OnStartAction()

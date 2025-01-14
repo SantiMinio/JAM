@@ -36,6 +36,7 @@ public class BlockAction : CharacterAction
         isBlocking = true;
         blockCollider.gameObject.SetActive(true);
         anim.SetBool("blocking", true);
+        Debug.Log("Blockea");
     }
 
     bool Blocking(Vector3 attackDir)

@@ -41,18 +41,24 @@ public class CharacterBase : MonoBehaviour, IPause
         movement.y = 0;
         if (movement != Vector3.zero)
         {
+            anim.transform.forward = rb.velocity.normalized;
             currentDir = new Vector3(xAxis, 0, yAxis);
-            anim.SetFloat("SetXDir", xAxis);
-            anim.SetFloat("SetZDir", yAxis);
+            //anim.SetFloat("SetXDir", xAxis);
+            //anim.SetFloat("SetZDir", yAxis);
+            anim.SetBool("Run", true);
             if (stepTimer > 0.2f)
             {
                 stepTimer = 0;
                 SoundFX.PlaySound(characterStepsSound, AudioManager.OverlapMode.DontDisturb);
             }
         }
+        else
+        {
+            anim.SetBool("Run", false);
+        }
 
-        anim.SetFloat("x", xAxis);
-        anim.SetFloat("z", yAxis);
+        //anim.SetFloat("x", xAxis);
+        //anim.SetFloat("z", yAxis);
     }
 
     public void MoveY(UnityEngine.InputSystem.InputAction.CallbackContext callback)
@@ -84,7 +90,7 @@ public class CharacterBase : MonoBehaviour, IPause
                 break;
         }
     }
-        bool dead;
+    bool dead;
 
     void Dead()
     {
