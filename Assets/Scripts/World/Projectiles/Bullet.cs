@@ -10,6 +10,7 @@ public class Bullet : MonoBehaviour, IPause
     [SerializeField] private float speed, lifeTime;
 
     [SerializeField] private LayerMask triggerLayers;
+    [SerializeField] Damager dmg = new Damager() { damage = 10 };
 
     private float _count;
     private void Awake()
@@ -25,10 +26,10 @@ public class Bullet : MonoBehaviour, IPause
     {
         if ((triggerLayers.value & (1 << other.gameObject.layer)) > 0)
         {
-            var character = other.GetComponent<IHiteable>();
-            Vector3 dir = (character.GetPosition() - transform.position).normalized;
-
-            character.GetHit(dir);
+            var character = other.GetComponent<DamageReceiver>();
+            Vector3 dir = (character.transform.position - transform.position).normalized;
+            dmg.knockbackModule.knockbackDir = dir;
+            character.DoDamage(dmg);
         }
         
         Destroy(gameObject);

@@ -3,13 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterBase : MonoBehaviour, IPause
+public class CharacterBase : Entity
 {
     [SerializeField] Rigidbody rb = null;
     [SerializeField] float speed = 5;
     [SerializeField] CharacterAction action = null;
     [SerializeField] Animator anim = null;
-    [SerializeField] WorldHittable hiteable = null;
+    [SerializeField] MovementComponent moveComp = null;
+    [SerializeField] PhysicsController physics = null;
 
     [SerializeField] string characterFallingSound = "Character_Falling";
     [SerializeField] string characterFallInLavaSound = "Character_FallInLava";
@@ -18,57 +19,18 @@ public class CharacterBase : MonoBehaviour, IPause
 
     float stepTimer;
 
-    float xAxis;
-    float yAxis;
 
-    public Vector3 currentDir = new Vector3(0, 0, -1);
+    public Vector3 CurrentDir => moveComp.Dir;
 
-    private void Start()
-    {
-        hiteable.onDead += Dead;
-        PauseManager.instance.AddToPause(this);
-    }
-
-    private void Update()
-    {
-        if (dead || paused) return;
-
-        Vector3 movement = new Vector3(Mathf.Abs(yAxis) == 1 ? xAxis / 1.5f * speed : xAxis * speed,
-                                       rb.velocity.y,
-                                       Mathf.Abs(xAxis) == 1 ? yAxis / 1.5f * speed : yAxis * speed);
-        rb.velocity = movement;
-        stepTimer += Time.deltaTime;
-        movement.y = 0;
-        if (movement != Vector3.zero)
-        {
-            anim.transform.forward = rb.velocity.normalized;
-            currentDir = new Vector3(xAxis, 0, yAxis);
-            //anim.SetFloat("SetXDir", xAxis);
-            //anim.SetFloat("SetZDir", yAxis);
-            anim.SetBool("Run", true);
-            if (stepTimer > 0.2f)
-            {
-                stepTimer = 0;
-                SoundFX.PlaySound(characterStepsSound, AudioManager.OverlapMode.DontDisturb);
-            }
-        }
-        else
-        {
-            anim.SetBool("Run", false);
-        }
-
-        //anim.SetFloat("x", xAxis);
-        //anim.SetFloat("z", yAxis);
-    }
-
+    #region Inputs
     public void MoveY(UnityEngine.InputSystem.InputAction.CallbackContext callback)
     {
-        yAxis = callback.ReadValue<float>();
+        moveComp.SetAxisY(callback.ReadValue<float>());
     }
 
     public void MoveX(UnityEngine.InputSystem.InputAction.CallbackContext callback)
     {
-        xAxis = callback.ReadValue<float>();
+        moveComp.SetAxisX(callback.ReadValue<float>());
     }
 
     public void ActionAbility(UnityEngine.InputSystem.InputAction.CallbackContext callback)
@@ -90,17 +52,83 @@ public class CharacterBase : MonoBehaviour, IPause
                 break;
         }
     }
-    bool dead;
+    #endregion
 
-    void Dead()
+    public void DeadBySeparate()
     {
-        PauseManager.instance.RemoveToPause(this);
+        anim.SetBool("Dead", true);
+        IsDead = true;
+    }
+
+    public void Cry()
+    {
+        //inserte llanto
+        anim.SetBool("Cry", true);
+    }
+    float animSpeed;
+
+
+    protected override void OnPause()
+    {
+        base.OnPause();
+        animSpeed = anim.speed;
+        anim.speed = 0;
+        physics.Pause();
+    }
+
+    protected override void OnResume()
+    {
+        base.OnResume();
+        paused = false;
+        anim.speed = animSpeed;
+        physics.Resume();
+    }
+
+    protected override void OnTurnOff()
+    {
+    }
+
+    protected override void OnTurnOn()
+    {
+    }
+
+    protected override void OnInitialize()
+    {
+        action.Initialize(this);
+    }
+
+    protected override void OnUpdate()
+    {
+        moveComp.Rotate();
+        var moveDir = moveComp.Move();
+        stepTimer += Time.deltaTime;
+
+        if (moveDir != Vector3.zero)
+        {
+            anim.SetBool("Run", true);
+            if (stepTimer > 0.2f)
+            {
+                stepTimer = 0;
+                SoundFX.PlaySound(characterStepsSound, AudioManager.OverlapMode.DontDisturb);
+            }
+        }
+        else
+        {
+            anim.SetBool("Run", false);
+        }
+    }
+
+    protected override void TakeDamage(Damager dmg)
+    {
+    }
+
+    protected override void OnDeath()
+    {
         var characters = Main.instance.GetCharacters();
         for (int i = 0; i < characters.Length; i++)
         {
             if (characters[i] != this) characters[i].Cry();
         }
-        dead = true;
         if (Physics.Raycast(transform.position, -transform.up, 1, 1 << 9))
         {
             anim.SetBool("Fall", true);
@@ -112,35 +140,7 @@ public class CharacterBase : MonoBehaviour, IPause
             anim.SetBool("Dead", true);
             SoundFX.PlaySound(characterGetHitSound);
         }
+        TurnOff();
         Main.instance.eventManager.TriggerEvent(GameEvents.CharactersSeparate);
-    }
-
-    public void DeadBySeparate()
-    {
-        anim.SetBool("Dead", true);
-        dead = true;
-    }
-
-    public void Cry()
-    {
-        //inserte llanto
-        anim.SetBool("Cry", true);
-    }
-
-    bool paused;
-    float animSpeed;
-
-    public void Pause()
-    {
-        paused = true;
-        animSpeed = anim.speed;
-        anim.speed = 0;
-        rb.velocity = Vector3.zero;
-    }
-
-    public void Resume()
-    {
-        paused = false;
-        anim.speed = animSpeed;
     }
 }

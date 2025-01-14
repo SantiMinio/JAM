@@ -5,6 +5,8 @@ using System;
 
 public abstract class CharacterAction : MonoBehaviour, IPause
 {
+    protected CharacterBase owner;
+
     public Action OnActionStart = delegate { };
     public Action OnActionKeep = delegate { };
     public Action OnActionEnd = delegate { };
@@ -13,6 +15,11 @@ public abstract class CharacterAction : MonoBehaviour, IPause
     float cooldown;
     bool startCooldown;
     bool actioning;
+
+    public virtual void Initialize(CharacterBase _owner)
+    {
+        owner = _owner;
+    }
 
     public void StartAction()
     {

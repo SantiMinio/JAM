@@ -60,7 +60,7 @@ public class Buttons : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene(1);
+        SceneLoader.Load(1);
     }
     public void Options()
     {

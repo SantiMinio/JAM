@@ -19,11 +19,11 @@ public class KillZone : MonoBehaviour
             
             fryObjectSound.Play();
             
-            var posibleHitable = other.GetComponent<IHiteable>();
+            var posibleHitable = other.GetComponent<DamageReceiver>();
 
             if (posibleHitable != null)
             {
-                posibleHitable.GetHit(Vector3.down);
+                posibleHitable.InstaKill();
             }
             
         } 

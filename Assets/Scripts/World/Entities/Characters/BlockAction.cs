@@ -5,7 +5,7 @@ using System.Linq;
 
 public class BlockAction : CharacterAction
 {
-    [SerializeField] WorldHittable hiteable = null;
+    [SerializeField] DamageReceiver hiteable = null;
     [SerializeField] float blockAngle = 90;
     [SerializeField] Transform blockCollider = null;
     [SerializeField] Animator anim = null;
@@ -15,7 +15,7 @@ public class BlockAction : CharacterAction
 
     private void Start()
     {
-        hiteable.Block = Blocking;
+        hiteable.IsInvulnerable = Blocking;
     }
 
     protected override void OnEndAction()
@@ -27,7 +27,7 @@ public class BlockAction : CharacterAction
 
     protected override void OnKeepAction()
     {
-        blockCollider.forward = Main.instance.GetWife().currentDir;
+        blockCollider.forward = owner.CurrentDir;
     }
 
     protected override void OnStartAction()
@@ -39,13 +39,14 @@ public class BlockAction : CharacterAction
         Debug.Log("Blockea");
     }
 
-    bool Blocking(Vector3 attackDir)
+    bool Blocking(Damager dmg)
     {
         if (isBlocking)
         {
+            var attackDir = dmg.knockbackModule.knockbackDir;
             attackDir.Normalize();
 
-            float blockRange = Vector3.Dot(Main.instance.GetWife().currentDir, attackDir);
+            float blockRange = Vector3.Dot(owner.CurrentDir, attackDir);
 
             if (blockRange <= blockAngle)
             {

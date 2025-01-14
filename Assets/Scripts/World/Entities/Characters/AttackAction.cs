@@ -18,7 +18,6 @@ public class AttackAction : CharacterAction
     protected override void OnEndAction()
     {
         anim.SetBool("Attack2", false);
-
     }
 
     protected override void OnKeepAction()
@@ -33,7 +32,7 @@ public class AttackAction : CharacterAction
         slashAnim.Play("Slash");
         List<Transform> targets = new List<Transform>();
         Collider[] targetsInViewRadious = Physics.OverlapSphere(transform.position, attackRadious).Where(x => x.GetComponent<Hiteable>() != null).ToArray();
-        Vector3 dir = Main.instance.GetHusband().currentDir;
+        Vector3 dir = owner.CurrentDir;
 
         for (int i = 0; i < targetsInViewRadious.Length; i++)
         {
@@ -54,7 +53,7 @@ public class AttackAction : CharacterAction
             Vector3 hitPos = Vector3.zero;
 
             RaycastHit hit;
-            if (Physics.Raycast(Main.instance.GetHusband().transform.position, dir, out hit, attackRadious))
+            if (Physics.Raycast(owner.transform.position, dir, out hit, attackRadious))
                 hitPos = hit.point;
 
             Hiteable hiteable = targets[i].GetComponent<Hiteable>();

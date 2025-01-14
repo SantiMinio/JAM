@@ -76,7 +76,7 @@ public class Main : MonoBehaviour
             
             yield return new WaitForEndOfFrame();
         }
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneLoader.Load(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void SetCheckpoint(Vector3 checkpointPos)

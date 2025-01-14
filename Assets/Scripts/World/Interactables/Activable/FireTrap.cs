@@ -10,7 +10,7 @@ public class FireTrap : ActivableObject
     [SerializeField] private ParticleSystem feedbackParticles;
 
     [SerializeField] private float timeToActivateTrap, radiusEffect;
-    
+    [SerializeField] Damager dmg;
     
     protected override void On()
     {
@@ -42,14 +42,16 @@ public class FireTrap : ActivableObject
     {
         var charsCloseToGetHit = Main.instance.GetCharacters()
             .Where(x => Vector3.Distance(x.transform.position, transform.position) <= radiusEffect)
-            .Select(x => x.GetComponent<IHiteable>());
+            .Select(x => x.GetComponent<DamageReceiver>());
 
         foreach (var charClose in charsCloseToGetHit)
         {
             Debug.Log("le pego a " + charClose);
-            Vector3 dir = (charClose.GetPosition() - transform.position).normalized;
+            Vector3 dir = (charClose.transform.position - transform.position).normalized;
+            dmg.inflictor = transform;
+            dmg.knockbackModule.knockbackDir = dir;
 
-            charClose.GetHit(dir);
+            charClose.DoDamage(dmg);
         }
         
         

@@ -34,7 +34,7 @@ public class FinishGameTrigger : MonoBehaviour
         }
 
         Destroy(SaveData.saveData.gameObject);
-        SceneManager.LoadScene("FranMapRemake1 1");
+        SceneLoader.Load(0);
         
     }
 }

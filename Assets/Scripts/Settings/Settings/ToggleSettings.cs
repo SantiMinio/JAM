@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,6 +28,7 @@ public abstract class ToggleSettings : SettingThing
     {
         SaveData(Settings.Instance.GetData());
         ChangeValue(value);
+        Settings.Instance.SaveSettings();
     }
 
     public override void SaveData(SettingsData data)

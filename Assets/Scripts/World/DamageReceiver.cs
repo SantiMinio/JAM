@@ -52,10 +52,16 @@ public class DamageReceiver : MonoBehaviour
         OnRefreshLifeEv?.Invoke(life.Max, life.Max);
     }
 
+    public void ResetComponent()
+    {
+        lifeSystem.ResetComponent();
+    }
+
     public void InstaKill()
     {
         lifeSystem.InstaKill();
         OnRefreshLifeEv?.Invoke(lifeSystem.Life, lifeSystem.Max);
+        OnDeathEv?.Invoke(new Damager());
     }
 
     public DamageResult DoDamage(Damager damager)
@@ -76,6 +82,7 @@ public class DamageReceiver : MonoBehaviour
 
         if (damageTypeMultipliers.ContainsKey(damager.damageType))
             damager.damage = (int)(damager.damage * damageTypeMultipliers[damager.damageType]);
+
 
         if (damager.hasKnockback)
         {
@@ -99,11 +106,12 @@ public class DamageReceiver : MonoBehaviour
             return result;
         }
 
-
         var lastLife = lifeSystem.Life;
         var isAlive = lifeSystem.Hit(damager.damage);
         result.damage = lastLife - lifeSystem.Life;
-        if(!isAlive)
+        Debug.Log(lifeSystem.Life);
+
+        if (!isAlive)
         {
 
             OnRefreshLifeEv?.Invoke(0, lifeSystem.Max);

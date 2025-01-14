@@ -62,7 +62,7 @@ public class InputSwitcher : MonoBehaviour
         //    isJoystick = false;
         //}
 
-        //SceneLoader.Instance.OnEndLoadScene += FindNewInput;
+        SceneLoader.Instance.OnEndLoadScene += FindNewInput;
     }
 
     //private void Update()
