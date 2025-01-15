@@ -13,8 +13,9 @@ public class BlockAction : CharacterAction
     [SerializeField] string shieldAriseSound = null;
     bool isBlocking;
 
-    private void Start()
+    public override void Initialize(CharacterBase _owner)
     {
+        base.Initialize(_owner);
         hiteable.IsInvulnerable = Blocking;
     }
 
@@ -47,7 +48,6 @@ public class BlockAction : CharacterAction
             attackDir.Normalize();
 
             float blockRange = Vector3.Dot(owner.CurrentDir, attackDir);
-
             if (blockRange <= blockAngle)
             {
                 blockCollider.gameObject.tag = "Mirror";

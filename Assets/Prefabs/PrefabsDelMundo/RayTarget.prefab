@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 60676545189788445}
   - component: {fileID: 60676545189788446}
   - component: {fileID: 60676545189788444}
-  m_Layer: 0
+  - component: {fileID: 7907483608944004477}
+  m_Layer: 19
   m_Name: RayTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,13 +28,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60676545189788433}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9, y: 1.082, z: 11.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1082300599409634024}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &60676545189788447
 MonoBehaviour:
@@ -58,9 +60,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60676545189788433}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 0.56055975, y: 1.679873, z: 1}
   m_Center: {x: 0.21972013, y: 0.3399365, z: 0}
 --- !u!114 &60676545189788446
@@ -75,16 +85,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 292aee4bd589055439b30a14871f85b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inmunity: 
-  currentLife: 0
+  dmgReceiver: {fileID: 7907483608944004477}
   maxLife: 3
-  canIDie: 0
   timeShaking: 0.5
   _moveShake: {fileID: 0}
-  _imInvulnerable: 0
-  destroySound: {fileID: 8300000, guid: 934384f7d639a5c4c9f4b3fbcf0e65ee, type: 3}
-  hitSound: {fileID: 8300000, guid: e31ba2f3a63b0404cba711f5e9d7e0db, type: 3}
+  hitableDestroySound: Hitable_BreakWall
+  hitableGetHitSound: Hitable_GetHit
   rockParticle: {fileID: 0}
+  destroyedRock: {fileID: 0}
+  invencible: 1
   rayOnMe: 0
 --- !u!114 &60676545189788444
 MonoBehaviour:
@@ -99,11 +108,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetActivableObject: {fileID: 0}
+--- !u!114 &7907483608944004477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60676545189788433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 226d623e85cbb894cbbbf325d05ab4e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invulnerabilityTypes: 
+  physics: {fileID: 0}
+  OnInvulnerable:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTakeDamage:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &871370109217101205
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 60676545189788432}
     m_Modifications:
     - target: {fileID: 221416174083620733, guid: baef353cb6a6d014f88d6a8a7d84bff6,
@@ -181,7 +214,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Reciber
       objectReference: {fileID: 0}
+    - target: {fileID: 601635697899070919, guid: baef353cb6a6d014f88d6a8a7d84bff6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 19
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: baef353cb6a6d014f88d6a8a7d84bff6, type: 3}
 --- !u!4 &1082300599409634024 stripped
 Transform:

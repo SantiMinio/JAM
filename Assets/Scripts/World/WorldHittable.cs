@@ -11,7 +11,6 @@ public class WorldHittable : MonoBehaviour, IHiteable
 
     [SerializeField] private bool _imInvulnerable;
 
-    [SerializeField] private List<Hiteable.DamageType> inmunity;
     
     public event Action onHit;
     public event Action onDead;
@@ -49,33 +48,6 @@ public class WorldHittable : MonoBehaviour, IHiteable
 
         onHit?.Invoke();
 
-        return true;
-    }
-
-    public bool GetHit(Vector3 dir, Hiteable.DamageType damageType)
-    {
-        if (_imDead) return false;
-        if (Block(dir)) return false;
-        if (_imInvulnerable) return false;
-
-        if (inmunity.Contains(damageType)) return false;
-        
-        StopAllCoroutines();
-        
-        currentLife--;
-        
-        if (currentLife <= 0)
-        {
-            currentLife = 0;
-            if (canIDie)
-            {
-                Dead();
-            }
-            
-        }
-
-        onHit?.Invoke();
-        
         return true;
     }
 

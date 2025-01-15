@@ -26,7 +26,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - BeamInteractable
   - Player
   - Empujable
   - Turret

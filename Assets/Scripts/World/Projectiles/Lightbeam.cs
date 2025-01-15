@@ -10,7 +10,7 @@ public class Lightbeam : MonoBehaviour, IPause
 
     [SerializeField] private Transform lineOrigin;
 
-    [SerializeField] private Hiteable.DamageType damageType;
+    [SerializeField] private Damager dmg;
 
     [SerializeField] private ParticleSystem endpoint_feedback_pf, endpoint_feedback;
     
@@ -65,16 +65,16 @@ public class Lightbeam : MonoBehaviour, IPause
 
         for (int i = 0; i < reflections; i++)
         {
-            if(Physics.Raycast(ray.origin, ray.direction, out hit, remainingLength))
+            if(Physics.Raycast(ray.origin, ray.direction, out hit, remainingLength, dmg.rivalsMask))
             {
-                var hiteable = hit.collider.GetComponent<IHiteable>();
+                var hiteable = hit.collider.GetComponent<DamageReceiver>();
                 if (hiteable != null)
                 {
-                    if(hiteable.ImInvulnerable()) return;
+                    Vector3 myAttackDir = (transform.position - hiteable.transform.position).normalized;
 
-                    Vector3 myAttackDir = (transform.position - hiteable.GetPosition()).normalized;
+                    dmg.knockbackModule.knockbackDir = myAttackDir;
 
-                    hiteable.GetHit(myAttackDir, damageType);
+                    hiteable.DoDamage(dmg);
                 }
                 
                 
