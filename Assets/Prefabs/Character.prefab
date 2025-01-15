@@ -210,7 +210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useCooldown: 0.11
-  attackRadious: 4
+  attackRadious: 1.57
   viewAngle: 90
   anim: {fileID: 5089256509117772097}
   slashAnim: {fileID: 1746774562842937319}
