@@ -18,7 +18,7 @@ public abstract class Entity : MonoBehaviour, IPause
 
     private void Update()
     {
-        if (paused || !turnOn) return;
+        if (paused || !turnOn || endGame) return;
 
         OnUpdate();
     }
@@ -42,6 +42,8 @@ public abstract class Entity : MonoBehaviour, IPause
         turnOn = true;
         dmgReceiver.ResetComponent();
         PauseManager.instance.AddToPause(this);
+        Main.instance.eventManager.SubscribeToEvent(GameEvents.CharactersSeparate, OnEndGame);
+        Main.instance.eventManager.SubscribeToEvent(GameEvents.HotelArrive, OnEndGame);
         OnTurnOn();
     }
 
@@ -52,6 +54,13 @@ public abstract class Entity : MonoBehaviour, IPause
         IsDead = false;
         PauseManager.instance.RemoveToPause(this);
         OnTurnOff();
+    }
+
+    protected bool endGame;
+
+    protected virtual void OnEndGame()
+    {
+        endGame = true;
     }
 
     protected abstract void OnTurnOff();
