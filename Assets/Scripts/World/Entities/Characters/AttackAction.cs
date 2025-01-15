@@ -10,6 +10,8 @@ public class AttackAction : CharacterAction
     [SerializeField] Animator anim = null;
     [SerializeField] Animator slashAnim;
     [SerializeField] string swordSlashSound = null;
+    [SerializeField] Damager dmg = new Damager() { damage = 10 };
+    
 
     private void Start()
     {
@@ -31,9 +33,8 @@ public class AttackAction : CharacterAction
         anim.SetTrigger("attack");
         slashAnim.Play("Slash");
         List<Transform> targets = new List<Transform>();
-        Collider[] targetsInViewRadious = Physics.OverlapSphere(transform.position, attackRadious).Where(x => x.GetComponent<Hiteable>() != null).ToArray();
+        Collider[] targetsInViewRadious = Physics.OverlapSphere(transform.position, attackRadious, dmg.rivalsMask).Where(x => x.GetComponent<DamageReceiver>() != null).ToArray();
         Vector3 dir = owner.CurrentDir;
-
         for (int i = 0; i < targetsInViewRadious.Length; i++)
         {
             Transform target = targetsInViewRadious[i].transform;
@@ -48,17 +49,18 @@ public class AttackAction : CharacterAction
 
         }
 
+        dmg.inflictor = owner.transform;
         for (int i = 0; i < targets.Count; i++)
         {
             Vector3 hitPos = Vector3.zero;
 
-            RaycastHit hit;
-            if (Physics.Raycast(owner.transform.position, dir, out hit, attackRadious))
-                hitPos = hit.point;
 
-            Hiteable hiteable = targets[i].GetComponent<Hiteable>();
-            
-            if (hiteable != null) hiteable.GetHit(hitPos);
+            DamageReceiver hiteable = targets[i].GetComponent<DamageReceiver>();
+            if (hiteable != null)
+            {
+                dmg.knockbackModule.knockbackDir = (hiteable.transform.position - owner.transform.position).normalized;
+                    hiteable.DoDamage(dmg);
+            }
         }
 
         slashAnim.transform.localPosition = new Vector3(-dir.x / 2, 0, -dir.z / 2);

@@ -126,7 +126,7 @@ public class DamageReceiver : MonoBehaviour
 
     public void DoKnockback(KnockBackModule module)
     {
-        Vector3 dir = (transform.position - module.knockbackDir);
+        Vector3 dir = module.knockbackDir;
         dir.y = 0;
         dir = dir.normalized;
         if(physics) physics.SetForceVector(module.knockbackApplyMode, dir, module.knockbackForce, module.knockbackForceTime, module.knockbackCurve);

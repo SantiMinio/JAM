@@ -215,6 +215,53 @@ MonoBehaviour:
   anim: {fileID: 5089256509117772097}
   slashAnim: {fileID: 1746774562842937319}
   swordSlashSound: Sword_Slash
+  dmg:
+    damage: 10
+    hasKnockback: 1
+    damageType: 0
+    inflictor: {fileID: 0}
+    knockbackModule:
+      knockbackDir: {x: 0, y: 0, z: 0}
+      knockbackForce: 10
+      knockbackForceTime: 0.5
+      knockbackApplyMode: 1
+      knockbackCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: -0.03392955
+          outSlope: -0.03392955
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.13715385
+        - serializedVersion: 3
+          time: 0.72910315
+          value: 0.734682
+          inSlope: -0.9053426
+          outSlope: -0.9053426
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.14866917
+          outWeight: 0.34637862
+        - serializedVersion: 3
+          time: 0.9991466
+          value: 0.007228166
+          inSlope: -4.8427672
+          outSlope: -4.8427672
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.08084997
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    rivalsMask:
+      serializedVersion: 2
+      m_Bits: 1024
+    dmgID: 
 --- !u!114 &6552932077902887852
 MonoBehaviour:
   m_ObjectHideFlags: 0
