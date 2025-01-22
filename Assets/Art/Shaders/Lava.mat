@@ -2,58 +2,76 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Lava
   m_Shader: {fileID: 4800000, guid: f8548b33eb47dea48a90b58717751ba6, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
     - _AlbedoTexture:
-        m_Texture: {fileID: 2800000, guid: 198c8572a7366de4880f7b2a2e7c516d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3db2c86478b05884f9941f5d081ca46e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _AlbedoTexture1:
-        m_Texture: {fileID: 2800000, guid: 198c8572a7366de4880f7b2a2e7c516d, type: 3}
+        m_Texture: {fileID: 2800000, guid: ef132b9a0ac5d1544a5013a24d35910b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FlowTexture:
         m_Texture: {fileID: 2800000, guid: ddeaa52be50776e4bba0e2cb1dba44f5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _VertexOffsetNoise:
+        m_Texture: {fileID: 2800000, guid: 6c18df5db11f0614d95210014b3af9e0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _texcoord:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
-    - _Depth: 0.44
+    - _Depth: 2
     - _DepthDistance: 0.047058824
     - _DepthDistance1: -0.01
+    - _EdgeLength: 50
     - _FallOff1: 0.4
-    - _Float0: 4.12
+    - _Float0: 150
     - _Float1: 1
     - _Float2: 1.93
-    - _FlowwMap: 0.064
+    - _FlowmapTime: 0.5
+    - _FlowwMap: 1
+    - _GrayscalePower: 5
     - _NOiseScale: 5.38
+    - _OffsetIntensity: 0.75
+    - _OffsetTiling: 1
     - _Pixels: 100
+    - _PreSinMultiplier: 10
     - _Speed: 0.06
-    - _SpeedX: 0.03
-    - _SpeedY: 0.03
+    - _SpeedX: 0.2
+    - _SpeedY: 0.2
+    - _Tiling: 150
+    - _Tiling1: 150
+    - _Timescale: 0.5
     - __dirty: 0
     m_Colors:
-    - _Color1: {r: 0.24528301, g: 0, b: 0, a: 1}
-    - _Color2: {r: 7.4642644, g: 2.3710017, b: 0, a: 1}
+    - _Color1: {r: 0.759, g: 0.12305401, b: 0, a: 1}
+    - _Color2: {r: 6.422235, g: 2.0400043, b: 0, a: 1}
     - _DepthColor: {r: 5.2780313, g: 0.6890292, b: 0, a: 1}
     - _DirectionPanner: {r: 1, g: 1, b: 0, a: 0}
-    - _TillingAlbedo: {r: 3, g: 13.48, b: 0, a: 0}
+    - _TillingAlbedo: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
