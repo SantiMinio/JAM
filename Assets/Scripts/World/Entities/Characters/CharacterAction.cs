@@ -11,6 +11,8 @@ public abstract class CharacterAction : MonoBehaviour, IPause
     public Action OnActionKeep = delegate { };
     public Action OnActionEnd = delegate { };
 
+    public GameObject[] actionParticles = new GameObject[2];// esto pensando en que todas las acciones van a tener particulas
+
     [SerializeField] float useCooldown = 2;
     float cooldown;
     bool startCooldown;

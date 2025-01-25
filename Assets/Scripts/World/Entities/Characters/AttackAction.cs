@@ -8,13 +8,17 @@ public class AttackAction : CharacterAction
     [SerializeField] float attackRadious = 4;
     [SerializeField] float viewAngle = 90;
     [SerializeField] Animator anim = null;
-    [SerializeField] Animator slashAnim;
     [SerializeField] string swordSlashSound = null;
     [SerializeField] Damager dmg = new Damager() { damage = 10 };
-    
+   
+
 
     private void Start()
     {
+        var shape = actionParticles[0].GetComponent<ParticleSystem>().shape;
+        var shape2 = actionParticles[1].GetComponent<ParticleSystem>().shape;
+        shape.radius = attackRadious- attackRadious / 2;
+        shape2.radius = attackRadious - attackRadious/2;
     }
 
     protected override void OnEndAction()
@@ -24,14 +28,16 @@ public class AttackAction : CharacterAction
 
     protected override void OnKeepAction()
     {
-        anim.SetBool("Attack2", true);
+        anim.SetBool("Attack2", true);        
+     
     }
 
     protected override void OnStartAction()
     {
         SoundFX.PlaySound(swordSlashSound);
         anim.SetTrigger("attack");
-        slashAnim.Play("Slash");
+       
+       
         List<Transform> targets = new List<Transform>();
         Collider[] targetsInViewRadious = Physics.OverlapSphere(transform.position, attackRadious, dmg.rivalsMask).Where(x => x.GetComponent<DamageReceiver>() != null).ToArray();
         Vector3 dir = owner.CurrentDir;
@@ -59,12 +65,15 @@ public class AttackAction : CharacterAction
             if (hiteable != null)
             {
                 dmg.knockbackModule.knockbackDir = (hiteable.transform.position - owner.transform.position).normalized;
-                    hiteable.DoDamage(dmg);
+                hiteable.DoDamage(dmg);
             }
         }
 
-        slashAnim.transform.localPosition = new Vector3(-dir.x / 2, 0, -dir.z / 2);
-        slashAnim.transform.right = dir;
-        slashAnim.transform.localEulerAngles = new Vector3(90, slashAnim.transform.localEulerAngles.y, slashAnim.transform.localEulerAngles.z);
+        foreach (GameObject slash in actionParticles)
+        {
+            slash.transform.forward = dir;
+            slash.transform.localPosition = new Vector3(-dir.x / 2, 1.3f, -dir.z / 2);
+        }
+
     }
 }
