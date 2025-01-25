@@ -6,7 +6,6 @@ using UnityEngine;
 public class CharacterBase : Entity
 {
     [SerializeField] Rigidbody rb = null;
-    [SerializeField] float speed = 5;
     [SerializeField] CharacterAction action = null;
     [SerializeField] Animator anim = null;
     [SerializeField] MovementComponent moveComp = null;
@@ -17,11 +16,15 @@ public class CharacterBase : Entity
     [SerializeField] string characterGetHitSound = "Character_GetHit";
     [SerializeField] string characterStepsSound = "Character_Steps";
 
+   
+    [SerializeField] float speed = 5;
     float stepTimer;
 
 
     public Vector3 CurrentDir => moveComp.Dir;
 
+
+  
     #region Inputs
     public void MoveY(UnityEngine.InputSystem.InputAction.CallbackContext callback)
     {
@@ -95,6 +98,7 @@ public class CharacterBase : Entity
     protected override void OnInitialize()
     {
         action.Initialize(this);
+        
     }
 
     protected override void OnUpdate()

@@ -11,6 +11,8 @@ public class BlockAction : CharacterAction
     [SerializeField] Animator anim = null;
     [SerializeField] AudioClip blockSound = null;
     [SerializeField] string shieldAriseSound = null;
+    [SerializeField] MovementComponent movement = null;
+    [SerializeField] float defensiveSpeed;
     bool isBlocking;
 
     public override void Initialize(CharacterBase _owner)
@@ -24,6 +26,7 @@ public class BlockAction : CharacterAction
         isBlocking = false;
         blockCollider.gameObject.SetActive(false);
         anim.SetBool("blocking", false);
+        movement.SetSpeed(movement.initialSpeed);
     }
 
     protected override void OnKeepAction()
@@ -38,6 +41,8 @@ public class BlockAction : CharacterAction
         blockCollider.gameObject.SetActive(true);
         anim.SetBool("blocking", true);
         Debug.Log("Blockea");
+        movement.SetSpeed(defensiveSpeed);
+
     }
 
     bool Blocking(Damager dmg)
