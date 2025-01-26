@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Enviroment con Ciudad
-  m_Shader: {fileID: 4800000, guid: 9f0cb137ad6b73342a7677753d70be51, type: 3}
+  m_Shader: {fileID: 4800000, guid: 1ccecd9b89b8a4f14bfb64f29ddfcc81, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -16,7 +16,7 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2000
   stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: 
@@ -77,7 +77,7 @@ Material:
     - _Float0: 0.48
     - _Gloss: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0.5
+    - _Glossiness: 0.214
     - _GlossyReflections: 1
     - _Metal: 0
     - _Metallic: 0
@@ -93,7 +93,7 @@ Material:
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 0.95912015, b: 0.7607843, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _lightCOlor: {r: 0.5, g: 0.16795273, b: 0.11084905, a: 0}
   m_BuildTextureStacks: []

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3451170289434794785}
   - component: {fileID: 1872660435688646566}
   - component: {fileID: 1291413551527524679}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: esquina001 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,12 +26,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2391563170487770214}
+  serializedVersion: 2
   m_LocalRotation: {x: -0.7070223, y: 0.010859464, z: 0.010859295, w: 0.7070246}
   m_LocalPosition: {x: -19.482157, y: -0.08079016, z: -0.0049046054}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 1.76}
 --- !u!33 &3451170289434794785
 MeshFilter:
@@ -52,6 +53,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -90,9 +92,17 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2391563170487770214}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 396255946080302364, guid: 3c50345680bbef347bf63dc42463ce8a, type: 3}

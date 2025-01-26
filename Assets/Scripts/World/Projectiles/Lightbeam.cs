@@ -67,8 +67,9 @@ public class Lightbeam : MonoBehaviour, IPause
         {
             if(Physics.Raycast(ray.origin, ray.direction, out hit, remainingLength, dmg.rivalsMask))
             {
+               
                 var hiteable = hit.collider.GetComponent<DamageReceiver>();
-                if (hiteable != null)
+                if (hiteable != null&&hiteable.gameObject.tag!="DestructibleWall")
                 {
                     Vector3 myAttackDir = (transform.position - hiteable.transform.position).normalized;
 

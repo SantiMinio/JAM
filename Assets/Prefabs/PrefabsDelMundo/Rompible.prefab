@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 5105073059447315360}
   m_Layer: 10
   m_Name: Rompible
-  m_TagString: Untagged
+  m_TagString: DestructibleWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6189,6 +6189,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3579970148049558608}
     m_Modifications:
+    - target: {fileID: 5255104271283188323, guid: 2f5f8de17df5ca9418c40fee3e149c14,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0771b06af7514ef439c35b9bae64ad69, type: 2}
     - target: {fileID: 6747403709836961321, guid: 2f5f8de17df5ca9418c40fee3e149c14,
         type: 3}
       propertyPath: m_Name
@@ -6368,6 +6373,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4709433565511541402, guid: 50f0b3daee14b27459b913d9aa339261,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0771b06af7514ef439c35b9bae64ad69, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6467,6 +6477,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4709433565511541402, guid: 50f0b3daee14b27459b913d9aa339261,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0771b06af7514ef439c35b9bae64ad69, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6486,6 +6501,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3579970148049558608}
     m_Modifications:
+    - target: {fileID: 5255104271283188323, guid: 2f5f8de17df5ca9418c40fee3e149c14,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0771b06af7514ef439c35b9bae64ad69, type: 2}
     - target: {fileID: 6747403709836961321, guid: 2f5f8de17df5ca9418c40fee3e149c14,
         type: 3}
       propertyPath: m_Name
@@ -6585,6 +6605,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3579970148049558608}
     m_Modifications:
+    - target: {fileID: 5255104271283188323, guid: 2f5f8de17df5ca9418c40fee3e149c14,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0771b06af7514ef439c35b9bae64ad69, type: 2}
     - target: {fileID: 6747403709836961321, guid: 2f5f8de17df5ca9418c40fee3e149c14,
         type: 3}
       propertyPath: m_Name
@@ -6854,6 +6879,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4709433565511541402, guid: 50f0b3daee14b27459b913d9aa339261,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0771b06af7514ef439c35b9bae64ad69, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6953,6 +6983,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4709433565511541402, guid: 50f0b3daee14b27459b913d9aa339261,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0771b06af7514ef439c35b9bae64ad69, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6972,6 +7007,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3579970148049558608}
     m_Modifications:
+    - target: {fileID: 5255104271283188323, guid: 2f5f8de17df5ca9418c40fee3e149c14,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0771b06af7514ef439c35b9bae64ad69, type: 2}
     - target: {fileID: 6747403709836961321, guid: 2f5f8de17df5ca9418c40fee3e149c14,
         type: 3}
       propertyPath: m_Name

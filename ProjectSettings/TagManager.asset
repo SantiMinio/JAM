@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Mirror
   - rayTarget
+  - DestructibleWall
   layers:
   - Default
   - TransparentFX

@@ -18,7 +18,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: -9.7
+    value: 15
   intensityX:
     overrideState: 0
     value: 1
@@ -29,11 +29,11 @@ MonoBehaviour:
     overrideState: 0
     value: 0
   centerY:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: -0.23
   scale:
-    overrideState: 0
-    value: 0.63
+    overrideState: 1
+    value: 1.04
 --- !u!114 &-1813733017876558059
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -183,10 +183,10 @@ MonoBehaviour:
     value: 1
   mode:
     overrideState: 1
-    value: 0
+    value: 1
   intensity:
     overrideState: 1
-    value: 1.66
+    value: 1.37
   color:
     overrideState: 1
     value: {r: 0.13071749, g: 0, b: 0.2924528, a: 1}

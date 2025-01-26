@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3587993792867243226}
   - component: {fileID: 4327458952751874501}
   - component: {fileID: 3669593849407027051}
-  m_Layer: 4
+  m_Layer: 7
   m_Name: Stairs2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,13 +25,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3610243868099867215}
+  serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 1, y: 1, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 71610572816362444}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4327458952751874501
 MeshFilter:
@@ -52,6 +53,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -92,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 71610572816362444}
   - component: {fileID: 3008436978884396275}
-  m_Layer: 4
+  m_Layer: 7
   m_Name: col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,12 +108,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7406391214855998424}
+  serializedVersion: 2
   m_LocalRotation: {x: -0.00050830847, y: -0.22847797, z: -0.000036314133, w: 0.973549}
   m_LocalPosition: {x: -0.30773294, y: 0.000000059604645, z: 1.0791417}
   m_LocalScale: {x: 1.064, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3587993792867243226}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -0.058, y: -26.415, z: 0.009}
 --- !u!65 &3008436978884396275
 BoxCollider:
@@ -121,8 +124,16 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7406391214855998424}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 2.11, y: 2.0589561, z: 0.18676388}
   m_Center: {x: 0.13, y: -0.0061188936, z: -0.40661806}

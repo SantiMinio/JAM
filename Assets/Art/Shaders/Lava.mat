@@ -16,7 +16,7 @@ Material:
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 3000
   stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: 
@@ -55,10 +55,10 @@ Material:
     - _Float2: 1.93
     - _FlowmapTime: 0.5
     - _FlowwMap: 1
-    - _GrayscalePower: 5
+    - _GrayscalePower: 1.97
     - _NOiseScale: 5.38
     - _OffsetIntensity: 0.75
-    - _OffsetTiling: 1
+    - _OffsetTiling: 23.17
     - _Pixels: 100
     - _PreSinMultiplier: 10
     - _Speed: 0.06
@@ -69,8 +69,8 @@ Material:
     - _Timescale: 0.5
     - __dirty: 0
     m_Colors:
-    - _Color1: {r: 0.759, g: 0.12305401, b: 0, a: 1}
-    - _Color2: {r: 6.422235, g: 2.0400043, b: 0, a: 1}
+    - _Color1: {r: 0.3773585, g: 0.023009665, b: 0, a: 1}
+    - _Color2: {r: 2.2338653, g: 0.6758455, b: 0, a: 1}
     - _DepthColor: {r: 5.2780313, g: 0.6890292, b: 0, a: 1}
     - _DirectionPanner: {r: 1, g: 1, b: 0, a: 0}
     - _TillingAlbedo: {r: 1, g: 1, b: 0, a: 0}

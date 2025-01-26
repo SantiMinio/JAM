@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 2633715896007884804}
   - component: {fileID: 484109744909134799}
   - component: {fileID: 2142196681708112576}
-  m_Layer: 7
+  - component: {fileID: 4398024453855486122}
+  m_Layer: 19
   m_Name: HelltileBorder2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,3 +84,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4398024453855486122
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810500897659006532}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.88900024, y: 1.778, z: 0.8890002}
+  m_Center: {x: 0.44450003, y: -0.000001930621, z: -0.44450006}
