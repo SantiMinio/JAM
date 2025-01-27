@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System;
-using static UnityEditor.Experimental.GraphView.GraphView;
 using UnityEngine.InputSystem.Users;
-using static UnityEditor.Timeline.TimelinePlaybackControls;
 
 public class InputSwitcher : MonoBehaviour
 {
