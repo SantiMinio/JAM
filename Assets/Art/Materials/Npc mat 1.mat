@@ -79,7 +79,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
-    - _HighIntensity: 1.5
+    - _HighIntensity: 4
     - _LightScalar: 1
     - _LowIntensity: 1
     - _Metallic: 0
