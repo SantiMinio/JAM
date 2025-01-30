@@ -377,6 +377,17 @@
                 },
                 {
                     "name": "",
+                    "id": "718dc4b1-a564-4790-9252-18e97bd5f6a1",
+                    "path": "<Keyboard>/rightShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "BothKeyboard",
+                    "action": "ActionHusband",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "14732429-6b19-4cb4-9f50-6b8e986edf85",
                     "path": "<Keyboard>/e",
                     "interactions": "",
