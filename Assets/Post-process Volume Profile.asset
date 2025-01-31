@@ -34,6 +34,34 @@ MonoBehaviour:
   scale:
     overrideState: 1
     value: 1.04
+--- !u!114 &-4483681092744740036
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 556797029e73b2347956b6579e77e05b, type: 3}
+  m_Name: DepthOfField
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  focusDistance:
+    overrideState: 1
+    value: 10
+  aperture:
+    overrideState: 1
+    value: 0.4
+  focalLength:
+    overrideState: 1
+    value: 45
+  kernelSize:
+    overrideState: 0
+    value: 1
 --- !u!114 &-1813733017876558059
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -52,13 +80,13 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 0.45
+    value: 1.74
   threshold:
     overrideState: 0
     value: 1
   softKnee:
     overrideState: 1
-    value: 0.527
+    value: 0.446
   clamp:
     overrideState: 0
     value: 65472
@@ -99,6 +127,8 @@ MonoBehaviour:
   - {fileID: 5953653053101427357}
   - {fileID: 1887174667223740360}
   - {fileID: -6937439163742968943}
+  - {fileID: -4483681092744740036}
+  - {fileID: 5156467855066155080}
 --- !u!114 &1887174667223740360
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -111,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b94fcd11afffcb142908bfcb1e261fba, type: 3}
   m_Name: MotionBlur
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 1
@@ -121,6 +151,32 @@ MonoBehaviour:
   sampleCount:
     overrideState: 1
     value: 10
+--- !u!114 &5156467855066155080
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6050e2d5de785ce4d931e4dbdbf2d755, type: 3}
+  m_Name: ChromaticAberration
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  spectralLut:
+    overrideState: 0
+    value: {fileID: 0}
+    defaultState: 1
+  intensity:
+    overrideState: 1
+    value: 0.155
+  fastMode:
+    overrideState: 0
+    value: 0
 --- !u!114 &5953653053101427357
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -148,10 +204,10 @@ MonoBehaviour:
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.401
+    value: 0.422
   smoothness:
     overrideState: 0
-    value: 0.2
+    value: 0.616
   roundness:
     overrideState: 0
     value: 0
@@ -186,7 +242,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 1.37
+    value: 1.34
   color:
     overrideState: 1
     value: {r: 0.13071749, g: 0, b: 0.2924528, a: 1}

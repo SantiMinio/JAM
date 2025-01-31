@@ -50,7 +50,7 @@ Material:
     - _DepthDistance1: -0.01
     - _EdgeLength: 50
     - _FallOff1: 0.4
-    - _Float0: 150
+    - _Float0: 78.1
     - _Float1: 1
     - _Float2: 1.93
     - _FlowmapTime: 0.5
