@@ -14,7 +14,7 @@ public class KillZone : MonoBehaviour
     {
         if ((triggerLayers.value & (1 << other.gameObject.layer)) > 0)
         {
-            feedbackTouchLava.transform.position =  other.transform.position;
+       //     feedbackTouchLava.transform.position =  other.transform.position;
             feedbackTouchLava.Play();
             
             fryObjectSound.Play();

@@ -44,7 +44,11 @@ public class Hiteable : Entity
         if (IsDead)
         {
             gameObject.SetActive(false);
-            if(destroyedRock != null) destroyedRock.Play();
+            if (destroyedRock != null)
+            {
+                destroyedRock.transform.parent = null;
+                destroyedRock.Play();
+            }
         }
     }
 
@@ -75,7 +79,7 @@ public class Hiteable : Entity
         if (rockParticle != null)
         {
             Vector3 position = Vector3.zero;
-            if(Physics.Raycast(dmg.inflictor.position, dmg.knockbackModule.knockbackDir, out RaycastHit hit, 1000))
+            if (Physics.Raycast(dmg.inflictor.position, dmg.knockbackModule.knockbackDir, out RaycastHit hit, 1000))
             {
                 position = hit.point;
             }
