@@ -30,11 +30,23 @@ public class ActivableBase : MonoBehaviour, IActivable, IPause
     public void Activate()
     {
         isActive = true;
+        OnActivate();
     }
 
     public void Deactivate()
     {
         isActive = false;
+        OnDeactivate();
+    }
+
+    protected virtual void OnActivate()
+    {
+
+    }
+
+    protected virtual void OnDeactivate()
+    {
+
     }
 
     protected bool paused;

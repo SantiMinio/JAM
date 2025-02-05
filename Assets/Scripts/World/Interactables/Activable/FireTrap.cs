@@ -4,67 +4,55 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class FireTrap : ActivableObject
+public class FireTrap : ActivableBase
 {
     [SerializeField] private ParticleSystem feedbackParticles;
 
-    [SerializeField] private float timeToActivateTrap, radiusEffect;
+    [SerializeField] TriggerInteract interactDmg;
     [SerializeField] Damager dmg;
-    
-    protected override void On()
+
+    [SerializeField] float minimumActivatedTime = 2;
+    bool stillActivated;
+
+    private void Start()
     {
-        open = true;
-        StartCoroutine(WaitUntilActivateTrap());
+        interactDmg.OnColliderEnter += HitCloseCharacters;
     }
 
-    IEnumerator WaitUntilActivateTrap()
+    protected override void OnActivate()
     {
-        float _count = 0;
-        do
-        {
-            if (paused)
-            {
-                yield return new WaitForEndOfFrame();
-                continue;
-            }
-
-            _count += Time.deltaTime;
-            yield return new WaitForEndOfFrame();
-        } while (_count <= timeToActivateTrap);
-     
         feedbackParticles.Play();
-        HitCloseCharacters();
-
+        interactDmg.gameObject.SetActive(true);
+        stillActivated = true;
+        TimerManager.Instance.AddTimer(minimumActivatedTime, () => { }, Check);
+        Debug.Log("activado");
     }
 
-    private void HitCloseCharacters()
+    private void HitCloseCharacters(Collider col)
     {
-        var charsCloseToGetHit = Main.instance.GetCharacters()
-            .Where(x => Vector3.Distance(x.transform.position, transform.position) <= radiusEffect)
-            .Select(x => x.GetComponent<DamageReceiver>());
+        var charsCloseToGetHit = col.GetComponent<DamageReceiver>();
 
-        foreach (var charClose in charsCloseToGetHit)
-        {
-            Debug.Log("le pego a " + charClose);
-            Vector3 dir = (charClose.transform.position - transform.position).normalized;
-            dmg.inflictor = transform;
-            dmg.knockbackModule.knockbackDir = dir;
+        if (charsCloseToGetHit == null) return;
+        Debug.Log("le pego a " + charsCloseToGetHit.name);
+        Vector3 dir = (charsCloseToGetHit.transform.position - transform.position).normalized;
+        dmg.inflictor = transform;
+        dmg.knockbackModule.knockbackDir = dir;
 
-            charClose.DoDamage(dmg);
-        }
-        
-        
+        charsCloseToGetHit.DoDamage(dmg);
     }
 
-    protected override void Off()
+    void Check()
     {
-        _count = 0;
-        open = false;
+        stillActivated = false;
+        if (!isActive)
+            OnDeactivate();
     }
 
-    private void OnDrawGizmos()
+    protected override void OnDeactivate()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, radiusEffect);
+        if (stillActivated) return;
+
+        feedbackParticles.Stop();
+        interactDmg.gameObject.SetActive(false);
     }
 }
