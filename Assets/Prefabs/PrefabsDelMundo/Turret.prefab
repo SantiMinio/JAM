@@ -212,6 +212,11 @@ MonoBehaviour:
   endpoint_feedback_pf: {fileID: 8938124219392226814, guid: fbfdcbc1e747dc441acad0aa2e84f932,
     type: 3}
   endpoint_feedback: {fileID: 0}
+  anticipationTime: 1
+  lineRenderer: {fileID: 186271190499656099}
+  anticipationLineRenderer: {fileID: 0}
+  anticipation: 0
+  inLightbeam: 1
 --- !u!114 &186271190499656098
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -13,13 +13,13 @@ public class Lightbeam : MonoBehaviour, IPause
     [SerializeField] private Damager dmg;
 
     [SerializeField] private ParticleSystem endpoint_feedback_pf, endpoint_feedback;
+
+    [SerializeField] float anticipationTime = 1;
     
-    LineRenderer lineRenderer;
+    [SerializeField] LineRenderer lineRenderer;
+    [SerializeField] LineRenderer anticipationLineRenderer;
     Ray ray;
     RaycastHit hit;
-    Vector3 direction;
-
-    private bool isOn;
 
     bool paused;
 
@@ -46,17 +46,58 @@ public class Lightbeam : MonoBehaviour, IPause
 
     private void Awake()
     {
-        lineRenderer = GetComponent<LineRenderer>();
         endpoint_feedback = Instantiate(endpoint_feedback_pf, transform);
         //endpoint_feedback.gameObject.SetActive(false);
+    }
+
+    public bool anticipation;
+    public bool inLightbeam;
+    float anticipationTimer;
+
+    public void StartAnticipation()
+    {
+        anticipation = true;
+        anticipationLineRenderer.enabled = true;
+    }
+
+    public void StartLightbeam()
+    {
+        inLightbeam = true;
+        anticipation = false;
+        anticipationTimer = 0;
+        anticipationLineRenderer.enabled = false;
+        lineRenderer.enabled = true;
+
+    }
+
+    public void StopLightbeam()
+    {
+        inLightbeam = false;
+        anticipation = false;
+        lineRenderer.enabled = false;
+        anticipationLineRenderer.enabled = false;
+        anticipationTimer = 0;
     }
 
     private void Update()
     {
         if (paused) return;
 
-        if(!lineRenderer.enabled) return; 
-        
+        if(anticipation)
+        {
+            anticipationTimer += Time.deltaTime;
+            anticipationLineRenderer.SetPosition(0, lineOrigin.position);
+            anticipationLineRenderer.SetPosition(1, lineOrigin.position + transform.forward * maxLength);
+
+            if(anticipationTimer >= anticipationTime)
+                StartLightbeam();
+
+        }
+
+
+        if (!inLightbeam) return;
+
+
         ray = new Ray(lineOrigin.position, transform.forward);
 
         lineRenderer.positionCount = 1;

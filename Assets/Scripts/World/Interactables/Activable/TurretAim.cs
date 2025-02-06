@@ -6,75 +6,55 @@ using UnityEngine;
 
 public class TurretAim : ActivableBase
 {
-    private bool isOn = true;
-
     [SerializeField] private Transform rotatePart;
     public float smoothTime = 0.3F;
     public Vector3 velocity = Vector3.zero;
 
-    [SerializeField] private float radius;
-
     [SerializeField] private bool followTarget;
-    
+
+    [SerializeField] TargetDetector detector;
+
     private Lightbeam _lightbeam;
 
     private void Start()
     {
         _lightbeam = GetComponent<Lightbeam>();
+        detector.OnGetNewTarget += FollowNewTarget;
+        detector.OnLostTarget += LostTarget;
+        detector.TurnOn();
     }
 
     protected override void OnUpdate()
     {
         base.OnUpdate();
 
+        detector.OnUpdate();
+
         if (followTarget)
-            FollowClosestCharacter();
-
-
-        if (!isActive)
         {
-            SetActive(true);
-            return;
+            Follow(detector.CurrentTarget);
         }
-
-        if (isOn)
-            SetActive(false);
     }
 
-    private void FollowClosestCharacter()
+    void FollowNewTarget(Transform newTarget)
     {
-        var closestChar = Physics
-            .OverlapSphere(transform.position, radius)
-            .Select(x=> x.GetComponent<Rigidbody>())
-            .Where(x => x != null && x.gameObject.tag == "rayTarget")
-            .OrderBy(x => Vector3.Distance(x.transform.position, transform.position));
-        
-        if(!closestChar.Any()) return;
-        
-        if (Vector3.Distance(closestChar.First().transform.position, transform.position) <= radius)
-        {
-            Follow(closestChar.First().transform);
-        }
-        
-        
+        Debug.Log("consigue nuevo target?");
+        if (_lightbeam.anticipation || _lightbeam.inLightbeam) return;
+
+        _lightbeam.StartAnticipation();
+    }
+
+    void LostTarget()
+    {
+        _lightbeam.StopLightbeam();
     }
 
     private void Follow(Transform closestChar)
     {
+        if (closestChar == null) return;
+
         Vector3 dir = (closestChar.position - rotatePart.position).normalized;
         Vector3 noY_dir = new Vector3(dir.x, 0, dir.z);
-        rotatePart.forward = Vector3.SmoothDamp(rotatePart.forward, noY_dir, ref velocity, smoothTime);
-    }
-
-    private void SetActive(bool b)
-    {
-        isOn = b;
-        _lightbeam.SetActive(b);
-    }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, radius);
+        rotatePart.forward = Vector3.Slerp(rotatePart.forward, noY_dir, smoothTime * Time.deltaTime);
     }
 }
