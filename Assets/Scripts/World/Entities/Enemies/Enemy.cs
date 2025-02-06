@@ -76,4 +76,11 @@ public abstract class Enemy : Entity
         brain.ActivateBrain();
         physics.Resume();
     }
+
+    protected override void OnEndGame()
+    {
+        base.OnEndGame();
+        brain.DesactivateBrain();
+        physics.Pause();
+    }
 }

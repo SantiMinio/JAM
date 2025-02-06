@@ -28,16 +28,20 @@ public class CharacterBase : Entity
     #region Inputs
     public void MoveY(UnityEngine.InputSystem.InputAction.CallbackContext callback)
     {
+        if (IsDead || endGame) return;
         moveComp.SetAxisY(callback.ReadValue<float>());
     }
 
     public void MoveX(UnityEngine.InputSystem.InputAction.CallbackContext callback)
     {
+        if (IsDead || endGame) return;
         moveComp.SetAxisX(callback.ReadValue<float>());
     }
 
     public void ActionAbility(UnityEngine.InputSystem.InputAction.CallbackContext callback)
     {
+        if (IsDead || endGame) return;
+
         switch (callback.phase)
         {
             case UnityEngine.InputSystem.InputActionPhase.Disabled:
