@@ -757,7 +757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmgReceiver: {fileID: 7859480971305584247}
-  maxLife: 20
+  maxLife: 2
   brain: {fileID: 6995349662761944974}
   targetDetector: {fileID: 5391426128459995502}
   physics: {fileID: 6759970391062502566}
