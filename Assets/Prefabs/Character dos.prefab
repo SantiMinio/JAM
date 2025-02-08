@@ -350,7 +350,6 @@ MonoBehaviour:
   dmgReceiver: {fileID: 5397967462316614772}
   maxLife: 1
   rb: {fileID: 2243943858438837761}
-  speed: 5
   action: {fileID: 7799210017518170787}
   anim: {fileID: 3718969725530741195}
   moveComp: {fileID: 3443009228775125715}
@@ -359,6 +358,7 @@ MonoBehaviour:
   characterFallInLavaSound: Character_FallInLava
   characterGetHitSound: Character_GetHit
   characterStepsSound: Character_StepsFemale
+  speed: 5
 --- !u!54 &2243943858438837761
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -398,13 +398,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1adb21d9fe2b2404eafd6b31efb9a1bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actionParticles:
+  - {fileID: 0}
+  - {fileID: 0}
   useCooldown: 0.21
   hiteable: {fileID: 5397967462316614772}
-  blockAngle: 90
+  blockAngle: 120
   blockCollider: {fileID: 1681647163552537304}
   anim: {fileID: 3718969725530741195}
   blockSound: {fileID: 8300000, guid: e521afd6af5b6504c879892043093407, type: 3}
   shieldAriseSound: Shield_Arise
+  movement: {fileID: 0}
+  defensiveSpeed: 0
 --- !u!114 &5397967462316614772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -812,8 +817,8 @@ Transform:
   m_GameObject: {fileID: 7957851863976867487}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.196, z: 0}
-  m_LocalScale: {x: 0.9191712, y: 0.51138, z: 0.5409529}
+  m_LocalPosition: {x: 0, y: 0.14158, z: 0.0018921}
+  m_LocalScale: {x: 1.325353, y: 0.73735887, z: 0.78000003}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8281584897306251732}

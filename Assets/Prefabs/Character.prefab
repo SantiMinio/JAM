@@ -213,7 +213,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   useCooldown: 0.11
-  attackRadious: 1.57
+  attackRadious: 2.5
   viewAngle: 90
   anim: {fileID: 5089256509117772097}
   swordSlashSound: Sword_Slash
