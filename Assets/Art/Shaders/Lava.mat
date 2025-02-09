@@ -50,23 +50,23 @@ Material:
     - _DepthDistance1: -0.01
     - _EdgeLength: 50
     - _FallOff1: 0.4
-    - _Float0: 78.1
+    - _Float0: 75.65
     - _Float1: 1
     - _Float2: 1.93
     - _FlowmapTime: 0.5
     - _FlowwMap: 1
-    - _GrayscalePower: 1.97
+    - _GrayscalePower: 1.49
     - _NOiseScale: 5.38
     - _OffsetIntensity: 0.75
-    - _OffsetTiling: 23.17
+    - _OffsetTiling: 22.18
     - _Pixels: 100
-    - _PreSinMultiplier: 10
+    - _PreSinMultiplier: 1.9
     - _Speed: 0.06
-    - _SpeedX: 0.2
+    - _SpeedX: 0.33
     - _SpeedY: 0.2
     - _Tiling: 150
     - _Tiling1: 150
-    - _Timescale: 0.5
+    - _Timescale: 1.9
     - __dirty: 0
     m_Colors:
     - _Color1: {r: 0.3773585, g: 0.023009665, b: 0, a: 1}
