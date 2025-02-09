@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SameDeviceToggleSetting : ToggleSettings
 {
@@ -32,6 +33,10 @@ public class SameDeviceToggleSetting : ToggleSettings
         if(value)
         {
             bothSelector.OpenClose(true);
+            var nav = new UnityEngine.UI.Navigation();
+            nav.mode = UnityEngine.UI.Navigation.Mode.Explicit;
+            nav.selectOnDown = bothSelector.GetComponentInChildren<Button>();
+            toggle.navigation = nav;
             playerOneSelector.OpenClose(false);
             playerTwoSelector.OpenClose(false);
 
@@ -42,6 +47,10 @@ public class SameDeviceToggleSetting : ToggleSettings
             bothSelector.OpenClose(false);
             playerOneSelector.OpenClose(true);
             playerTwoSelector.OpenClose(true);
+            var nav = new UnityEngine.UI.Navigation();
+            nav.mode = UnityEngine.UI.Navigation.Mode.Explicit;
+            nav.selectOnDown = playerOneSelector.GetComponentInChildren<Button>();
+            toggle.navigation = nav;
 
             SetPlayer(playerOneSelector.RefreshDevices(),0);
             SetPlayer(playerTwoSelector.RefreshDevices(),1);

@@ -5836,7 +5836,19 @@ MonoBehaviour:
       m_Calls: []
   OpenOverEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8701989122797510905}
+        m_TargetAssemblyTypeName: SetMainButton, Assembly-CSharp
+        m_MethodName: SetButtonInteract
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 3736661936333448889}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   CloseOverEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -6641,10 +6653,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 1244752582231454101}
+    m_SelectOnDown: {fileID: 1138530494426278902}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -11663,10 +11675,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 745402154095757343}
+    m_SelectOnDown: {fileID: 1244752582231454101}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -13056,10 +13068,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 1138530494426278902}
+    m_SelectOnDown: {fileID: 745402154095757343}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -24874,7 +24886,42 @@ PrefabInstance:
     - target: {fileID: 5191138564587506248, guid: a841809263847724fb47a1167dd9ef17,
         type: 3}
       propertyPath: CloseOverEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5191138564587506248, guid: a841809263847724fb47a1167dd9ef17,
+        type: 3}
+      propertyPath: CloseOverEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5191138564587506248, guid: a841809263847724fb47a1167dd9ef17,
+        type: 3}
+      propertyPath: CloseOverEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8701989122797510905}
+    - target: {fileID: 5191138564587506248, guid: a841809263847724fb47a1167dd9ef17,
+        type: 3}
+      propertyPath: CloseOverEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5191138564587506248, guid: a841809263847724fb47a1167dd9ef17,
+        type: 3}
+      propertyPath: CloseOverEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetButtonInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 5191138564587506248, guid: a841809263847724fb47a1167dd9ef17,
+        type: 3}
+      propertyPath: CloseOverEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SetMainButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5191138564587506248, guid: a841809263847724fb47a1167dd9ef17,
+        type: 3}
+      propertyPath: CloseOverEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 7727178778796648194}
+    - target: {fileID: 5191138564587506248, guid: a841809263847724fb47a1167dd9ef17,
+        type: 3}
+      propertyPath: CloseOverEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5374080364268848648, guid: a841809263847724fb47a1167dd9ef17,
         type: 3}
@@ -25324,7 +25371,7 @@ PrefabInstance:
     - target: {fileID: 9122003282187877946, guid: a841809263847724fb47a1167dd9ef17,
         type: 3}
       propertyPath: m_Value
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9122003282187877949, guid: a841809263847724fb47a1167dd9ef17,
         type: 3}

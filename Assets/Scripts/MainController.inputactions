@@ -513,7 +513,7 @@
                     "path": "<Gamepad>/leftShoulder",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Joystick",
+                    "groups": "Joystick;BothGamepad",
                     "action": "ChangePageLeft",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -524,7 +524,7 @@
                     "path": "<Gamepad>/rightShoulder",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Joystick",
+                    "groups": "Joystick;BothGamepad",
                     "action": "ChangePageRight",
                     "isComposite": false,
                     "isPartOfComposite": false

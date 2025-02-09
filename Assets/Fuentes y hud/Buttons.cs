@@ -21,6 +21,8 @@ public class Buttons : MonoBehaviour
     [SerializeField] Animator textPressKey = null;
     [SerializeField] Animator fade = null;
 
+    [SerializeField] Button firstButton = null;
+
     int currentIndex = -1;
     int cameraIndex;
 
@@ -117,5 +119,6 @@ public class Buttons : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         fade.Play("FadeOut");
+        SetMainButton.Instance.SetButtonInteract(firstButton.gameObject);
     }
 }

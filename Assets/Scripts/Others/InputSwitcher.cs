@@ -31,34 +31,32 @@ public class InputSwitcher : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(this);
         FindNewInput();
-        //if (inputs[i].currentControlScheme == joystickScheme)
-        //{
-        //    OnChangeJoystick?.Invoke();
-        //    isJoystick = true;
-        //}
-        //else if (input.currentControlScheme == keyboardScheme)
-        //{
-        //    OnChangeKeyboard?.Invoke();
-        //    isJoystick = false;
-        //}
+        if (inputs[0].currentControlScheme == joystickScheme || inputs[0].currentControlScheme == JoystickBothScheme)
+        {
+            OnChangeJoystick?.Invoke();
+            isJoystick = true;
+        }
+        else if (inputs[0].currentControlScheme == keyboardScheme || inputs[0].currentControlScheme == keyboardBothScheme)
+        {
+            OnChangeKeyboard?.Invoke();
+            isJoystick = false;
+        }
     }
 
     private void Start()
     {
         //FindNewInput();
 
-
-
-        //if (input.currentControlScheme == joystickScheme)
-        //{
-        //    OnChangeJoystick?.Invoke();
-        //    isJoystick = true;
-        //}
-        //else if (input.currentControlScheme == keyboardScheme)
-        //{
-        //    OnChangeKeyboard?.Invoke();
-        //    isJoystick = false;
-        //}
+        if (inputs[0].currentControlScheme == joystickScheme || inputs[0].currentControlScheme == JoystickBothScheme)
+        {
+            OnChangeJoystick?.Invoke();
+            isJoystick = true;
+        }
+        else if (inputs[0].currentControlScheme == keyboardScheme || inputs[0].currentControlScheme == keyboardBothScheme)
+        {
+            OnChangeKeyboard?.Invoke();
+            isJoystick = false;
+        }
 
         SceneLoader.Instance.OnEndLoadScene += FindNewInput;
     }
