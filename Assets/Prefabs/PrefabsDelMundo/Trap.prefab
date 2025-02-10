@@ -5303,6 +5303,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5591932859415672054, guid: 38b68cdb9f7481245a1f0b0444208975,
         type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5591932859415672054, guid: 38b68cdb9f7481245a1f0b0444208975,
+        type: 3}
       propertyPath: InitialModule.size3D
       value: 1
       objectReference: {fileID: 0}

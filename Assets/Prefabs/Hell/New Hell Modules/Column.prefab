@@ -12,12 +12,12 @@ GameObject:
   - component: {fileID: 1055175631775109688}
   - component: {fileID: 4239896516120956768}
   - component: {fileID: 8404985365885666902}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: Column
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7123416927800049495
 Transform:
@@ -117,12 +117,12 @@ GameObject:
   - component: {fileID: 1287154188982263674}
   - component: {fileID: 8611493005769989325}
   - component: {fileID: 3178177675903690615}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: Door_Hell004_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1287154188982263674
 Transform:
