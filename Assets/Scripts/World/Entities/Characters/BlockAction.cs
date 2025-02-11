@@ -7,8 +7,9 @@ public class BlockAction : CharacterAction
 {
     [SerializeField] DamageReceiver hiteable = null;
     [SerializeField] float blockAngle = 90;
-    [SerializeField] Transform blockCollider = null;
+    [SerializeField] Collider blockCollider = null;
     [SerializeField] Animator anim = null;
+    [SerializeField] AudioClip blockSound = null;
     [SerializeField] string shieldAriseSound = null;
     [SerializeField] MovementComponent movement = null;
     [SerializeField] float defensiveSpeed;
@@ -23,21 +24,21 @@ public class BlockAction : CharacterAction
     protected override void OnEndAction()
     {
         isBlocking = false;
-        blockCollider.gameObject.SetActive(false);
+        blockCollider.enabled = false;
         anim.SetBool("blocking", false);
         movement.SetSpeed(movement.initialSpeed);
+        blockCollider.gameObject.tag = "rayTarget";
     }
 
     protected override void OnKeepAction()
     {
-        blockCollider.forward = owner.CurrentDir;
     }
 
     protected override void OnStartAction()
     {
         SoundFX.PlaySound(shieldAriseSound);
         isBlocking = true;
-        blockCollider.gameObject.SetActive(true);
+        blockCollider.enabled = true;
         anim.SetBool("blocking", true);
         Debug.Log("Blockea");
         movement.SetSpeed(defensiveSpeed);
@@ -48,20 +49,7 @@ public class BlockAction : CharacterAction
     {
         if (isBlocking)
         {
-            var attackDir = dmg.knockbackModule.knockbackDir;
-            attackDir.Normalize();
-
-            float blockRange = Vector3.Dot(owner.CurrentDir, attackDir);
-            if (blockRange <= blockAngle)
-            {
-                blockCollider.gameObject.tag = "Mirror";
-                return true;
-            }
-            else
-            {
-                blockCollider.gameObject.tag = "";
-                return false;
-            }
+            return true;
         }
         else
             return false;

@@ -111,7 +111,7 @@ public class Lightbeam : MonoBehaviour, IPause
 
         for (int i = 0; i < reflections; i++)
         {
-            if(Physics.Raycast(ray.origin, ray.direction, out hit, remainingLength, dmg.rivalsMask))
+            if(Physics.Raycast(ray.origin, ray.direction, out hit, remainingLength, dmg.rivalsMask, QueryTriggerInteraction.Collide))
             {
                
                 var hiteable = hit.collider.GetComponent<DamageReceiver>();
