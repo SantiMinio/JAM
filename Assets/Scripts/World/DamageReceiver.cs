@@ -109,7 +109,6 @@ public class DamageReceiver : MonoBehaviour
         var lastLife = lifeSystem.Life;
         var isAlive = lifeSystem.Hit(damager.damage);
         result.damage = lastLife - lifeSystem.Life;
-        Debug.Log(lifeSystem.Life);
 
         if (!isAlive)
         {

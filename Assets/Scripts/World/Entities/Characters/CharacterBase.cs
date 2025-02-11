@@ -15,8 +15,9 @@ public class CharacterBase : Entity
     [SerializeField] string characterFallInLavaSound = "Character_FallInLava";
     [SerializeField] string characterGetHitSound = "Character_GetHit";
     [SerializeField] string characterStepsSound = "Character_Steps";
+    [SerializeField] string characterCrySound = "Character_MaleCry";
 
-   
+
     [SerializeField] float speed = 5;
     float stepTimer;
 
@@ -61,6 +62,12 @@ public class CharacterBase : Entity
     }
     #endregion
 
+    protected override void OnEndGame()
+    {
+        base.OnEndGame();
+        physics.StopPhysics();
+    }
+
     public void DeadBySeparate()
     {
         anim.SetBool("Dead", true);
@@ -70,6 +77,7 @@ public class CharacterBase : Entity
     public void Cry()
     {
         //inserte llanto
+        SoundFX.PlaySound(characterCrySound);
         anim.SetBool("Cry", true);
     }
     float animSpeed;

@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class CheckpointManager : MonoBehaviour
+public class CheckpointManager : MonoSingleton<CheckpointManager>
 {
-    [SerializeField] Checkpoint[] checkpoints = new Checkpoint[0];
+    Checkpoint[] checkpoints = new Checkpoint[0];
 
     public bool CheckIfCheckpoint(Vector3 pos)
     {
@@ -12,5 +12,10 @@ public class CheckpointManager : MonoBehaviour
         }
 
         return false;
+    }
+
+    protected override void OnAwake()
+    {
+        checkpoints = GetComponentsInChildren<Checkpoint>();
     }
 }

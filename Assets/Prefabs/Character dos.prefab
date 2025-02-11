@@ -358,6 +358,7 @@ MonoBehaviour:
   characterFallInLavaSound: Character_FallInLava
   characterGetHitSound: Character_GetHit
   characterStepsSound: Character_StepsFemale
+  characterCrySound: Character_FemaleCry
   speed: 5
 --- !u!54 &2243943858438837761
 Rigidbody:
@@ -406,7 +407,6 @@ MonoBehaviour:
   blockAngle: 120
   blockCollider: {fileID: 1681647163552537304}
   anim: {fileID: 3718969725530741195}
-  blockSound: {fileID: 8300000, guid: e521afd6af5b6504c879892043093407, type: 3}
   shieldAriseSound: Shield_Arise
   movement: {fileID: 0}
   defensiveSpeed: 0

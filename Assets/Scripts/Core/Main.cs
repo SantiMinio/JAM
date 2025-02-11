@@ -15,8 +15,6 @@ public class Main : MonoBehaviour
     [SerializeField] CharacterBase charOne = null;
     [SerializeField] CharacterBase charTwo = null;
 
-    [SerializeField] CheckpointManager checkpointManager = null;
-
     [SerializeField] Grayscale_Post_Process pp = null;
 
     [SerializeField] float restartTime = 3;
@@ -37,7 +35,8 @@ public class Main : MonoBehaviour
     {
         checkpointPosition = SaveData.saveData.checkpointPosition;
 
-        if(checkpointPosition != Vector3.zero && checkpointManager.CheckIfCheckpoint(checkpointPosition))
+        Debug.Log(CheckpointManager.Instance);
+        if(checkpointPosition != Vector3.zero && CheckpointManager.Instance.CheckIfCheckpoint(checkpointPosition))
         {
             charOne.transform.position = checkpointPosition;
             charTwo.transform.position = checkpointPosition + Vector3.right;
@@ -81,8 +80,8 @@ public class Main : MonoBehaviour
 
     public void SetCheckpoint(Vector3 checkpointPos)
     {
+        Debug.Log("nuevo checkpoint: " + checkpointPos);
         if (checkpointPosition == checkpointPos) return;
-
         checkpointPosition = checkpointPos;
         SaveData.saveData.checkpointPosition = checkpointPosition;
         //BinarySerialization.Serialize(SaveDataName, save);

@@ -16,9 +16,9 @@ public class SoundFX : MonoSingleton<SoundFX>
 
         var properties = Instance.SearchByID(ID);
 
-        if(properties.sounds ==null)
+        if(properties.sounds == null || properties.sounds.Length <= 0)
         {
-            Debug.LogWarning("No tenes seteado el sonido");
+            Debug.LogWarning("No tenes seteado el sonido: " + ID);
             return null;
         }
 

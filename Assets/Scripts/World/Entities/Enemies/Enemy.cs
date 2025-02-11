@@ -22,6 +22,7 @@ public abstract class Enemy : Entity
 
     protected override void OnTurnOff()
     {
+
         Destroy(this.gameObject);
     }
 

@@ -64,7 +64,7 @@ MonoBehaviour:
   sounds:
   - ID: Character_Falling
     sounds:
-    - {fileID: 8300000, guid: 543d52a14ccfcde4cb360e6cbf398b9b, type: 3}
+    - {fileID: 8300000, guid: bceae5cd686e62245a1e3b74f2025763, type: 3}
     currentIndex: 0
     dimension: 1
     priority: 0
@@ -73,7 +73,7 @@ MonoBehaviour:
     group: {fileID: 1025625244639756035, guid: 00b34bc68275ff84a82cbcce13f11dcb, type: 2}
   - ID: Character_GetHit
     sounds:
-    - {fileID: 8300000, guid: e31ba2f3a63b0404cba711f5e9d7e0db, type: 3}
+    - {fileID: 8300000, guid: bceae5cd686e62245a1e3b74f2025763, type: 3}
     currentIndex: 0
     dimension: 1
     priority: 0
@@ -82,7 +82,7 @@ MonoBehaviour:
     group: {fileID: 1025625244639756035, guid: 00b34bc68275ff84a82cbcce13f11dcb, type: 2}
   - ID: Character_FallInLava
     sounds:
-    - {fileID: 8300000, guid: f254f8199b89a1c44b05587f037ceb61, type: 3}
+    - {fileID: 8300000, guid: 208e902c8c8dfe441b0da88f7f8d04c4, type: 3}
     currentIndex: 0
     dimension: 1
     priority: 0
@@ -91,8 +91,8 @@ MonoBehaviour:
     group: {fileID: 1025625244639756035, guid: 00b34bc68275ff84a82cbcce13f11dcb, type: 2}
   - ID: Character_Steps
     sounds:
-    - {fileID: 8300000, guid: 4c566f4b01647eb4493e42065475a7dc, type: 3}
-    - {fileID: 8300000, guid: 75b176df77ee13c4dbf9ac630b2372b8, type: 3}
+    - {fileID: 8300000, guid: 2c24e471e85bb06458f2643486769f10, type: 3}
+    - {fileID: 8300000, guid: 37df079f486fad94ba6d079afefd3259, type: 3}
     currentIndex: 0
     dimension: 1
     priority: 150
@@ -101,17 +101,35 @@ MonoBehaviour:
     group: {fileID: 1025625244639756035, guid: 00b34bc68275ff84a82cbcce13f11dcb, type: 2}
   - ID: Character_StepsFemale
     sounds:
-    - {fileID: 8300000, guid: 4c566f4b01647eb4493e42065475a7dc, type: 3}
-    - {fileID: 8300000, guid: 75b176df77ee13c4dbf9ac630b2372b8, type: 3}
+    - {fileID: 8300000, guid: 09d2a254acbc98c4d8ce72e074a897c6, type: 3}
+    - {fileID: 8300000, guid: 2bf2eb0f63b29d0449533b4dd1a00749, type: 3}
     currentIndex: 0
     dimension: 1
     priority: 150
     isLoop: 0
     isSequencial: 1
     group: {fileID: 1025625244639756035, guid: 00b34bc68275ff84a82cbcce13f11dcb, type: 2}
+  - ID: Character_MaleCry
+    sounds:
+    - {fileID: 8300000, guid: ec6b94fca37e8cb40923e0728a142a92, type: 3}
+    currentIndex: 0
+    dimension: 1
+    priority: 150
+    isLoop: 0
+    isSequencial: 0
+    group: {fileID: 1025625244639756035, guid: 00b34bc68275ff84a82cbcce13f11dcb, type: 2}
+  - ID: Character_FemaleCry
+    sounds:
+    - {fileID: 8300000, guid: dee05710882d2ce41a06707d82bbe252, type: 3}
+    currentIndex: 0
+    dimension: 1
+    priority: 150
+    isLoop: 0
+    isSequencial: 0
+    group: {fileID: 1025625244639756035, guid: 00b34bc68275ff84a82cbcce13f11dcb, type: 2}
   - ID: Shield_Arise
     sounds:
-    - {fileID: 8300000, guid: e521afd6af5b6504c879892043093407, type: 3}
+    - {fileID: 8300000, guid: ae94756946cf1e6438d34c3b3d086f62, type: 3}
     currentIndex: 0
     dimension: 1
     priority: 75
@@ -120,7 +138,7 @@ MonoBehaviour:
     group: {fileID: 1025625244639756035, guid: 00b34bc68275ff84a82cbcce13f11dcb, type: 2}
   - ID: Sword_Slash
     sounds:
-    - {fileID: 8300000, guid: 88f6a95165f4b404daa009d88700a0cb, type: 3}
+    - {fileID: 8300000, guid: ae94756946cf1e6438d34c3b3d086f62, type: 3}
     currentIndex: 0
     dimension: 1
     priority: 75
@@ -129,16 +147,7 @@ MonoBehaviour:
     group: {fileID: 1025625244639756035, guid: 00b34bc68275ff84a82cbcce13f11dcb, type: 2}
   - ID: Hitable_BreakWall
     sounds:
-    - {fileID: 8300000, guid: 934384f7d639a5c4c9f4b3fbcf0e65ee, type: 3}
-    currentIndex: 0
-    dimension: 1
-    priority: 75
-    isLoop: 0
-    isSequencial: 0
-    group: {fileID: 1025625244639756035, guid: 00b34bc68275ff84a82cbcce13f11dcb, type: 2}
-  - ID: Hitable_GetHit
-    sounds:
-    - {fileID: 8300000, guid: e31ba2f3a63b0404cba711f5e9d7e0db, type: 3}
+    - {fileID: 8300000, guid: 29d74b3ca3fbf9f46a7197c759bef81e, type: 3}
     currentIndex: 0
     dimension: 1
     priority: 75

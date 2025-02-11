@@ -25,7 +25,6 @@ public class FireTrap : ActivableBase
         interactDmg.gameObject.SetActive(true);
         stillActivated = true;
         TimerManager.Instance.AddTimer(minimumActivatedTime, () => { }, Check);
-        Debug.Log("activado");
     }
 
     private void HitCloseCharacters(Collider col)

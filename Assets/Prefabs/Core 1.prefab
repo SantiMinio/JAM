@@ -5894,7 +5894,6 @@ GameObject:
   - component: {fileID: 2119409628401185569}
   - component: {fileID: 5514389464381974682}
   - component: {fileID: 694551886661176684}
-  - component: {fileID: 8672817185362344051}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -5936,7 +5935,7 @@ MonoBehaviour:
   djHandler: {fileID: 8871259785751059397}
   charOne: {fileID: 8049236203600888895}
   charTwo: {fileID: 7636172991831704616}
-  checkpointManager: {fileID: 8672817185362344051}
+  checkpointManager: {fileID: 0}
   pp: {fileID: 1814612142030710442}
   restartTime: 3
 --- !u!114 &694551886661176684
@@ -5957,31 +5956,6 @@ MonoBehaviour:
   charOne: {fileID: 925054952935123310}
   charTwo: {fileID: 65425055018782504}
   gpp: {fileID: 1814612142030710442}
---- !u!114 &8672817185362344051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1852383593388069841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d8938eb60508974984caf9a47536250, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checkpoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &2089057069823710304
 GameObject:
   m_ObjectHideFlags: 0
@@ -25371,7 +25345,7 @@ PrefabInstance:
     - target: {fileID: 9122003282187877946, guid: a841809263847724fb47a1167dd9ef17,
         type: 3}
       propertyPath: m_Value
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9122003282187877949, guid: a841809263847724fb47a1167dd9ef17,
         type: 3}

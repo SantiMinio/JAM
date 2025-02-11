@@ -53,6 +53,8 @@ public abstract class Entity : MonoBehaviour, IPause
         turnOn = false;
         IsDead = false;
         PauseManager.instance.RemoveToPause(this);
+        Main.instance.eventManager.UnsubscribeToEvent(GameEvents.CharactersSeparate, OnEndGame);
+        Main.instance.eventManager.UnsubscribeToEvent(GameEvents.HotelArrive, OnEndGame);
         OnTurnOff();
     }
 

@@ -9,7 +9,6 @@ public class BlockAction : CharacterAction
     [SerializeField] float blockAngle = 90;
     [SerializeField] Transform blockCollider = null;
     [SerializeField] Animator anim = null;
-    [SerializeField] AudioClip blockSound = null;
     [SerializeField] string shieldAriseSound = null;
     [SerializeField] MovementComponent movement = null;
     [SerializeField] float defensiveSpeed;
