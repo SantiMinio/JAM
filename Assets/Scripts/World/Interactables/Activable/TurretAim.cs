@@ -38,7 +38,7 @@ public class TurretAim : ActivableBase
 
     void FollowNewTarget(Transform newTarget)
     {
-        Debug.Log("consigue nuevo target?");
+        Debug.Log("consigue nuevo target?: " + newTarget.name);
         if (_lightbeam.anticipation || _lightbeam.inLightbeam) return;
 
         _lightbeam.StartAnticipation();

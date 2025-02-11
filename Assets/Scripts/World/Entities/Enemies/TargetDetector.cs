@@ -49,7 +49,7 @@ public class TargetDetector : MonoBehaviour
             }
         }
 
-        if(tempTarget != target)
+        if(tempTarget != null && tempTarget != target)
         {
             target = tempTarget;
             OnGetNewTarget?.Invoke(tempTarget);

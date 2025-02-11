@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 
 [RequireComponent(typeof(LineRenderer))]
 public class Lightbeam : MonoBehaviour, IPause
@@ -26,6 +27,7 @@ public class Lightbeam : MonoBehaviour, IPause
     private void Start()
     {
         PauseManager.instance.AddToPause(this);
+        endpoint_feedback.gameObject.SetActive(false);
     }
 
     public void Pause()
@@ -67,7 +69,8 @@ public class Lightbeam : MonoBehaviour, IPause
         anticipationTimer = 0;
         anticipationLineRenderer.enabled = false;
         lineRenderer.enabled = true;
-
+        endpoint_feedback.gameObject.SetActive(true);
+        Debug.Log("started");
     }
 
     public void StopLightbeam()
@@ -77,6 +80,8 @@ public class Lightbeam : MonoBehaviour, IPause
         lineRenderer.enabled = false;
         anticipationLineRenderer.enabled = false;
         anticipationTimer = 0;
+        Debug.Log("stopped");
+        endpoint_feedback.gameObject.SetActive(false);
     }
 
     private void Update()
