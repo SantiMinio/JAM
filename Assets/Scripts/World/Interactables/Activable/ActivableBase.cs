@@ -33,6 +33,10 @@ public class ActivableBase : MonoBehaviour, IActivable, IPause
         OnActivate();
     }
 
+    public virtual void Anticipation()
+    {
+    }
+
     public void Deactivate()
     {
         isActive = false;

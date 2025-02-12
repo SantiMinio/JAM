@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class ActiveCondition_Timer : ActiveCondition
 {
@@ -8,6 +9,8 @@ public class ActiveCondition_Timer : ActiveCondition
 
     [SerializeField] float timeToActive = 2;
     [SerializeField] float timeToDeactive = 2;
+
+    [SerializeField] float anticipationTime = 0.5f;
 
     private void Start()
     {
@@ -22,6 +25,9 @@ public class ActiveCondition_Timer : ActiveCondition
 
     protected override void OnDeactivate()
     {
+        var anticipationTimer = timeToActive - anticipationTime;
+
         TimerManager.Instance.AddTimer(timeToActive, () => { }, Activate);
+        TimerManager.Instance.AddTimer(anticipationTimer, () => { }, activable.Anticipation);
     }
 }

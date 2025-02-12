@@ -34,6 +34,7 @@ public class ActiveCondition_Trigger : ActiveCondition
         }
         else
         {
+            activable.Anticipation();
             TimerManager.Instance.AddTimer(timeToActivate, () => { }, Activate);
             Debug.Log("pongo timer");
         }

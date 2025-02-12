@@ -7,6 +7,10 @@ using UnityEngine;
 public class FireTrap : ActivableBase
 {
     [SerializeField] private ParticleSystem feedbackParticles;
+    [SerializeField] private ParticleSystem sparksParticles;
+
+    ParticleSystem currentFire;
+    ParticleSystem currentSparks;
 
     [SerializeField] TriggerInteract interactDmg;
     [SerializeField] Damager dmg;
@@ -17,10 +21,18 @@ public class FireTrap : ActivableBase
     private void Start()
     {
         interactDmg.OnColliderEnter += HitCloseCharacters;
+        ParticlesManager.Instance.GetParticlePool(feedbackParticles.name, feedbackParticles, 10);
+        ParticlesManager.Instance.GetParticlePool(sparksParticles.name, sparksParticles, 10);
     }
 
     protected override void OnActivate()
     {
+        if (currentSparks != null)
+        {
+            ParticlesManager.Instance.StopParticle(sparksParticles.name, currentSparks);
+            currentSparks = null;
+        }
+        currentFire = ParticlesManager.Instance.PlayParticle(feedbackParticles.name, transform.position, transform);
         feedbackParticles.Play();
         interactDmg.gameObject.SetActive(true);
         stillActivated = true;
@@ -51,7 +63,18 @@ public class FireTrap : ActivableBase
     {
         if (stillActivated) return;
 
+        if(currentFire != null)
+        {
+            ParticlesManager.Instance.StopParticle(feedbackParticles.name, currentFire);
+            currentFire = null;
+        }
         feedbackParticles.Stop();
         interactDmg.gameObject.SetActive(false);
+    }
+
+    public override void Anticipation()
+    {
+        base.Anticipation();
+        currentSparks = ParticlesManager.Instance.PlayParticle(sparksParticles.name, transform.position, transform);
     }
 }
