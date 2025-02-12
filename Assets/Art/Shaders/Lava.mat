@@ -46,7 +46,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Depth: 2
-    - _DepthDistance: 0.047058824
+    - _DepthDistance: 0.985
     - _DepthDistance1: -0.01
     - _EdgeLength: 50
     - _FallOff1: 0.4
