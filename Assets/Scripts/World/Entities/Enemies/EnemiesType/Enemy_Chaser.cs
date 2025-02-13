@@ -34,6 +34,8 @@ public class Enemy_Chaser : Enemy
         targetDetector.TurnOn();
     }
 
+
+
     void OnDamage(Collider col)
     {
         if (col.GetComponent<DamageReceiver>())

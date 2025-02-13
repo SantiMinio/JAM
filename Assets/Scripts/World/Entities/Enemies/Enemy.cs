@@ -5,6 +5,8 @@ using UnityEngine;
 
 public abstract class Enemy : Entity
 {
+    [SerializeField] ParticleSystem particle_TakeDamage;
+    [SerializeField] ParticleSystem particle_Death;
     [SerializeField] protected FSMBrain brain;
     [SerializeField] protected TargetDetector targetDetector;
     [SerializeField] protected PhysicsController physics;
@@ -35,7 +37,8 @@ public abstract class Enemy : Entity
     {
         targetDetector.OnGetNewTarget += OnGetNewTarget;
         targetDetector.OnLostTarget += OnLostTarget;
-
+        ParticlesManager.Instance.GetParticlePool(particle_TakeDamage.name, particle_TakeDamage, 3);
+        ParticlesManager.Instance.GetParticlePool(particle_Death.name, particle_Death, 3);
         brain.Initialize();
     }
 
@@ -46,11 +49,12 @@ public abstract class Enemy : Entity
 
     protected override void TakeDamage(Damager dmg)
     {
-
+        ParticlesManager.Instance.PlayParticle(particle_TakeDamage.name, transform.position);
     }
 
     protected override void OnDeath()
     {
+        ParticlesManager.Instance.PlayParticle(particle_Death.name, transform.position);
         brain.SendInput(StateMachineInputs.ToDeath);
     }
 

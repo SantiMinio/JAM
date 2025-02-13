@@ -2926,7 +2926,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1546006028707917088}
-  - component: {fileID: 1631367662711168168}
+  - component: {fileID: 7188259176194428027}
   m_Layer: 5
   m_Name: MasterVolume
   m_TagString: Untagged
@@ -2955,7 +2955,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0.0000047684, y: 101.5}
   m_SizeDelta: {x: 294.7103, y: 30.3218}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1631367662711168168
+--- !u!114 &7188259176194428027
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2964,14 +2964,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 4556814749308690421}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd952da569fe95d4888010ab0cfbd16b, type: 3}
+  m_Script: {fileID: 11500000, guid: ec45b239e8f6e72479346e1566fa2a94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ID: Audio_MasterVolume
   slider: {fileID: 4233499016728463286}
-  sliders:
-  - {fileID: 4435778791433506423}
-  - {fileID: 8089450451029080964}
+  mixer: {fileID: 24100000, guid: 00b34bc68275ff84a82cbcce13f11dcb, type: 2}
+  exposedVolumeParam: Master_Volume
+  initValue: 0.8
 --- !u!1 &4616963710663947079
 GameObject:
   m_ObjectHideFlags: 0
