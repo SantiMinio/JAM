@@ -209,9 +209,10 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 1572864
     dmgID: 
-  endpoint_feedback_pf: {fileID: 8938124219392226814, guid: fbfdcbc1e747dc441acad0aa2e84f932,
+  endpoint_feedback_pf: {fileID: 6632873113054383767, guid: f97e0243769c41b48ad5b717bdad804f,
     type: 3}
-  endpoint_feedback: {fileID: 0}
+  endpoint_feedback: {fileID: 6632873113054383767, guid: f97e0243769c41b48ad5b717bdad804f,
+    type: 3}
   anticipationTime: 1
   lineRenderer: {fileID: 186271190499656099}
   anticipationLineRenderer: {fileID: 0}

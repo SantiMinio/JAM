@@ -12,8 +12,6 @@ GameObject:
   - component: {fileID: 9107770980621825580}
   - component: {fileID: 5177686315828872023}
   - component: {fileID: 6465842355607647760}
-  - component: {fileID: 4202933158313515016}
-  - component: {fileID: 7609569964014726902}
   m_Layer: 0
   m_Name: TileCorner
   m_TagString: Untagged
@@ -107,45 +105,3 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.020041151, y: 0.019725073, z: 0.022447746}
   m_Center: {x: -0.009953282, y: 0.009705429, z: -0.0111126825}
---- !u!65 &4202933158313515016
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3716579330107205460}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.0028862667, y: 0.020108132, z: 0.025886053}
-  m_Center: {x: -0.0013758403, y: 0.009896969, z: -0.009393532}
---- !u!65 &7609569964014726902
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3716579330107205460}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.020041151, y: 0.0042733666, z: 0.025886053}
-  m_Center: {x: -0.009953282, y: 0.01781432, z: -0.009393533}
