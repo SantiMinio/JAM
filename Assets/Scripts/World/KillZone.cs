@@ -25,7 +25,14 @@ public class KillZone : MonoBehaviour
             {
                 posibleHitable.InstaKill();
             }
+
+            var restartObj = other.GetComponent<RestartOnKillzone>();
             
+            if(restartObj != null)
+            {
+                restartObj.RestartObject();
+            }
+
         } 
     }
 }
