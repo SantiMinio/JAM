@@ -5308,6 +5308,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5591932859415672054, guid: 38b68cdb9f7481245a1f0b0444208975,
         type: 3}
+      propertyPath: lengthInSec
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5591932859415672054, guid: 38b68cdb9f7481245a1f0b0444208975,
+        type: 3}
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
@@ -5394,7 +5399,7 @@ PrefabInstance:
     - target: {fileID: 5591932859415672054, guid: 38b68cdb9f7481245a1f0b0444208975,
         type: 3}
       propertyPath: InitialModule.startLifetime.scalar
-      value: 0.25
+      value: 0.16
       objectReference: {fileID: 0}
     - target: {fileID: 5591932859415672054, guid: 38b68cdb9f7481245a1f0b0444208975,
         type: 3}

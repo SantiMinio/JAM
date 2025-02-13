@@ -118,10 +118,10 @@ Material:
     - _OutlineSoftness: 0
     - _OutlineUVSpeedX: 0
     - _OutlineUVSpeedY: 0
-    - _OutlineWidth: 0.427
+    - _OutlineWidth: 0.206
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
-    - _ScaleRatioA: 0.7410701
+    - _ScaleRatioA: 0.8333333
     - _ScaleRatioB: 0.25208333
     - _ScaleRatioC: 0.25208333
     - _ScaleX: 1
