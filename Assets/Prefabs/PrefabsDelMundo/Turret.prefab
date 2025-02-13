@@ -207,7 +207,7 @@ MonoBehaviour:
         m_RotationOrder: 4
     rivalsMask:
       serializedVersion: 2
-      m_Bits: 1572864
+      m_Bits: 3672192
     dmgID: 
   endpoint_feedback_pf: {fileID: 6632873113054383767, guid: f97e0243769c41b48ad5b717bdad804f,
     type: 3}

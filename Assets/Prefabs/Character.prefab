@@ -10658,7 +10658,7 @@ MonoBehaviour:
   myCollider: {fileID: 4529642458630019526}
   layerToEffect:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 3072
 --- !u!1001 &1386975899145614281
 PrefabInstance:
   m_ObjectHideFlags: 0
