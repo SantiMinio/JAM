@@ -49,7 +49,10 @@ public class BlockAction : CharacterAction
     {
         if (isBlocking)
         {
-            return true;
+            if (dmg.damageType == DamageType.NoBlock)
+                return false;
+            else
+                return true;
         }
         else
             return false;

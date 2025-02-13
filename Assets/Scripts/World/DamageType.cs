@@ -10,5 +10,6 @@ public enum DamageType
     Ice,
     Contundent,
     Electric,
-    Poison
+    Poison,
+    NoBlock
 }

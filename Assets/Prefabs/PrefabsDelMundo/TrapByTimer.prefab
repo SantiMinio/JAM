@@ -131,7 +131,7 @@ MonoBehaviour:
   dmg:
     damage: 10
     hasKnockback: 0
-    damageType: 0
+    damageType: 7
     inflictor: {fileID: 0}
     knockbackModule:
       knockbackDir: {x: 0, y: 0, z: 0}
