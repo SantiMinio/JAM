@@ -69,8 +69,8 @@ Material:
     - _Timescale: 0.38
     - __dirty: 0
     m_Colors:
-    - _Color1: {r: 0.6320754, g: 0.039504714, b: 0, a: 1}
-    - _Color2: {r: 2.2338653, g: 0.6758455, b: 0, a: 1}
+    - _Color1: {r: 0.4528302, g: 0.0281261, b: 0, a: 1}
+    - _Color2: {r: 1.5160017, g: 0.55738163, b: 0.03575475, a: 1}
     - _DepthColor: {r: 5.2780313, g: 0.6890292, b: 0, a: 1}
     - _DirectionPanner: {r: 1, g: 1, b: 0, a: 0}
     - _TillingAlbedo: {r: 1, g: 1, b: 0, a: 0}
