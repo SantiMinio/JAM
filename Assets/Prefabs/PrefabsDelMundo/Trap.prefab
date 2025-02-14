@@ -109,7 +109,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1.947993, z: 1}
+  m_Size: {x: 0.64, y: 1.947993, z: 0.7}
   m_Center: {x: 0, y: 0.4739945, z: 0}
 --- !u!114 &2178364634305589610
 MonoBehaviour:
