@@ -309,7 +309,7 @@ GameObject:
   - component: {fileID: 15245566}
   - component: {fileID: 15245565}
   m_Layer: 0
-  m_Name: Text (TMP) (8)
+  m_Name: Santiago Mino
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -489,7 +489,7 @@ GameObject:
   - component: {fileID: 24397215}
   - component: {fileID: 24397214}
   m_Layer: 0
-  m_Name: Text (TMP) (16)
+  m_Name: Ayelen Micale
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -534,7 +534,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ayelen \nMicalle"
+  m_text: "Ayelen \nMicale"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0ce83a752dd094b48811891d80258584, type: 2}
   m_sharedMaterial: {fileID: -6521026242900609899, guid: 0ce83a752dd094b48811891d80258584,
@@ -1571,7 +1571,7 @@ GameObject:
   - component: {fileID: 92933013}
   - component: {fileID: 92933012}
   m_Layer: 0
-  m_Name: Text (TMP) (4)
+  m_Name: Gonazlo Fernandez
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1745,7 +1745,7 @@ GameObject:
   - component: {fileID: 98914865}
   - component: {fileID: 98914864}
   m_Layer: 0
-  m_Name: Text (TMP) (12)
+  m_Name: JamTeam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1762,7 +1762,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: -19.9}
   m_LocalScale: {x: 0.06335115, y: 0.06335115, z: 0.06335115}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 830623426}
+  - {fileID: 343687792}
+  - {fileID: 1726012541}
+  - {fileID: 881023339}
   m_Father: {fileID: 1896163922}
   m_LocalEulerAnglesHint: {x: 21.863, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -3106,7 +3110,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.26625004, y: 0.072000004}
   m_AnchorMax: {x: 0.7325, y: 0.16000001}
-  m_AnchoredPosition: {x: -0.000030517578, y: 152.2}
+  m_AnchoredPosition: {x: 0, y: 152.20007}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &220200951
@@ -4590,7 +4594,7 @@ GameObject:
   - component: {fileID: 294666219}
   - component: {fileID: 294666218}
   m_Layer: 0
-  m_Name: Text (TMP) (1)
+  m_Name: Programmers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5763,7 +5767,7 @@ GameObject:
   - component: {fileID: 343687794}
   - component: {fileID: 343687793}
   m_Layer: 0
-  m_Name: Text (TMP) (5)
+  m_Name: Dario Colo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5776,16 +5780,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 343687791}
-  m_LocalRotation: {x: 0.19977444, y: -0, z: -0, w: 0.979842}
-  m_LocalPosition: {x: 0, y: 0, z: -19.54}
-  m_LocalScale: {x: 0.06760841, y: 0.06760841, z: 0.06760841}
+  m_LocalRotation: {x: 0.010337278, y: -0, z: -0, w: 0.99994665}
+  m_LocalPosition: {x: 0, y: 0, z: 2.569934}
+  m_LocalScale: {x: 1.067201, y: 1.0672011, z: 1.0672011}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1896163922}
+  m_Father: {fileID: 98914863}
   m_LocalEulerAnglesHint: {x: 23.048, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.45, y: 1.15}
+  m_AnchoredPosition: {x: 12.628002, y: 8.855003}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &343687793
@@ -6127,7 +6131,7 @@ GameObject:
   - component: {fileID: 349984087}
   - component: {fileID: 349984086}
   m_Layer: 5
-  m_Name: Image
+  m_Name: FlashArt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7340,7 +7344,7 @@ GameObject:
   - component: {fileID: 425046827}
   - component: {fileID: 425046826}
   m_Layer: 5
-  m_Name: Image
+  m_Name: FlashArtCorner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10209,7 +10213,7 @@ GameObject:
   - component: {fileID: 647936967}
   - component: {fileID: 647936966}
   m_Layer: 0
-  m_Name: Text (TMP) (13)
+  m_Name: Kevin Lenz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10254,7 +10258,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kevin Lens
+  m_text: Kevin Lenz
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0ce83a752dd094b48811891d80258584, type: 2}
   m_sharedMaterial: {fileID: -6521026242900609899, guid: 0ce83a752dd094b48811891d80258584,
@@ -11264,7 +11268,7 @@ GameObject:
   - component: {fileID: 769177043}
   - component: {fileID: 769177042}
   m_Layer: 0
-  m_Name: Text (TMP) (2)
+  m_Name: Sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11438,7 +11442,7 @@ GameObject:
   - component: {fileID: 769417584}
   - component: {fileID: 769417583}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: Honeymoon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11456,8 +11460,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2142977299}
   - {fileID: 1274093183}
+  - {fileID: 2142977299}
   m_Father: {fileID: 349984085}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
@@ -12508,7 +12512,7 @@ GameObject:
   - component: {fileID: 830623428}
   - component: {fileID: 830623427}
   m_Layer: 0
-  m_Name: Text (TMP) (3)
+  m_Name: Dario Carbonell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12521,16 +12525,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 830623425}
-  m_LocalRotation: {x: 0.19977444, y: -0, z: -0, w: 0.979842}
-  m_LocalPosition: {x: 0, y: 0, z: -19.53}
-  m_LocalScale: {x: 0.06760841, y: 0.06760841, z: 0.06760841}
+  m_LocalRotation: {x: 0.010337278, y: -0, z: -0, w: 0.99994665}
+  m_LocalPosition: {x: 0, y: 0, z: 2.54009}
+  m_LocalScale: {x: 1.067201, y: 1.0672011, z: 1.0672011}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1896163922}
+  m_Father: {fileID: 98914863}
   m_LocalEulerAnglesHint: {x: 23.048, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19.18, y: 1.18}
+  m_AnchoredPosition: {x: -30.465126, y: 9.353279}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &830623427
@@ -13207,7 +13211,7 @@ GameObject:
   - component: {fileID: 881023341}
   - component: {fileID: 881023340}
   m_Layer: 0
-  m_Name: Text (TMP) (6)
+  m_Name: Franco Hernandez
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13220,16 +13224,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 881023338}
-  m_LocalRotation: {x: 0.19977444, y: -0, z: -0, w: 0.979842}
-  m_LocalPosition: {x: 0, y: 0, z: -19.54}
-  m_LocalScale: {x: 0.06760841, y: 0.06760841, z: 0.06760841}
+  m_LocalRotation: {x: 0.010337278, y: -0, z: -0, w: 0.99994665}
+  m_LocalPosition: {x: 0, y: 0, z: 2.569934}
+  m_LocalScale: {x: 1.067201, y: 1.0672011, z: 1.0672011}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1896163922}
+  m_Father: {fileID: 98914863}
   m_LocalEulerAnglesHint: {x: 23.048, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15.385, y: 1.15}
+  m_AnchoredPosition: {x: 29.439077, y: 8.855003}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &881023340
@@ -19245,7 +19249,7 @@ GameObject:
   - component: {fileID: 1088082030}
   - component: {fileID: 1088082029}
   m_Layer: 0
-  m_Name: Text (TMP) (9)
+  m_Name: Franco Ramirez
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21274,7 +21278,7 @@ GameObject:
   - component: {fileID: 1200185380}
   - component: {fileID: 1200185379}
   m_Layer: 0
-  m_Name: Text (TMP) (11)
+  m_Name: MemoBy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22490,7 +22494,7 @@ GameObject:
   - component: {fileID: 1274093186}
   - component: {fileID: 1274093185}
   m_Layer: 5
-  m_Name: Text (TMP) (3)
+  m_Name: To
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22512,7 +22516,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -59.9, y: -43.4}
+  m_AnchoredPosition: {x: -62.3, y: -40.4}
   m_SizeDelta: {x: 373, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1274093185
@@ -22599,7 +22603,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 6.594082, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -23490,7 +23494,7 @@ GameObject:
   - component: {fileID: 1343222374}
   - component: {fileID: 1343222373}
   m_Layer: 0
-  m_Name: Text (TMP) (7)
+  m_Name: Franco Criscuolo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25488,7 +25492,7 @@ GameObject:
   - component: {fileID: 1511358206}
   - component: {fileID: 1511358205}
   m_Layer: 0
-  m_Name: Text (TMP) (14)
+  m_Name: Maximiliano Garcia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26794,7 +26798,7 @@ GameObject:
   - component: {fileID: 1582099155}
   - component: {fileID: 1582099154}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: NewArtist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28775,7 +28779,7 @@ GameObject:
   - component: {fileID: 1726012543}
   - component: {fileID: 1726012542}
   m_Layer: 0
-  m_Name: Text (TMP) (10)
+  m_Name: Luka Nicolau
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28788,16 +28792,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1726012540}
-  m_LocalRotation: {x: 0.19977444, y: -0, z: -0, w: 0.979842}
-  m_LocalPosition: {x: 0, y: 0, z: -19.516}
-  m_LocalScale: {x: 0.06760841, y: 0.06760841, z: 0.06760841}
+  m_LocalRotation: {x: 0.010337278, y: -0, z: -0, w: 0.99994665}
+  m_LocalPosition: {x: 0, y: 0, z: 2.9215298}
+  m_LocalScale: {x: 1.067201, y: 1.0672011, z: 1.0672011}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1896163922}
+  m_Father: {fileID: 98914863}
   m_LocalEulerAnglesHint: {x: 23.048, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18.021, y: 1.15}
+  m_AnchoredPosition: {x: -12.170258, y: 8.99608}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1726012542
@@ -30014,7 +30018,7 @@ GameObject:
   - component: {fileID: 1818584419}
   - component: {fileID: 1818584418}
   m_Layer: 0
-  m_Name: Text (TMP) (15)
+  m_Name: Gianluca Cuculich
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30788,18 +30792,14 @@ Transform:
   - {fileID: 98914863}
   - {fileID: 294666217}
   - {fileID: 769177041}
-  - {fileID: 830623426}
   - {fileID: 647936965}
   - {fileID: 92933011}
   - {fileID: 1511358204}
-  - {fileID: 343687792}
   - {fileID: 1818584417}
-  - {fileID: 881023339}
   - {fileID: 24397213}
   - {fileID: 1343222372}
   - {fileID: 15245564}
   - {fileID: 1088082028}
-  - {fileID: 1726012541}
   - {fileID: 1200185381}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -34552,7 +34552,7 @@ GameObject:
   - component: {fileID: 2142977302}
   - component: {fileID: 2142977301}
   m_Layer: 5
-  m_Name: Text (TMP) (2)
+  m_Name: Hell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34574,7 +34574,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -23.2, y: -65}
+  m_AnchoredPosition: {x: -32.3, y: -73.2}
   m_SizeDelta: {x: 373, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2142977301
@@ -34661,7 +34661,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 1.722395, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
