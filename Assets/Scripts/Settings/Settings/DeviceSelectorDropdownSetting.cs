@@ -32,6 +32,11 @@ public class DeviceSelectorDropdownSetting : DropdownSettings
         {
             currentPosibleDevices.Add(new ID_Schema("Joystick " + (i + 1).ToString(), joystickSchema, Gamepad.all[i]));
         }
+
+        for (int i = 0; i < Joystick.all.Count; i++)
+        {
+            currentPosibleDevices.Add(new ID_Schema("Joystick " + (i + 1).ToString(), joystickSchema, Joystick.all[i]));
+        }
         int current = dropdown.CurrentSelectedItem;
 
         if (current >= currentPosibleDevices.Count)
