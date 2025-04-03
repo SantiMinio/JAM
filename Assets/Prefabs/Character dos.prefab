@@ -5078,6 +5078,37 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!1 &3457475973910819337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7064592808647252005}
+  m_Layer: 20
+  m_Name: GrabbedObjectPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7064592808647252005
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3457475973910819337}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
+  m_LocalPosition: {x: 0, y: 1.248281, z: 1.824}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3813989482614708006}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: -90}
 --- !u!1 &5739995608270101553
 GameObject:
   m_ObjectHideFlags: 0
@@ -5094,6 +5125,8 @@ GameObject:
   - component: {fileID: 2720898889729422955}
   - component: {fileID: 8694155764033941798}
   - component: {fileID: 4305048454146290321}
+  - component: {fileID: 7436341532618616119}
+  - component: {fileID: 3423928529375405539}
   m_Layer: 20
   m_Name: Character dos
   m_TagString: rayTarget
@@ -5139,6 +5172,8 @@ MonoBehaviour:
   anim: {fileID: 3718969725530741195}
   moveComp: {fileID: 3443009228775125715}
   physics: {fileID: 4350935292511566529}
+  interactor: {fileID: 7436341532618616119}
+  grabComp: {fileID: 3423928529375405539}
   characterFallingSound: Character_Falling
   characterFallInLavaSound: Character_FallInLava
   characterGetHitSound: Character_GetHit
@@ -5238,7 +5273,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.3
+  m_Radius: 0.21
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -5360,6 +5395,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 8bdf6279-7bcb-41f7-add7-452c8cf58e44
     m_ActionName: Player/SubmitDialog[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2140009741369973443}
+        m_TargetAssemblyTypeName: CharacterBase, Assembly-CSharp
+        m_MethodName: Interact
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: e79efbb6-ab99-4d1d-a7d7-369f818d5a98
+    m_ActionName: Player/InteractInputWife[/Keyboard/leftShift]
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -5386,6 +5437,34 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.6
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7436341532618616119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5739995608270101553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3792253cc72f92243b3fd4da25dcd23c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactables: []
+--- !u!114 &3423928529375405539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5739995608270101553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acc76be0218e6544094a7c4b0e363d17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentGrabbable: {fileID: 0}
+  grabbablePosition: {fileID: 7064592808647252005}
+  moveComp: {fileID: 3443009228775125715}
 --- !u!1 &6143103108717606847
 GameObject:
   m_ObjectHideFlags: 0
@@ -11242,6 +11321,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5975503298490748005, guid: 932fa6d662c6264429a092d1a46de763,
+        type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 7064592808647252005}
     - targetCorrespondingSourceObject: {fileID: 5975503298490748005, guid: 932fa6d662c6264429a092d1a46de763,
         type: 3}
       insertIndex: -1

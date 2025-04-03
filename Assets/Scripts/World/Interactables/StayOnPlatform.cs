@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class StayOnPlatform : MonoBehaviour, IInteractable
+public class StayOnPlatform : MonoBehaviour
 {
     [SerializeField] private LayerMask triggerLayers;
     [SerializeField] private ActivableBase objetctActivable;

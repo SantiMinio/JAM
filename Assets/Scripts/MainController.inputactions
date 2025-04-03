@@ -60,9 +60,18 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "InteractInput",
+                    "name": "InteractInputHusband",
                     "type": "Button",
                     "id": "39b39b14-39ae-4a96-8b02-82ce19242833",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "InteractInputWife",
+                    "type": "Button",
+                    "id": "e79efbb6-ab99-4d1d-a7d7-369f818d5a98",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -377,23 +386,23 @@
                 },
                 {
                     "name": "",
-                    "id": "718dc4b1-a564-4790-9252-18e97bd5f6a1",
-                    "path": "<Keyboard>/rightShift",
+                    "id": "14732429-6b19-4cb4-9f50-6b8e986edf85",
+                    "path": "<Keyboard>/leftShift",
                     "interactions": "",
                     "processors": "",
-                    "groups": "BothKeyboard",
-                    "action": "ActionHusband",
+                    "groups": "Keyboard",
+                    "action": "InteractInputHusband",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "14732429-6b19-4cb4-9f50-6b8e986edf85",
-                    "path": "<Keyboard>/e",
+                    "id": "95144202-f5bc-40f6-9ab3-0a209157630e",
+                    "path": "<Keyboard>/rightShift",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard;BothKeyboard",
-                    "action": "InteractInput",
+                    "groups": "BothKeyboard",
+                    "action": "InteractInputHusband",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -404,7 +413,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Joystick",
-                    "action": "InteractInput",
+                    "action": "InteractInputHusband",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d8495d56-3668-4daa-b9bc-2267c723c1c5",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "BothKeyboard",
+                    "action": "InteractInputHusband",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -680,6 +700,39 @@
                     "processors": "",
                     "groups": "Joystick",
                     "action": "zAxisWife",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "09f6b8bd-61a5-4dab-b9f7-4f731f12313d",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard;BothKeyboard",
+                    "action": "InteractInputWife",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0c4c8038-5c5b-4dab-af76-402b0e60aaa2",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Joystick",
+                    "action": "InteractInputWife",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3c3ecfcc-bae2-4125-b8c5-bfd1ff57e782",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "BothKeyboard",
+                    "action": "InteractInputWife",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

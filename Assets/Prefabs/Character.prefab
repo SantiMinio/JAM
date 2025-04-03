@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 6552932077902887852}
   - component: {fileID: 5639558122209801518}
   - component: {fileID: 7637203084749631247}
+  - component: {fileID: 6584395250653436831}
+  - component: {fileID: 5917191024750151858}
   m_Layer: 20
   m_Name: Character
   m_TagString: rayTarget
@@ -59,6 +61,8 @@ MonoBehaviour:
   anim: {fileID: 5089256509117772097}
   moveComp: {fileID: 4221863562213927739}
   physics: {fileID: 3638794263350232906}
+  interactor: {fileID: 6584395250653436831}
+  grabComp: {fileID: 5917191024750151858}
   characterFallingSound: Character_Falling
   characterFallInLavaSound: Character_FallInLava
   characterGetHitSound: Character_GetHit
@@ -204,7 +208,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.3
+  m_Radius: 0.18
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -295,7 +299,19 @@ MonoBehaviour:
     m_ActionId: ffdf8484-bf40-4425-9d96-32b600cddafd
     m_ActionName: Player/ActionWife[/Keyboard/space]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8245841957816015150}
+        m_TargetAssemblyTypeName: CharacterBase, Assembly-CSharp
+        m_MethodName: Interact
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 39b39b14-39ae-4a96-8b02-82ce19242833
     m_ActionName: Player/InteractInput[/Keyboard/e]
   - m_PersistentCalls:
@@ -326,11 +342,43 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 8bdf6279-7bcb-41f7-add7-452c8cf58e44
     m_ActionName: Player/SubmitDialog[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e79efbb6-ab99-4d1d-a7d7-369f818d5a98
+    m_ActionName: Player/InteractInputWife[/Keyboard/leftShift]
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: Keyboard
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &6584395250653436831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644881505203095043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3792253cc72f92243b3fd4da25dcd23c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactables: []
+--- !u!114 &5917191024750151858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644881505203095043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acc76be0218e6544094a7c4b0e363d17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentGrabbable: {fileID: 0}
+  grabbablePosition: {fileID: 7774104353278158382}
+  moveComp: {fileID: 4221863562213927739}
 --- !u!1 &1450549046845112448
 GameObject:
   m_ObjectHideFlags: 0
@@ -736,6 +784,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &3612108838384207713
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7774104353278158382}
+  m_Layer: 20
+  m_Name: GrabbedObjectPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7774104353278158382
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3612108838384207713}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
+  m_LocalPosition: {x: 0, y: 1.2482809, z: 1.824}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4743072901004885932}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: -90}
 --- !u!1 &3981408435356223440
 GameObject:
   m_ObjectHideFlags: 0
@@ -11174,6 +11253,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 3095100397231801997}
+    - targetCorrespondingSourceObject: {fileID: 5975503298490748005, guid: 932fa6d662c6264429a092d1a46de763,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7774104353278158382}
     - targetCorrespondingSourceObject: {fileID: 8689635091176978617, guid: 932fa6d662c6264429a092d1a46de763,
         type: 3}
       insertIndex: 0

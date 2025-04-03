@@ -98,6 +98,8 @@ GameObject:
   - component: {fileID: 1625181876792820894}
   - component: {fileID: 3244898291756895268}
   - component: {fileID: 4618981213007331639}
+  - component: {fileID: 7072328598982905122}
+  - component: {fileID: 5698428208006130146}
   m_Layer: 21
   m_Name: Barril
   m_TagString: rayTarget
@@ -247,6 +249,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c192e7aae5224534984cfab0a3009ce3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7072328598982905122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477870808459213379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dc8cc82a9ac9124ba336e77bf913caa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  getMessage: 
+  autoCollect: 1
+  trigger: {fileID: 5698428208006130146}
+  rb: {fileID: 1625181876792820894}
+--- !u!135 &5698428208006130146
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477870808459213379}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 1.33
+  m_Center: {x: -0.011020035, y: 0, z: 0.40204573}
 --- !u!1 &4227463466912436310
 GameObject:
   m_ObjectHideFlags: 0

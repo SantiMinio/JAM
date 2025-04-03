@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CharacterBase : Entity
 {
@@ -10,6 +11,8 @@ public class CharacterBase : Entity
     [SerializeField] Animator anim = null;
     [SerializeField] MovementComponent moveComp = null;
     [SerializeField] PhysicsController physics = null;
+    [SerializeField] Interactor interactor = null;
+    [SerializeField] GrabberComponent grabComp = null;
 
     [SerializeField] string characterFallingSound = "Character_Falling";
     [SerializeField] string characterFallInLavaSound = "Character_FallInLava";
@@ -27,38 +30,49 @@ public class CharacterBase : Entity
 
   
     #region Inputs
-    public void MoveY(UnityEngine.InputSystem.InputAction.CallbackContext callback)
+    public void MoveY(InputAction.CallbackContext callback)
     {
         if (IsDead || endGame) return;
         moveComp.SetAxisY(callback.ReadValue<float>());
     }
 
-    public void MoveX(UnityEngine.InputSystem.InputAction.CallbackContext callback)
+    public void MoveX(InputAction.CallbackContext callback)
     {
         if (IsDead || endGame) return;
         moveComp.SetAxisX(callback.ReadValue<float>());
     }
 
-    public void ActionAbility(UnityEngine.InputSystem.InputAction.CallbackContext callback)
+    public void ActionAbility(InputAction.CallbackContext callback)
     {
-        if (IsDead || endGame) return;
+        if (grabComp.HaveGrabbedObject() || IsDead || endGame) return;
 
         switch (callback.phase)
         {
-            case UnityEngine.InputSystem.InputActionPhase.Disabled:
+            case InputActionPhase.Disabled:
                 break;
-            case UnityEngine.InputSystem.InputActionPhase.Waiting:
+            case InputActionPhase.Waiting:
                 break;
-            case UnityEngine.InputSystem.InputActionPhase.Started:
+            case InputActionPhase.Started:
                 action.StartAction();
                 break;
-            case UnityEngine.InputSystem.InputActionPhase.Performed:
+            case InputActionPhase.Performed:
                 action.KeepAction();
                 break;
-            case UnityEngine.InputSystem.InputActionPhase.Canceled:
+            case InputActionPhase.Canceled:
                 action.EndAction();
                 break;
         }
+    }
+
+    public void Interact(InputAction.CallbackContext callback)
+    {
+        if (callback.phase != InputActionPhase.Started || IsDead || endGame) return;
+
+
+        if (grabComp.HaveGrabbedObject())
+            grabComp.ThrowObject();
+        else
+            interactor.Interact();
     }
     #endregion
 
