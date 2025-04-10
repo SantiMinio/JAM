@@ -242,6 +242,17 @@
                     "isPartOfComposite": false
                 },
                 {
+                    "name": "",
+                    "id": "68c210f0-a360-455d-bd27-6833fc86988b",
+                    "path": "<HID::DragonRise inc.   Generic   USB  Joystick  >/stick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Joystick",
+                    "action": "xAxisHusband",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
                     "name": "1D Axis",
                     "id": "f008352f-1b17-4155-8083-eff99356cdaa",
                     "path": "1DAxis",
@@ -342,6 +353,17 @@
                 },
                 {
                     "name": "",
+                    "id": "b519feff-c37e-4fc9-aa80-884f64112da4",
+                    "path": "<HID::DragonRise inc.   Generic   USB  Joystick  >/stick/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Joystick",
+                    "action": "zAxisHusband",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "4643f3d9-8724-4e5d-a94c-98ea0595f6fd",
                     "path": "<Keyboard>/space",
                     "interactions": "",
@@ -380,6 +402,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "BothKeyboard",
+                    "action": "ActionHusband",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d45f7a4f-0646-4ba3-ab15-ee8af49e7b3b",
+                    "path": "<HID::DragonRise inc.   Generic   USB  Joystick  >/button11",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Joystick",
                     "action": "ActionHusband",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -430,6 +463,17 @@
                 },
                 {
                     "name": "",
+                    "id": "bed0d623-ba66-4bae-8391-95fe30a14bc3",
+                    "path": "<HID::DragonRise inc.   Generic   USB  Joystick  >/button12",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Joystick",
+                    "action": "InteractInputHusband",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "62c8045d-1c81-43ad-99fb-a4ac6e150f88",
                     "path": "<Keyboard>/space",
                     "interactions": "",
@@ -463,6 +507,17 @@
                 },
                 {
                     "name": "",
+                    "id": "ce3ead25-6462-4194-bc6f-1c105f59d99d",
+                    "path": "<HID::DragonRise inc.   Generic   USB  Joystick  >/button11",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ActionWife",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "8e84ddf2-d160-4ae7-9ca9-f22aa53cbe2b",
                     "path": "<Keyboard>/escape",
                     "interactions": "",
@@ -479,6 +534,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Joystick;BothGamepad",
+                    "action": "PauseInput",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "448877b0-ccc3-4829-9601-b9faa31bdb90",
+                    "path": "<HID::DragonRise inc.   Generic   USB  Joystick  >/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Joystick",
                     "action": "PauseInput",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -649,6 +715,17 @@
                     "isPartOfComposite": false
                 },
                 {
+                    "name": "",
+                    "id": "80392025-ef39-468d-86d9-a3bb7deb3e40",
+                    "path": "<HID::DragonRise inc.   Generic   USB  Joystick  >/stick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Joystick",
+                    "action": "xAxisWife",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
                     "name": "1D Axis",
                     "id": "969d2feb-b033-4739-bd67-69e4810db5b3",
                     "path": "1DAxis",
@@ -705,6 +782,17 @@
                 },
                 {
                     "name": "",
+                    "id": "b9b5c9a1-f9a3-4537-9ce1-cfdf492b831b",
+                    "path": "<HID::DragonRise inc.   Generic   USB  Joystick  >/stick/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Joystick",
+                    "action": "zAxisWife",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "09f6b8bd-61a5-4dab-b9f7-4f731f12313d",
                     "path": "<Keyboard>/leftShift",
                     "interactions": "",
@@ -732,6 +820,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "BothKeyboard",
+                    "action": "InteractInputWife",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9e61107f-a3af-483e-bb93-f000d6069188",
+                    "path": "<HID::DragonRise inc.   Generic   USB  Joystick  >/button12",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "InteractInputWife",
                     "isComposite": false,
                     "isPartOfComposite": false
