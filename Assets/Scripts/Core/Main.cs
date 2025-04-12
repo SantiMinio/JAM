@@ -35,7 +35,7 @@ public class Main : MonoBehaviour
     {
         checkpointPosition = SaveData.saveData.checkpointPosition;
 
-        Debug.Log(CheckpointManager.Instance);
+        
         if(checkpointPosition != Vector3.zero && CheckpointManager.Instance.CheckIfCheckpoint(checkpointPosition))
         {
             charOne.transform.position = checkpointPosition;

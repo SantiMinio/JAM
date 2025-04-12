@@ -155,6 +155,7 @@ public class CharacterBase : Entity
     protected override void OnDeath()
     {
         var characters = Main.instance.GetCharacters();
+        physics.StopPhysics();
         for (int i = 0; i < characters.Length; i++)
         {
             if (characters[i] != this) characters[i].Cry();
