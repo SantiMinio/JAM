@@ -6,6 +6,7 @@ using System;
 public class TimerManager : MonoSingleton<TimerManager>, IPause
 {
     CDModule cdModule = new CDModule();
+    CDModule cdModuleUnpaused = new CDModule();
     float currentTimer;
 
 
@@ -20,12 +21,7 @@ public class TimerManager : MonoSingleton<TimerManager>, IPause
 
     public string AddTimer(float timer, Action OnStartTimer, Action OnEndTimer)
     {
-        string timerKey = currentTimer.ToString();
-        OnStartTimer?.Invoke();
-        cdModule.AddCD(timerKey, OnEndTimer, timer);
-        currentTimer += 0.01f;
-
-        return timerKey;
+        return AddAnim(timer, OnStartTimer, OnEndTimer, null);
     }
 
     public void StopTimer(string key, bool executeEnd)
@@ -44,10 +40,18 @@ public class TimerManager : MonoSingleton<TimerManager>, IPause
         return timerKey;
     }
 
-    public string AddAOTEffect(int ticks, float ticksInterval, Action OnStartTimer, Action OnEndTimer, Action TickEffect, bool startTicking = false)
+    public string AddAnimUnpaused(float timer, Action OnStartTimer, Action OnEndTimer, Action<float> AnimCallback)
     {
         string timerKey = currentTimer.ToString();
         OnStartTimer?.Invoke();
+        cdModuleUnpaused.AddCD(timerKey, OnEndTimer, timer, AnimCallback);
+        currentTimer += 0.01f;
+
+        return timerKey;
+    }
+
+    public string AddAOTEffect(int ticks, float ticksInterval, Action OnStartTimer, Action OnEndTimer, Action TickEffect, bool startTicking = false)
+    {
         float interval = ticksInterval;
         int curTicks = ticks - (startTicking ? 1 : 0);
         if (startTicking)
@@ -63,14 +67,13 @@ public class TimerManager : MonoSingleton<TimerManager>, IPause
             }
         };
 
-        cdModule.AddCD(timerKey, OnEndTimer, ((float)ticks * ticksInterval) +0.1f - (startTicking ? ticksInterval : 0), anim);
-        currentTimer += 0.01f;
-
-        return timerKey;
+        return AddAnim(((float)ticks * ticksInterval) + 0.1f - (startTicking ? ticksInterval : 0), OnStartTimer, OnEndTimer, anim);
     }
 
     private void Update()
     {
+        cdModuleUnpaused.UpdateCD();
+
         if (paused) return;
 
         cdModule.UpdateCD();

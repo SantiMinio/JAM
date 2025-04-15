@@ -25,6 +25,5 @@ public class UI_Pause : MonoBehaviour
     {
         SaveData.saveData.checkpointPosition = Vector3.zero;
         SceneLoader.Load(SceneManager.GetActiveScene().name);
-
     }
 }

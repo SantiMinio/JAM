@@ -117,4 +117,14 @@ public class InputSwitcher : MonoBehaviour
         InputUser.PerformPairingWithDevice(device, inputs[player].user);
         inputs[player].user.ActivateControlScheme(schema);
     }
+    
+    public void EnableInput(int player)
+    {
+        inputs[player].enabled = true;
+    }
+
+    public void DisableInput(int player)
+    {
+        inputs[player].enabled = false;
+    }
 }
