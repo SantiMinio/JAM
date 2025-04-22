@@ -92,7 +92,7 @@ namespace AmplifyShaderEditor
 
 			if( dataCollector.PortCategory == MasterNodePortCategory.Fragment || dataCollector.PortCategory == MasterNodePortCategory.Debug )
 			{
-				dataCollector.AddToInput( UniqueId, SurfaceInputs.WORLD_NORMAL, CurrentPrecisionType );
+				dataCollector.AddToInput( UniqueId, SurfaceInputs.WORLD_NORMAL, UIUtils.CurrentWindow.CurrentGraph.CurrentPrecision );
 
 				string result = string.Empty;
 				if( m_inputPorts[ 0 ].IsConnected )
@@ -114,7 +114,7 @@ namespace AmplifyShaderEditor
 
 					if( connCount > 1 )
 					{
-						dataCollector.AddToLocalVariables( UniqueId, string.Format( NormalVecDecStr, NormalVecValStr + OutputId, result ) );
+						dataCollector.AddToFragmentLocalVariables( UniqueId, string.Format( NormalVecDecStr, NormalVecValStr + OutputId, result ) );
 						return GetOutputVectorItem( 0, outputId, NormalVecValStr + OutputId );
 					}
 				}

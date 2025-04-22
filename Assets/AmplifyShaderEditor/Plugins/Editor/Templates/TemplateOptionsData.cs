@@ -59,6 +59,7 @@ namespace AmplifyShaderEditor
 
 	public enum AseOptionsActionType
 	{
+		RefreshOption,
 		ShowOption,
 		HideOption,
 		SetOption,
@@ -114,7 +115,8 @@ namespace AmplifyShaderEditor
 		StencilZFail,
 		RenderType,
 		RenderQueue,
-		DisableBatching
+		DisableBatching,
+		ChangeTagValue
 	}
 
 	public enum AseOptionsSetup
@@ -185,10 +187,37 @@ namespace AmplifyShaderEditor
 	}
 
 	[Serializable]
+	public class TemplateActionItemConditional
+	{
+		public enum Conditional
+		{
+			None,
+			Equal,
+			NotEqual
+		}
+
+		public Conditional Condition = Conditional.None;
+		public string Option = null;
+		public string Value = null;
+
+		public bool IsValid => ( Condition != Conditional.None );
+
+		public TemplateActionItemConditional( string condition, string option, string value )
+		{
+			Condition = condition.Equals( "=" ) ? Conditional.Equal : Conditional.NotEqual;
+			Option = option;
+			Value = value;
+		}
+	}
+
+	[Serializable]
 	public class TemplateActionItem
 	{
+		public TemplateActionItemConditional ActionConditional = null;
+
 		public AseOptionsActionType ActionType;
 		public string ActionData = string.Empty;
+		public string ActionData2 = string.Empty;
 		public int ActionDataIdx = -1;
 
 		public string PassName;
@@ -442,7 +471,7 @@ namespace AmplifyShaderEditor
 		//public const string PassOptionsMainPattern = @"\/\*ase_pass_options:([\w:= ]*)[\n]([\w: \t;\n&|,_\+-]*)\*\/";
 		//public const string SubShaderOptionsMainPattern = @"\/\*ase_subshader_options:([\w:= ]*)[\n]([\w: \t;\n&|,_\+-]*)\*\/";
 		public const string PassOptionsMainPattern = "\\/\\*ase_pass_options:([\\w:= ]*)[\n]([\\w: \t;\n&|,_\\+\\-\\(\\)\\[\\]\\\"\\=\\/\\.]*)\\*\\/";
-		public const string SubShaderOptionsMainPattern = "\\/\\*ase_subshader_options:([\\w:= ]*)[\n]([\\w: \t;\n&|,_\\+\\-\\(\\)\\[\\]\\\"\\=\\/\\.]*)\\*\\/";
+		public const string SubShaderOptionsMainPattern = "\\/\\*ase_subshader_options:([\\w:= ]*)[\n]([\\w: \t?!;\n&|,_\\+\\-\\(\\)\\[\\]\\\"\\=\\/\\.]*)\\*\\/";
 		public static readonly char OptionsDataSeparator = ',';
 		public static Dictionary<string, AseOptionsSetup> AseOptionsSetupDict = new Dictionary<string, AseOptionsSetup>()
 		{
@@ -459,6 +488,7 @@ namespace AmplifyShaderEditor
 
 		public static Dictionary<string, AseOptionsActionType> AseOptionsActionTypeDict = new Dictionary<string, AseOptionsActionType>()
 		{
+			{"RefreshOption",  AseOptionsActionType.RefreshOption },
 			{"ShowOption",  AseOptionsActionType.ShowOption },
 			{"HideOption",  AseOptionsActionType.HideOption },
 			{"SetOption",  AseOptionsActionType.SetOption },
@@ -489,6 +519,9 @@ namespace AmplifyShaderEditor
 			bool success = true;
 			switch( original )
 			{
+				case AseOptionsActionType.RefreshOption:
+				inverted = AseOptionsActionType.RefreshOption;
+				break;
 				case AseOptionsActionType.ShowOption:
 				inverted = AseOptionsActionType.HideOption;
 				break;
@@ -732,7 +765,20 @@ namespace AmplifyShaderEditor
 								break;
 								default:
 								{
-									if( optionItemToIndex.ContainsKey( optionItems[ 0 ] ) )
+									// @diogo: handle conditional action first
+									const string IsConditionalPattern = @"^\s*(.+?)\s*\?\s*(.+?)\s*(=|!=)\s*(.+?)\s*$";
+									TemplateActionItemConditional condition = null;
+									Match isConditionalMatch = Regex.Match( optionItems[ 0 ], IsConditionalPattern );
+									if ( isConditionalMatch.Success )
+									{
+										optionItems[ 0 ] = isConditionalMatch.Groups[ 1 ].Value;
+										condition = new TemplateActionItemConditional(
+											isConditionalMatch.Groups[ 3 ].Value,
+											isConditionalMatch.Groups[ 2 ].Value,
+											isConditionalMatch.Groups[ 4 ].Value );
+									}
+
+									if ( optionItemToIndex.ContainsKey( optionItems[ 0 ] ) )
 									{
 										int idx = 0;
 										if( currentOption != null && currentOption.UIWidget == AseOptionsUIWidget.Toggle )
@@ -745,7 +791,7 @@ namespace AmplifyShaderEditor
 										{
 											idx = optionItemToIndex[ optionItems[ 0 ] ];
 										}
-										actionItemsList[ idx ].Add( CreateActionItem( isSubShader, optionItems ) );
+										actionItemsList[ idx ].Add( CreateActionItem( isSubShader, optionItems, condition ) );
 									}
 									else
 									{
@@ -805,11 +851,12 @@ namespace AmplifyShaderEditor
 			}
 		}
 
-		static TemplateActionItem CreateActionItem( bool isSubshader, string[] optionItems )
+		static TemplateActionItem CreateActionItem( bool isSubshader, string[] optionItems, TemplateActionItemConditional condition = null )
 		{
 			TemplateActionItem actionItem = new TemplateActionItem();
 			try
 			{
+				actionItem.ActionConditional = condition;
 				actionItem.ActionType = AseOptionsActionTypeDict[ optionItems[ 1 ] ];
 				int optionsIdx = 2;
 				if( optionItems.Length > 3 )
@@ -826,6 +873,16 @@ namespace AmplifyShaderEditor
 
 				switch( actionItem.ActionType )
 				{
+					case AseOptionsActionType.RefreshOption:
+					{
+						string[] arr = optionItems[ optionsIdx ].Split( OptionsDataSeparator );
+						if ( arr.Length > 1 )
+						{
+							Debug.LogWarning( "RefreshOption should not have additional parameters other than Option name." );
+						}
+						actionItem.ActionData = arr[ 0 ];
+					}
+					break;
 					case AseOptionsActionType.ShowOption:
 					case AseOptionsActionType.HideOption:
 					{
@@ -865,8 +922,11 @@ namespace AmplifyShaderEditor
 						string[] arr = optionItems[ optionsIdx ].Split( OptionsDataSeparator );
 						if( arr.Length > 1 )
 						{
-							int.TryParse( arr[ 0 ], out actionItem.ActionDataIdx );
-							actionItem.ActionData = arr[ 1 ];
+							if ( !int.TryParse( arr[ 0 ], out actionItem.ActionDataIdx ) )
+								actionItem.ActionDataIdx = -1;
+						
+							actionItem.ActionData = arr[ 0 ];
+							actionItem.ActionData2 = arr[ 1 ];
 						}
 					}
 					break;
@@ -1144,6 +1204,17 @@ namespace AmplifyShaderEditor
 								{
 									if( arr.Length > 1 )
 										actionItem.ActionData = arr[ 1 ];
+								}
+								break;
+								case PropertyActionsEnum.ChangeTagValue:
+								{
+									if( arr.Length > 2 )
+									{
+										//Tag Name
+										actionItem.ActionData = arr[ 1 ];
+										//Tag Value
+										actionItem.ActionBuffer = arr[ 2 ];
+									}
 								}
 								break;
 							}

@@ -12,7 +12,7 @@ namespace AmplifyShaderEditor
 	[Serializable]
 	public class TemplateOptionUIItem
 	{
-		public delegate void OnActionPerformed( bool actionFromUser, bool isRefreshing, bool invertAction, TemplateOptionUIItem uiItem, params TemplateActionItem[] validActions );
+		public delegate void OnActionPerformed( bool actionFromUser, bool isRefreshing, bool invertAction, TemplateOptionUIItem uiItem, int recursionLevel = 0, params TemplateActionItem[] validActions );
 		public event OnActionPerformed OnActionPerformedEvt;
 
 		[SerializeField]
@@ -32,6 +32,9 @@ namespace AmplifyShaderEditor
 
 		[SerializeField]
 		private bool m_invertActionOnDeselection = false;
+
+		[SerializeField]
+		private Int64 m_lastClickedTimestamp = 0;
 
 		public TemplateOptionUIItem( TemplateOptionsItem options )
 		{
@@ -56,6 +59,7 @@ namespace AmplifyShaderEditor
 			m_checkOnExecute = origin.CheckOnExecute;
 			m_invertActionOnDeselection = origin.InvertActionOnDeselection;
 		}
+		
 
 		public void Draw( UndoParentNode owner )
 		{
@@ -136,12 +140,13 @@ namespace AmplifyShaderEditor
 				}
 				if( EditorGUI.EndChangeCheck() )
 				{
+					m_lastClickedTimestamp = DateTime.UtcNow.Ticks;
 					if( OnActionPerformedEvt != null )
 					{
 						if( m_invertActionOnDeselection )
-							OnActionPerformedEvt( true, false, lastOption != m_options.DisableIdx, this, m_options.ActionsPerOption[ lastOption ] );
+							OnActionPerformedEvt( true, false, lastOption != m_options.DisableIdx, this, 0, m_options.ActionsPerOption[ lastOption ] );
 
-						OnActionPerformedEvt( true, false, false, this, m_options.ActionsPerOption[ m_currentOption ] );
+						OnActionPerformedEvt( true, false, false, this, 0, m_options.ActionsPerOption[ m_currentOption ] );
 					}
 				}
 			}
@@ -164,14 +169,14 @@ namespace AmplifyShaderEditor
 							{
 								if( i != m_currentOption && i != m_options.DisableIdx )
 								{
-									OnActionPerformedEvt( actionFromUser, false, true, this, m_options.ActionsPerOption[ i ] );
+									OnActionPerformedEvt( actionFromUser, false, true, this, 0, m_options.ActionsPerOption[ i ] );
 								}
 							}
 						}
 
-						OnActionPerformedEvt( actionFromUser, false, false, this, m_options.ActionsPerOption[ m_currentOption ] );
+						OnActionPerformedEvt( actionFromUser, false, false, this, 0, m_options.ActionsPerOption[ m_currentOption ] );
 						//if( !m_isVisible )
-							//OnActionPerformedEvt( isRefreshing, false, this, m_options.ActionsPerOption[ m_options.DisableIdx ] );
+							//OnActionPerformedEvt( isRefreshing, false, this, 0, m_options.ActionsPerOption[ m_options.DisableIdx ] );
 					}
 				}
 
@@ -185,7 +190,7 @@ namespace AmplifyShaderEditor
 
 				if( OnActionPerformedEvt != null )
 				{
-					OnActionPerformedEvt( actionFromUser, false, false, this, m_options.ActionsPerOption[ m_options.DisableIdx ] );
+					OnActionPerformedEvt( actionFromUser, false, false, this, 0, m_options.ActionsPerOption[ m_options.DisableIdx ] );
 				}
 			}
 		}
@@ -213,7 +218,7 @@ namespace AmplifyShaderEditor
 			}
 		}
 
-		public void Refresh()
+		public void Update( int recursionLevel = 0, bool isRefreshing = true )
 		{
 			if( OnActionPerformedEvt != null )
 			{
@@ -223,12 +228,12 @@ namespace AmplifyShaderEditor
 					{
 						if( i != m_currentOption && i != m_options.DisableIdx )
 						{
-							OnActionPerformedEvt( false, true, true, this, m_options.ActionsPerOption[ i ] );
+							OnActionPerformedEvt( false, isRefreshing, true, this, recursionLevel, m_options.ActionsPerOption[ i ] );
 						}
 					}
 				}
 
-				OnActionPerformedEvt( false, true, false, this, m_options.ActionsPerOption[ m_currentOption ] );
+				OnActionPerformedEvt( false, isRefreshing, false, this, recursionLevel, m_options.ActionsPerOption[ m_currentOption ] );
 			}
 		}
 
@@ -319,5 +324,6 @@ namespace AmplifyShaderEditor
 			}
 		}
 		public bool InvertActionOnDeselection { get { return m_invertActionOnDeselection; } }
+		public Int64 LastClickedTimestamp { get { return m_lastClickedTimestamp; } set { m_lastClickedTimestamp = value; } }
 	}
 }

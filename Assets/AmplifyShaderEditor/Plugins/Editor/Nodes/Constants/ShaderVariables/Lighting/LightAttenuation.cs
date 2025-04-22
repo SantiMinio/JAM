@@ -1,25 +1,19 @@
 // Amplify Shader Editor - Visual Shader Editing Tool
 // Copyright (c) Amplify Creations, Lda <info@amplify.pt>
+using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
 namespace AmplifyShaderEditor
 {
 	[System.Serializable]
-	[NodeAttributes( "Light Attenuation", "Light", "Contains light attenuation for all types of light", NodeAvailabilityFlags = (int)( NodeAvailability.CustomLighting | NodeAvailability.TemplateShader ) )]
+	[NodeAttributes( "Main Light Attenuation", "Lighting", "Attenuation/shadow of main Directional light.", NodeAvailabilityFlags = (int)( NodeAvailability.CustomLighting | NodeAvailability.TemplateShader ) )]
 	public sealed class LightAttenuation : ParentNode
 	{
 		static readonly string SurfaceError = "This node only returns correct information using a custom light model, otherwise returns 1";
 		static readonly string TemplateError = "This node will only produce proper attenuation if the template contains a shadow caster pass";
 
 		private const string ASEAttenVarName = "ase_lightAtten";
-
-		private readonly string[] LightweightPragmaMultiCompiles =
-		{
-			"multi_compile _ _MAIN_LIGHT_SHADOWS",
-			"multi_compile _ _MAIN_LIGHT_SHADOWS_CASCADE",
-			"multi_compile _ _SHADOWS_SOFT"
-		};
 
 		//private readonly string[] LightweightVertexInstructions =
 		//{
@@ -32,7 +26,8 @@ namespace AmplifyShaderEditor
 		private readonly string[] LightweightFragmentInstructions =
 		{
 			/*shadow coords*/"Light ase_lightAtten_mainLight = GetMainLight( {0} );",
-			"ase_lightAtten = ase_lightAtten_mainLight.distanceAttenuation * ase_lightAtten_mainLight.shadowAttenuation;"
+			//"ase_lightAtten = ase_lightAtten_mainLight.distanceAttenuation * ase_lightAtten_mainLight.shadowAttenuation;"
+			"ase_lightAtten = {0}.distanceAttenuation * {0}.shadowAttenuation;"
 		};
 
 		protected override void CommonInit( int uniqueId )
@@ -61,16 +56,96 @@ namespace AmplifyShaderEditor
 				}
 				else
 				{
-					if( dataCollector.CurrentSRPType == TemplateSRPType.Lightweight )
+					if( dataCollector.CurrentSRPType == TemplateSRPType.URP )
 					{
 						if( dataCollector.HasLocalVariable( LightweightLightAttenDecl ))
 							return ASEAttenVarName;
 
-						// Pragmas
-						for( int i = 0; i < LightweightPragmaMultiCompiles.Length; i++ )
-							dataCollector.AddToPragmas( UniqueId, LightweightPragmaMultiCompiles[ i ] );
+						bool isForward = dataCollector.CurrentPassName.Contains( "Forward" );
+						bool isGBuffer = dataCollector.CurrentPassName.Contains( "GBuffer" );
 
-						string shadowCoords = dataCollector.TemplateDataCollectorInstance.GetShadowCoords( UniqueId/*, false, dataCollector.PortCategory*/ );
+						// Pragmas
+						var pragmas = new List<string>();
+						if ( ASEPackageManagerHelper.CurrentSRPVersion >= 140009 )
+						{
+							if ( isForward || isGBuffer )
+							{
+								pragmas.Add( "multi_compile _ _MAIN_LIGHT_SHADOWS _MAIN_LIGHT_SHADOWS_CASCADE _MAIN_LIGHT_SHADOWS_SCREEN" );
+								pragmas.Add( "multi_compile_fragment _ _SHADOWS_SOFT _SHADOWS_SOFT_LOW _SHADOWS_SOFT_MEDIUM _SHADOWS_SOFT_HIGH" );
+							}
+
+							if ( isForward )
+							{
+								pragmas.Add( "multi_compile _ _ADDITIONAL_LIGHTS_VERTEX _ADDITIONAL_LIGHTS" );
+								pragmas.Add( "multi_compile_fragment _ _ADDITIONAL_LIGHT_SHADOWS" );
+								pragmas.Add( "multi_compile _ _FORWARD_PLUS" );
+							}
+						}
+						else if ( ASEPackageManagerHelper.CurrentURPBaseline >= ASESRPBaseline.ASE_SRP_14 )
+						{
+							if ( isForward || isGBuffer )
+							{
+								pragmas.Add( "multi_compile _ _MAIN_LIGHT_SHADOWS _MAIN_LIGHT_SHADOWS_CASCADE _MAIN_LIGHT_SHADOWS_SCREEN" );
+								pragmas.Add( "multi_compile_fragment _ _SHADOWS_SOFT" );
+							}
+
+							if ( isForward )
+							{
+								pragmas.Add( "multi_compile _ _ADDITIONAL_LIGHTS_VERTEX _ADDITIONAL_LIGHTS" );
+								pragmas.Add( "multi_compile_fragment _ _ADDITIONAL_LIGHT_SHADOWS" );
+								pragmas.Add( "multi_compile _ _FORWARD_PLUS" );
+							}
+						}
+						else if ( ASEPackageManagerHelper.CurrentURPBaseline >= ASESRPBaseline.ASE_SRP_12 )
+						{
+							if ( isForward || isGBuffer )
+							{
+								pragmas.Add( "multi_compile _ _MAIN_LIGHT_SHADOWS _MAIN_LIGHT_SHADOWS_CASCADE _MAIN_LIGHT_SHADOWS_SCREEN" );
+								pragmas.Add( "multi_compile_fragment _ _SHADOWS_SOFT" );
+							}
+
+							if ( isForward )
+							{
+								pragmas.Add( "multi_compile _ _ADDITIONAL_LIGHTS_VERTEX _ADDITIONAL_LIGHTS" );
+								pragmas.Add( "multi_compile_fragment _ _ADDITIONAL_LIGHT_SHADOWS" );
+							}
+						}
+						else if ( ASEPackageManagerHelper.CurrentURPBaseline >= ASESRPBaseline.ASE_SRP_11 )
+						{
+							if ( isForward || isGBuffer )
+							{
+								pragmas.Add( "multi_compile _ _MAIN_LIGHT_SHADOWS _MAIN_LIGHT_SHADOWS_CASCADE _MAIN_LIGHT_SHADOWS_SCREEN" );
+								pragmas.Add( "multi_compile_fragment _ _SHADOWS_SOFT" );
+							}
+
+							if ( isForward )
+							{
+								pragmas.Add( "multi_compile _ _ADDITIONAL_LIGHTS_VERTEX _ADDITIONAL_LIGHTS" );
+								pragmas.Add( "multi_compile_fragment _ _ADDITIONAL_LIGHT_SHADOWS" );
+							}
+						}
+						else
+						{
+							if ( isForward || isGBuffer )
+							{
+								pragmas.Add( "multi_compile _ _MAIN_LIGHT_SHADOWS" );
+								pragmas.Add( "multi_compile _ _MAIN_LIGHT_SHADOWS_CASCADE" );
+								pragmas.Add( "multi_compile_fragment _ _SHADOWS_SOFT" );
+							}
+
+							if ( isForward )
+							{
+								pragmas.Add( "multi_compile _ _ADDITIONAL_LIGHTS_VERTEX _ADDITIONAL_LIGHTS" );
+								pragmas.Add( "multi_compile_fragment _ _ADDITIONAL_LIGHT_SHADOWS" );
+							}
+						}
+
+						for ( int i = 0; i < pragmas.Count; i++ )
+						{
+							dataCollector.AddToPragmas( UniqueId, pragmas[ i ] );
+						}
+
+						//string shadowCoords = dataCollector.TemplateDataCollectorInstance.GetShadowCoords( UniqueId/*, false, dataCollector.PortCategory*/ );
 						//return shadowCoords;
 						// Vertex Instructions
 						//TemplateVertexData shadowCoordsData = dataCollector.TemplateDataCollectorInstance.RequestNewInterpolator( WirePortDataType.FLOAT4, false );
@@ -88,8 +163,9 @@ namespace AmplifyShaderEditor
 						//string fragmentShadowCoords = fragmentInterpName + "." + shadowCoordsData.VarNameWithSwizzle;
 
 						dataCollector.AddLocalVariable( UniqueId, LightweightLightAttenDecl );
-						dataCollector.AddLocalVariable( UniqueId, string.Format( LightweightFragmentInstructions[ 0 ], shadowCoords ) );
-						dataCollector.AddLocalVariable( UniqueId, LightweightFragmentInstructions[ 1 ] );
+						string mainLight = dataCollector.TemplateDataCollectorInstance.GetURPMainLight( UniqueId );
+						//dataCollector.AddLocalVariable( UniqueId, string.Format( LightweightFragmentInstructions[ 0 ], shadowCoords ) );
+						dataCollector.AddLocalVariable( UniqueId, string.Format( LightweightFragmentInstructions[ 1 ], mainLight) );
 						return ASEAttenVarName;
 					}
 					else
@@ -113,7 +189,7 @@ namespace AmplifyShaderEditor
 		public override void Draw( DrawInfo drawInfo )
 		{
 			base.Draw( drawInfo );
-			if( ContainerGraph.CurrentCanvasMode == NodeAvailability.TemplateShader && ContainerGraph.CurrentSRPType != TemplateSRPType.Lightweight )
+			if( ContainerGraph.CurrentCanvasMode == NodeAvailability.TemplateShader && ContainerGraph.CurrentSRPType != TemplateSRPType.URP )
 			{
 				m_showErrorMessage = true;
 				m_errorMessageTypeIsError = NodeMessageType.Warning;
