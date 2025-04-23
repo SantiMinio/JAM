@@ -6,6 +6,7 @@ public class PhotoModel : MonoBehaviour
 {
     public Camera cam;
     [SerializeField] Animator[] animators;
+    public string ID;
 
     public void StartPhoto()
     {

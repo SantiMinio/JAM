@@ -8,6 +8,7 @@ public class PhotoManager : MonoSingleton<PhotoManager>
     [SerializeField] Camera mainCamera;
 
     [SerializeField] float fadeSpeed = 0.5f;
+    [SerializeField] GameObject photoUI = null;
     PhotoModel curModel;
     PhotoSettings curSettings;
 
@@ -37,15 +38,31 @@ public class PhotoManager : MonoSingleton<PhotoManager>
 
     void FadeInOver()
     {
-        mainCamera.enabled = false;
+        //mainCamera.enabled = false;
         curModel.gameObject.SetActive(true);
+        photoUI.gameObject.SetActive(true);
         UIManager.instance.DoFadeOut(fadeSpeed, null);
         InputSwitcher.instance.EnableInput(2);
         InputSwitcher.instance.EnableInput(3);
     }
 
+    void TakePhoto()
+    {
+        var renderTexture = curModel.cam.targetTexture;
+        Texture2D render = new Texture2D(renderTexture.width, renderTexture.height, TextureFormat.ARGB32, false);
+        Rect rect = new Rect(0,0, renderTexture.width,renderTexture.height);
+        render.ReadPixels(rect, 0, 0);
+        render.Apply();
+        PhotoDatabase.SaveImage(curModel.ID, render);
+    }
+
     public void ClosePhotoWindow()
     {
+        photoUI.gameObject.SetActive(false);
+        curModel.gameObject.SetActive(false);
+
+        InputSwitcher.instance.EnableInput(2);
+        InputSwitcher.instance.EnableInput(3);
         PauseManager.instance.ResumeGame();
     }
 }
