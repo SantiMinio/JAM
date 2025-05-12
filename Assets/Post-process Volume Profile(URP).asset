@@ -58,16 +58,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5485954d14dfb9a4c8ead8edb0ded5b1, type: 3}
   m_Name: LiftGammaGain
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   lift:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 0.9733312, z: 0.90549326, w: -0.013464963}
+    m_Value: {x: 1, y: 0.9178601, z: 0.8478427, w: -0.013464963}
   gamma:
     m_OverrideState: 0
     m_Value: {x: 0.90516144, y: 0.9382802, z: 1, w: 0}
   gain:
     m_OverrideState: 1
-    m_Value: {x: 0.8244918, y: 0.90866023, z: 1, w: 0.17026126}
+    m_Value: {x: 0.79296786, y: 0.9100431, z: 1, w: 0.17026126}
 --- !u!114 &-3698733909754590929
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -89,9 +89,9 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.358
+    m_Value: 0.3
   smoothness:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.616
   rounded:
     m_OverrideState: 0
@@ -219,12 +219,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   texture:
-    m_OverrideState: 0
-    m_Value: {fileID: 0}
+    m_OverrideState: 1
+    m_Value: {fileID: 2800000, guid: d67c80ce4d7e37943bc30c2ea02632c8, type: 3}
     dimension: 1
   contribution:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 0.63
 --- !u!114 &6095129126309476504
 MonoBehaviour:
   m_ObjectHideFlags: 3
