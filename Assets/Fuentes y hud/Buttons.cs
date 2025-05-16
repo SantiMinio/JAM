@@ -60,9 +60,9 @@ public class Buttons : MonoBehaviour
         mainScene.SetActive(true);
     }
 
-    public void Play()
+    public void Play(int SceneIndex)
     {
-        SceneLoader.Load(1);
+        SceneLoader.Load(SceneIndex);
     }
     public void Options()
     {

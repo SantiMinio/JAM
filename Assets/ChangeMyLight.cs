@@ -51,7 +51,7 @@ public class ChangeMyLight : MonoBehaviour
         if (other.CompareTag(playerTag) && directionalLight != null)
         {
             cam.offset = new Vector3(0, 15.7f, -8);
-            cam.smoothTime = transitionDuration;
+            cam.smoothTime = 1;
             StopAllCoroutines();
             StartCoroutine(TransitionLighting(
                 directionalLight.color, newLightColor,
@@ -59,10 +59,10 @@ public class ChangeMyLight : MonoBehaviour
                 RenderSettings.ambientLight, ambientOffColor,
                 RenderSettings.ambientIntensity, ambientOffIntensity
             ));
-        }
-        if (timelineToPlay != null)
-        {
-            timelineToPlay.Play();
+            if (timelineToPlay != null)
+            {
+                timelineToPlay.Play();
+            }
         }
     }
 

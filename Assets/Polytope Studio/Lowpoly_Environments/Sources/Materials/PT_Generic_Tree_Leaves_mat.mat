@@ -27,7 +27,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseTexture:
-        m_Texture: {fileID: 2800000, guid: 55a083d549e055045948e2083099df16, type: 3}
+        m_Texture: {fileID: 2800000, guid: d2f321fff7f05aa49ad106541e997dd3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -97,7 +97,7 @@ Material:
     - _GlossyReflections: 1
     - _Gradient: 0.167
     - _GradientPower: 2.54
-    - _LeavesThickness: 0.445
+    - _LeavesThickness: 0.95
     - _MaskClipValue: 0.5
     - _Metallic: 0
     - _Mode: 3
@@ -121,7 +121,7 @@ Material:
     - _TransNormalDistortion: 0.486
     - _TransScattering: 25.1
     - _TransShadow: 0.5
-    - _TransStrength: 1
+    - _TransStrength: 3
     - _Translucency: 5
     - _UVSec: 0
     - _WINDMASKONOFF: 0

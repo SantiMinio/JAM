@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level_1_prefinal.unity
     guid: d91f939fdddb96949b8f69c2b5880520
+  - enabled: 1
+    path: Assets/Scenes/FirstHell.unity
+    guid: 697f64746fd89f147b8adf24348271dd
+  - enabled: 1
+    path: Assets/Scenes/GonzaTest.unity
+    guid: 8a26590227fd6204cac4d6ecfa6a59ac
   - enabled: 0
     path: Assets/Scenes/Level_1.unity
     guid: 875a27d7d8da5014b952c7b13c9bfb34

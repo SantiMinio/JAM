@@ -1,0 +1,1178 @@
+fileFormatVersion: 2
+guid: e48c955ef11459b4ab66c8827d2c1709
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell/Cube_002_cell_686:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_001/Cube_002_cell_687:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_001/Cube_002_cell_687:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_002/Cube_002_cell_613:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_002/Cube_002_cell_613:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_003/Cube_002_cell_616:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_004/Cube_002_cell_617:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_004/Cube_002_cell_617:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_005/Cube_002_cell_618:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_005/Cube_002_cell_618:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_007/Cube_002_cell_619:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_008/Cube_002_cell_622:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_008/Cube_002_cell_622:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_009/Cube_002_cell_623:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_009/Cube_002_cell_623:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_010/Cube_002_cell_624:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_010/Cube_002_cell_624:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_011/Cube_002_cell_625:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_011/Cube_002_cell_625:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_012/Cube_002_cell_626:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_012/Cube_002_cell_626:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_013/Cube_002_cell_627:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_013/Cube_002_cell_627:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_014/Cube_002_cell_628:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_014/Cube_002_cell_628:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_015/Cube_002_cell_629:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_015/Cube_002_cell_629:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_018/Cube_002_cell_632:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_018/Cube_002_cell_632:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_019/Cube_002_cell_633:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_019/Cube_002_cell_633:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_020/Cube_002_cell_634:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_020/Cube_002_cell_634:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_021/Cube_002_cell_635:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_021/Cube_002_cell_635:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_022/Cube_002_cell_636:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_022/Cube_002_cell_636:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_023/Cube_002_cell_637:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_023/Cube_002_cell_637:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_024/Cube_002_cell_638:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_025/Cube_002_cell_639:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_025/Cube_002_cell_639:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_026/Cube_002_cell_640:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_026/Cube_002_cell_640:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_027/Cube_002_cell_641:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_027/Cube_002_cell_641:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_028/Cube_002_cell_642:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_028/Cube_002_cell_642:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_029/Cube_002_cell_643:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_029/Cube_002_cell_643:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_030/Cube_002_cell_644:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_030/Cube_002_cell_644:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_031/Cube_002_cell_645:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_031/Cube_002_cell_645:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_032/Cube_002_cell_646:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_032/Cube_002_cell_646:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell/Cube_002_cell_035_cell_070:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell/Cube_002_cell_035_cell_070:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_001/Cube_002_cell_035_cell_071:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_001/Cube_002_cell_035_cell_071:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_002/Cube_002_cell_035_cell_001:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_002/Cube_002_cell_035_cell_001:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_003/Cube_002_cell_035_cell_002:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_003/Cube_002_cell_035_cell_002:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_004/Cube_002_cell_035_cell_003:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_004/Cube_002_cell_035_cell_003:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_005/Cube_002_cell_035_cell_004:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_006/Cube_002_cell_035_cell_005:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_007/Cube_002_cell_035_cell_006:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_007/Cube_002_cell_035_cell_006:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_009/Cube_002_cell_035_cell_007:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_009/Cube_002_cell_035_cell_007:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_010/Cube_002_cell_035_cell_008:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_010/Cube_002_cell_035_cell_008:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_011/Cube_002_cell_035_cell_009:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_011/Cube_002_cell_035_cell_009:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_012/Cube_002_cell_035_cell_010:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_013/Cube_002_cell_035_cell_011:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_013/Cube_002_cell_035_cell_011:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_014/Cube_002_cell_035_cell_012:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_014/Cube_002_cell_035_cell_012:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_015/Cube_002_cell_035_cell_013:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_015/Cube_002_cell_035_cell_013:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_017/Cube_002_cell_035_cell_014:000:tierra
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_018/Cube_002_cell_035_cell_015:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_018/Cube_002_cell_035_cell_015:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_019/Cube_002_cell_035_cell_016:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_020/Cube_002_cell_035_cell_017:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_020/Cube_002_cell_035_cell_017:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_021/Cube_002_cell_035_cell_018:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_022/Cube_002_cell_035_cell_019:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_023/Cube_002_cell_035_cell_020:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_024/Cube_002_cell_035_cell_021:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_024/Cube_002_cell_035_cell_021:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_025/Cube_002_cell_035_cell_022:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_025/Cube_002_cell_035_cell_022:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_026/Cube_002_cell_035_cell_023:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_026/Cube_002_cell_035_cell_023:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_027/Cube_002_cell_035_cell_024:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_027/Cube_002_cell_035_cell_024:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_029/Cube_002_cell_035_cell_025:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_029/Cube_002_cell_035_cell_025:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_030/Cube_002_cell_035_cell_026:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_030/Cube_002_cell_035_cell_026:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_032/Cube_002_cell_035_cell_027:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_033/Cube_002_cell_035_cell_028:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_033/Cube_002_cell_035_cell_028:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_034/Cube_002_cell_035_cell_029:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_034/Cube_002_cell_035_cell_029:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_035/Cube_002_cell_035_cell_030:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_036/Cube_002_cell_035_cell_031:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_036/Cube_002_cell_035_cell_031:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_037/Cube_002_cell_035_cell_032:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_037/Cube_002_cell_035_cell_032:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_038/Cube_002_cell_035_cell_033:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_038/Cube_002_cell_035_cell_033:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_039/Cube_002_cell_035_cell_034:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_039/Cube_002_cell_035_cell_034:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_040/Cube_002_cell_035_cell_035:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_040/Cube_002_cell_035_cell_035:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_041/Cube_002_cell_035_cell_036:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_041/Cube_002_cell_035_cell_036:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_042/Cube_002_cell_035_cell_037:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_043/Cube_002_cell_035_cell_038:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_044/Cube_002_cell_035_cell_039:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_044/Cube_002_cell_035_cell_039:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_045/Cube_002_cell_035_cell_040:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_045/Cube_002_cell_035_cell_040:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_046/Cube_002_cell_035_cell_041:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_047/Cube_002_cell_035_cell_042:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_048/Cube_002_cell_035_cell_043:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_048/Cube_002_cell_035_cell_043:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_049/Cube_002_cell_035_cell_044:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_049/Cube_002_cell_035_cell_044:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_050/Cube_002_cell_035_cell_045:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_050/Cube_002_cell_035_cell_045:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_051/Cube_002_cell_035_cell_046:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_051/Cube_002_cell_035_cell_046:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_052/Cube_002_cell_035_cell_047:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_052/Cube_002_cell_035_cell_047:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_054/Cube_002_cell_035_cell_048:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_054/Cube_002_cell_035_cell_048:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_055/Cube_002_cell_035_cell_049:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_055/Cube_002_cell_035_cell_049:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_056/Cube_002_cell_035_cell_050:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_057/Cube_002_cell_035_cell_051:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_057/Cube_002_cell_035_cell_051:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_058/Cube_002_cell_035_cell_052:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_058/Cube_002_cell_035_cell_052:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_059/Cube_002_cell_035_cell_053:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_060/Cube_002_cell_035_cell_054:000:Material_002
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_061/Cube_002_cell_035_cell_055:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_061/Cube_002_cell_035_cell_055:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_062/Cube_002_cell_035_cell_056:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_062/Cube_002_cell_035_cell_056:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_063/Cube_002_cell_035_cell_057:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_063/Cube_002_cell_035_cell_057:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_067/Cube_002_cell_035_cell_058:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_067/Cube_002_cell_035_cell_058:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_068/Cube_002_cell_035_cell_059:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_068/Cube_002_cell_035_cell_059:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_069/Cube_002_cell_035_cell_060:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_035_cell_069/Cube_002_cell_035_cell_060:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_036/Cube_002_cell_650:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_036/Cube_002_cell_650:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_037/Cube_002_cell_651:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_037/Cube_002_cell_651:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_038/Cube_002_cell_652:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_038/Cube_002_cell_652:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_039/Cube_002_cell_653:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_039/Cube_002_cell_653:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_040/Cube_002_cell_654:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_040/Cube_002_cell_654:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_041/Cube_002_cell_655:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_042/Cube_002_cell_656:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_042/Cube_002_cell_656:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_043/Cube_002_cell_657:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_044/Cube_002_cell_658:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_044/Cube_002_cell_658:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_045/Cube_002_cell_659:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_046/Cube_002_cell_660:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_046/Cube_002_cell_660:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_047/Cube_002_cell_661:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_047/Cube_002_cell_661:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_048/Cube_002_cell_662:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_048/Cube_002_cell_662:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_049/Cube_002_cell_663:000:Material_002
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_049/Cube_002_cell_663:001:tierra
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_050/Cube_002_cell_664:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_050/Cube_002_cell_664:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_051/Cube_002_cell_665:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_051/Cube_002_cell_665:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_052/Cube_002_cell_666:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_052/Cube_002_cell_666:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_053/Cube_002_cell_667:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_054/Cube_002_cell_668:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_054/Cube_002_cell_668:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_055/Cube_002_cell_669:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_055/Cube_002_cell_669:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_056/Cube_002_cell_670:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_056/Cube_002_cell_670:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_057/Cube_002_cell_671:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_057/Cube_002_cell_671:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_058/Cube_002_cell_672:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_058/Cube_002_cell_672:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_059/Cube_002_cell_673:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_059/Cube_002_cell_673:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_060/Cube_002_cell_674:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_060/Cube_002_cell_674:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_061/Cube_002_cell_675:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_061/Cube_002_cell_675:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_062/Cube_002_cell_676:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_062/Cube_002_cell_676:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_063/Cube_002_cell_677:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_063/Cube_002_cell_677:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_064/Cube_002_cell_678:000:Material_002
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_065/Cube_002_cell_679:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_065/Cube_002_cell_679:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_066/Cube_002_cell_680:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_066/Cube_002_cell_680:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_067/Cube_002_cell_681:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_067/Cube_002_cell_681:001:Material_002
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_068/Cube_002_cell_682:000:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_068/Cube_002_cell_682:001:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_069/Cube_002_cell_683:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_069/Cube_002_cell_683:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_070/Cube_002_cell_684:000:tierra
+    second: {fileID: 2100000, guid: bdf3b1221db58f04884455f3f1a8f5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002_cell_070/Cube_002_cell_684:001:Material_002
+    second: {fileID: 2100000, guid: 14f73797f0704bc47ac2c28663d92a9e, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: f53f5fc499d31e44b9deee84d28a9ee8, type: 3}
+  rootGameObjectId: 
+  rootGameObjectName: 
+  importerVersion: 1
+  streamSettings:
+    normals: 1
+    tangents: 1
+    cameraAspectRatio: 2
+    importVisibility: 1
+    scaleFactor: 0.01
+    swapHandedness: 1
+    flipFaces: 0
+    interpolateSamples: 1
+    importPointPolygon: 1
+    importLinePolygon: 1
+    importTrianglePolygon: 1
+    importXform: 1
+    importCameras: 1
+    importMeshes: 1
+    importPoints: 0
+    importCurves: 1
+    createCurveRenderers: 0
+  abcStartTime: 0.041666666666666664
+  abcEndTime: 10.416666666666666
+  startTime: 0.041666666666666664
+  endTime: 10.416666666666666
+  importWarning: 
+  firstImport: 0
+  isHDF5: 0
