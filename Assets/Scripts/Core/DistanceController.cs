@@ -11,12 +11,15 @@ public class DistanceController : MonoBehaviour, IPause
 
     [SerializeField] Transform charOne = null;
     [SerializeField] Transform charTwo = null;
-    [SerializeField] Grayscale_Post_Process gpp = null;
+    [SerializeField] Material grayscalePass = null;
+    //old
+    //[SerializeField] Grayscale_Post_Process gpp = null;
 
     float characterDistance;
 
     private void Start()
     {
+        grayscalePass.SetFloat("_Intensity", 0);
         timer = timeToDead;
         PauseManager.instance.AddToPause(this);
     }
@@ -30,8 +33,10 @@ public class DistanceController : MonoBehaviour, IPause
         if(characterDistance > maxDistanceToDead)
         {
             timer -= Time.deltaTime;
+            float t = 1f - (timer / timeToDead);
+      //      grayscalePass.SetFloat("_Intensity", t);
 
-            if(timer <= 0)
+            if (timer <= 0)
             {
                 Main.instance.eventManager.TriggerEvent(GameEvents.CharactersSeparate);
                 var characters = Main.instance.GetCharacters();
@@ -49,8 +54,7 @@ public class DistanceController : MonoBehaviour, IPause
                 timer = timeToDead;
         }
         var value = Mathf.Lerp(1,0,timer/timeToDead);
-        gpp.grayscale = value;
-        gpp.masOcuro = value;
+        grayscalePass.SetFloat("_Intensity", value);
         UIManager.instance.SetLife(timer / timeToDead);
     }
 

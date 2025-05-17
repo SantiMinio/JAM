@@ -8,7 +8,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Lava
-  m_Shader: {fileID: 4800000, guid: f8548b33eb47dea48a90b58717751ba6, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: ec2b56a3d47f36b42a504551a6b2efe7,
+    type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -16,7 +17,7 @@ Material:
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: 
@@ -33,6 +34,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _FlowTexture:
         m_Texture: {fileID: 2800000, guid: ddeaa52be50776e4bba0e2cb1dba44f5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Flowmap:
+        m_Texture: {fileID: 2800000, guid: ddeaa52be50776e4bba0e2cb1dba44f5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 3db2c86478b05884f9941f5d081ca46e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _VertexOffsetNoise:
@@ -61,12 +70,16 @@ Material:
     - _Depth: 2
     - _DepthDistance: 0.985
     - _DepthDistance1: -0.01
+    - _DepthPower: 1
+    - _DepthRange: 0.53
     - _EdgeLength: 50
+    - _EmissiveStrenght: 0
     - _EnvironmentReflections: 1
     - _FallOff1: 0.4
     - _Float0: 92.96
     - _Float1: 1
     - _Float2: 1.93
+    - _FlowmapIntensity: 0.9
     - _FlowmapTime: 0
     - _FlowwMap: 1
     - _GrayscalePower: 13.53
@@ -85,12 +98,32 @@ Material:
     - _Tiling: 150
     - _Tiling1: 150
     - _Timescale: 0.38
+    - _VertexOffset: 0.33
     - __dirty: 0
     m_Colors:
     - _Color1: {r: 0.4528302, g: 0.0281261, b: 0, a: 1}
     - _Color2: {r: 1.5160017, g: 0.55738163, b: 0.03575475, a: 1}
-    - _DepthColor: {r: 5.2780313, g: 0.6890292, b: 0, a: 1}
+    - _Color_A: {r: 0.1981132, g: 0, b: 0, a: 0}
+    - _Color_B: {r: 0.62352943, g: 0.24053457, b: 0, a: 0}
+    - _DepthColor: {r: 0.9339623, g: 0.50145924, b: 0.15419187, a: 1}
+    - _Direction: {r: 0, g: 0, b: 0, a: 0}
     - _DirectionPanner: {r: 1, g: 1, b: 0, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _MetallicSmoothness: {r: 0, g: 0, b: 0, a: 0}
+    - _Tiling: {r: 0.25, g: 0.25, b: 0, a: 0}
     - _TillingAlbedo: {r: 1, g: 1, b: 0, a: 0}
+    - _TopColor: {r: 1, g: 0.65739936, b: 0, a: 0}
   m_BuildTextureStacks: []
+--- !u!114 &752777737456304894
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7

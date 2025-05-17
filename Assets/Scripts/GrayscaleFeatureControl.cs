@@ -38,4 +38,23 @@ public class GrayscaleFeatureControl : MonoBehaviour
         grayscaleMat.SetFloat("_Intensity", 1);
         isAnimating = false;
     }
+
+    private IEnumerator TriggerOf()
+    {
+        isAnimating = true;
+        float elapsed = 0f;
+
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            float currentValue = Mathf.Lerp(1, 0, t);
+            grayscaleMat.SetFloat("_Intensity", currentValue);
+            elapsed += Time.deltaTime; ;
+            yield return null;
+        }
+           
+
+    }
+
+
 }
