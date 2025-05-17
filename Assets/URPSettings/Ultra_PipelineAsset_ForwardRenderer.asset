@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d613f08f173d4dd895bb07b3230baa9, type: 3}
   m_Name: Grayscale
   m_EditorClassIdentifier: 
-  m_Active: 0
+  m_Active: 1
   injectionPoint: 600
   fetchColorBuffer: 1
   requirements: 0
@@ -91,8 +91,7 @@ MonoBehaviour:
   - {fileID: -771890842080382630}
   - {fileID: -6151043033877445761}
   - {fileID: 4326732567000707544}
-  - {fileID: 0}
-  m_RendererFeatureMap: 5af16b685eb149f57f039847f31aa3aad8f1307e58a40b3ccdfe8a267d24bef8
+  m_RendererFeatureMap: 5af16b685eb149f57f039847f31aa3aad8f1307e58a40b3c
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
