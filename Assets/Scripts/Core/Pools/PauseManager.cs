@@ -26,12 +26,12 @@ public class PauseManager : MonoBehaviour
 
     private void Start()
     {
-        InputSwitcher.instance.AddToAction("PauseInput", GetPauseInput);
+        InputSwitcher.instance.AddToAllAction("PauseInput", GetPauseInput);
     }
 
     private void OnDestroy()
     {
-        InputSwitcher.instance.RemoveToAction("PauseInput", GetPauseInput);
+        InputSwitcher.instance.RemoveToAllAction("PauseInput", GetPauseInput);
     }
 
     public void AddToPause(IPause pauseEntity)

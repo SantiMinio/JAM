@@ -93,6 +93,22 @@ public class InputSwitcher : MonoBehaviour
         inputs[0].actions.FindAction(actionName).started -= callback;
     }
 
+    public void AddToAllAction(string actionName, Action<UnityEngine.InputSystem.InputAction.CallbackContext> callback)
+    {
+        for (int i = 0; i < inputs.Length; i++)
+        {
+            inputs[i].actions.FindAction(actionName).started += callback;
+        }
+    }
+
+    public void RemoveToAllAction(string actionName, Action<UnityEngine.InputSystem.InputAction.CallbackContext> callback)
+    {
+        for (int i = 0; i < inputs.Length; i++)
+        {
+            inputs[i].actions.FindAction(actionName).started -= callback;
+        }
+    }
+
     public void FindNewInput()
     {
         inputs = PlayerInput.all.ToArray();
