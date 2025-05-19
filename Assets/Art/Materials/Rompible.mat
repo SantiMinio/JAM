@@ -161,6 +161,6 @@ Material:
     - _LowColor: {r: 0.15285665, g: 0.14667143, b: 0.3018868, a: 1}
     - _OutlineColor: {r: 0.3066038, g: 0.657987, b: 1, a: 1}
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Tint: {r: 0.64924717, g: 0.4262638, b: 0.8773585, a: 0}
+    - _Tint: {r: 0.42745098, g: 0.68940085, b: 0.8784314, a: 0}
     - _Tint_Emissive: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
