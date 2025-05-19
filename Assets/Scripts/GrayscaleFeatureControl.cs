@@ -13,10 +13,7 @@ public class GrayscaleFeatureControl : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetMouseButtonDown(0))
-        {
-            StartCoroutine(TriggerOn());
-        }
+     
     }
 
     private IEnumerator TriggerOn()

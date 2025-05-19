@@ -48,10 +48,10 @@ public class DistanceController : MonoBehaviour, IPause
         }
         else
         {
-            if (timer >= timeToDead) return;
+         /*   if (timer >= timeToDead) return;
             timer += Time.deltaTime;
             if(timer >= timeToDead)
-                timer = timeToDead;
+                timer = timeToDead;*/
         }
         var value = Mathf.Lerp(1,0,timer/timeToDead);
         grayscalePass.SetFloat("_Intensity", value);
@@ -71,5 +71,26 @@ public class DistanceController : MonoBehaviour, IPause
     public void Resume()
     {
         paused = false;
+    }
+
+    public void Heal()
+    {
+           if (timer >= timeToDead) return;
+        StartCoroutine(HealCorrutine(1));
+    }
+
+    IEnumerator HealCorrutine(float healDuration)
+    {
+        float currentTime = 0;
+        
+        while (currentTime < healDuration)
+        {
+           
+            timer += Time.deltaTime;
+            if (timer >= timeToDead)
+                timer = timeToDead;
+               yield return null;
+
+        }
     }
 }

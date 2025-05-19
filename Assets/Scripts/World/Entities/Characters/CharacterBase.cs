@@ -24,11 +24,11 @@ public class CharacterBase : Entity
     [SerializeField] float speed = 5;
     float stepTimer;
 
+    public KissAction KA;
 
     public Vector3 CurrentDir => moveComp.Dir;
 
 
-  
     #region Inputs
     public void MoveY(InputAction.CallbackContext callback)
     {
@@ -73,6 +73,25 @@ public class CharacterBase : Entity
             grabComp.ThrowObject();
         else
             interactor.Interact();
+
+
+        if (KA.canKiss == false)
+        {
+            KA.canKiss = true;
+        }
+        if ( KA.canKiss == true && KA.partner.TryGetComponent(out KissAction ka))
+        {
+            if (ka.canKiss)
+            {
+                ka.model.transform.forward = -KA.model.forward;
+                KA.Kiss();
+                ka.canKiss=false;
+                KA.canKiss=false;
+                ka.myAnim.SetTrigger("kiss");
+            }
+
+        
+        }
     }
     #endregion
 
@@ -124,7 +143,7 @@ public class CharacterBase : Entity
     protected override void OnInitialize()
     {
         action.Initialize(this);
-        
+
     }
 
     protected override void OnUpdate()

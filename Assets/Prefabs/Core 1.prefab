@@ -5915,7 +5915,7 @@ MonoBehaviour:
   djHandler: {fileID: 8871259785751059397}
   charOne: {fileID: 8049236203600888895}
   charTwo: {fileID: 7636172991831704616}
-  pp: {fileID: 1814612142030710442}
+  pp: {fileID: 0}
   restartTime: 3
 --- !u!114 &694551886661176684
 MonoBehaviour:
@@ -5934,7 +5934,7 @@ MonoBehaviour:
   timer: 0
   charOne: {fileID: 925054952935123310}
   charTwo: {fileID: 65425055018782504}
-  gpp: {fileID: 1814612142030710442}
+  gpp: {fileID: 0}
 --- !u!1 &2089057069823710304
 GameObject:
   m_ObjectHideFlags: 0
@@ -10958,7 +10958,6 @@ GameObject:
   - component: {fileID: 2780726301945749668}
   - component: {fileID: 5819519696675901251}
   - component: {fileID: 2681434269732475008}
-  - component: {fileID: 1814612142030710442}
   - component: {fileID: -906886479440199974}
   m_Layer: 0
   m_Name: Main Camera
@@ -11059,25 +11058,6 @@ MonoBehaviour:
   minZoom: 60
   maxZoom: 40
   zoomLimiter: 15.68
---- !u!114 &1814612142030710442
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2744869415882944592}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b37d6b70edac68a4094dad99fbd171bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shader: {fileID: 4800000, guid: cd906c2489694da4388d70be08a29f49, type: 3}
-  grayscale: 0
-  masOcuro: 0
-  fade_in_out: 1
-  pixeles: 45
-  scale: 15
-  speed: 0.5
 --- !u!114 &-906886479440199974
 MonoBehaviour:
   m_ObjectHideFlags: 0

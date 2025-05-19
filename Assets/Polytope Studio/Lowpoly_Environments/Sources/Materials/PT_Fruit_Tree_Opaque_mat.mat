@@ -13,7 +13,8 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _CUSTOMWIND_ON
-  m_InvalidKeywords: []
+  m_InvalidKeywords:
+  - _CUSTOMCOLORSTINTING_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
@@ -84,7 +85,7 @@ Material:
     m_Floats:
     - _AlphaCutoff: 0.5
     - _BumpScale: 1
-    - _CUSTOMCOLORSTINTING: 0
+    - _CUSTOMCOLORSTINTING: 1
     - _CUSTOMWIND: 1
     - _CUSTOMWIND1: 1
     - _Cutoff: 0.5
@@ -94,8 +95,8 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
-    - _Gradient: 1
-    - _GradientPower: 1.6
+    - _Gradient: 0.496
+    - _GradientPower: 2.4
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -124,6 +125,6 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _GroundColor: {r: 0.08490568, g: 0.05234205, b: 0.04846032, a: 1}
-    - _TopColor: {r: 0.4811321, g: 0.4036026, b: 0.2382966, a: 1}
+    - _GroundColor: {r: 0.4811321, g: 0.15659487, b: 0.27365148, a: 1}
+    - _TopColor: {r: 0.8584906, g: 0.33610713, b: 0.44068363, a: 1}
   m_BuildTextureStacks: []
