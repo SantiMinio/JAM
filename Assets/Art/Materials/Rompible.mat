@@ -130,7 +130,7 @@ Material:
     - _HighIntensity: 1.58
     - _LightScalar: 1.02
     - _LowIntensity: 2.16
-    - _Metal_Offset: 0
+    - _Metal_Offset: 0.284
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -144,7 +144,7 @@ Material:
     - _RimDropOff: 0
     - _RimPower: 0
     - _SmoothnessTextureChannel: 0
-    - _Smotness_Offset: 0
+    - _Smotness_Offset: 0.471
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
@@ -161,6 +161,6 @@ Material:
     - _LowColor: {r: 0.15285665, g: 0.14667143, b: 0.3018868, a: 1}
     - _OutlineColor: {r: 0.3066038, g: 0.657987, b: 1, a: 1}
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Tint: {r: 0.42745098, g: 0.68940085, b: 0.8784314, a: 0}
+    - _Tint: {r: 0.990566, g: 0.990566, b: 0.990566, a: 0}
     - _Tint_Emissive: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
