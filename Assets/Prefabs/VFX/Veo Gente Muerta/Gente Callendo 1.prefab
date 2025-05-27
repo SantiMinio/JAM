@@ -57,7 +57,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 3
-    scalar: 7
+    scalar: 1.75
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -871,7 +871,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.54
+      scalar: 0.81
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -4836,7 +4836,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 76e631e79ed28524380cdda34baa9230, type: 2}
+  - {fileID: 2100000, guid: cf22dc2e896317744aee6062570d3476, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4952,6 +4952,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire-Static
       objectReference: {fileID: 0}
+    - target: {fileID: 8059908731592805041, guid: 4e36892d649dd7740883c2e80281d9f0,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 9148425448268395637, guid: 4e36892d649dd7740883c2e80281d9f0,
         type: 3}
       propertyPath: NoiseModule.enabled

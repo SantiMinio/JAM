@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 0
-  feedbackParticles: {fileID: 5591932859415672054, guid: 38b68cdb9f7481245a1f0b0444208975,
+  feedbackParticles: {fileID: 1097031286348149302, guid: c2f6a8962aac3814aa56cb9647c93470,
     type: 3}
   sparksParticles: {fileID: 6391573641997104105, guid: 36b1ee8af10846b49935ffe59bdfb34d,
     type: 3}
