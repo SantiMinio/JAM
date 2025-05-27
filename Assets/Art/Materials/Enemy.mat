@@ -60,7 +60,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Emissive:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: d6757a7d445b3104f84f79866b705f09, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmmisTex:
@@ -161,6 +161,6 @@ Material:
     - _LowColor: {r: 0.54950005, g: 0.06666666, b: 0.7647059, a: 1}
     - _OutlineColor: {r: 1, g: 0.0141509175, b: 0.0141509175, a: 1}
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Tint: {r: 0.6809186, g: 0.21560161, b: 0.8962264, a: 0}
-    - _Tint_Emissive: {r: 0, g: 0, b: 0, a: 0}
+    - _Tint: {r: 0.25943398, g: 1, b: 0.37003094, a: 0}
+    - _Tint_Emissive: {r: 0, g: 0.1981132, b: 0.05427384, a: 0}
   m_BuildTextureStacks: []

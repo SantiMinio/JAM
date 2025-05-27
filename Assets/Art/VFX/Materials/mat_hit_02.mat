@@ -34,23 +34,29 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: mat_hit_02
-  m_Shader: {fileID: -6465566751694194690, guid: ceeb06e0a14a7ee4ebf363b4dd938268,
-    type: 3}
+  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords:
+  - _ALPHABLEND_ON
   - _BUILTIN_SURFACE_TYPE_TRANSPARENT
+  - _COLORCOLOR_ON
+  - _EMISSION
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -101,6 +107,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - PixelSnap: 0
     - _BUILTIN_AlphaClip: 0
     - _BUILTIN_Blend: 0
     - _BUILTIN_CullMode: 0
@@ -126,7 +133,8 @@ Material:
     - _DistortionStrength: 1
     - _DistortionStrengthScaled: 0.1
     - _DstBlend: 1
-    - _EmissionEnabled: 0
+    - _EmissionEnabled: 1
+    - _EnableExternalAlpha: 0
     - _FadeMultiplier: 1
     - _FadeOffset: 0
     - _FadePower: 1
@@ -157,8 +165,10 @@ Material:
     - _ColorAddSubDiff: {r: -1, g: 0, b: 0, a: 0}
     - _Color_A: {r: 4, g: 0, b: 0, a: 0}
     - _Color_B: {r: 1.3333262, g: 1.5157166, b: 0.86510235, a: 0}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 2.297397, g: 0.32866797, b: 0.010836803, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _Panner: {r: 0, g: 0, b: 0, a: 0}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
     - _UVMask: {r: 0, g: 0, b: 0, a: 0}

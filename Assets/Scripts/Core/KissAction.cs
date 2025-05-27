@@ -13,7 +13,7 @@ public class KissAction : MonoBehaviour
     public Animator canvasAnim;
     public DistanceController distanceController;
     public bool kissing;
-
+    public GameObject kissEffect;
     public void Kiss()
     {
         StartCoroutine(KissCorrutine());
@@ -31,6 +31,8 @@ public class KissAction : MonoBehaviour
             yield return null;
         }
         canvasAnim.SetTrigger("kiss");
+        kissEffect.SetActive(true);
+        kissEffect.transform.position = Vector3.Lerp(partner.position, transform.position, 0.5f);
         distanceController.Heal();
         kissing = true;
 

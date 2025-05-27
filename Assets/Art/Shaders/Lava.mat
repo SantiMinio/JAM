@@ -71,15 +71,15 @@ Material:
     - _DepthDistance: 0.985
     - _DepthDistance1: -0.01
     - _DepthPower: 1
-    - _DepthRange: 0.53
+    - _DepthRange: 0.38
     - _EdgeLength: 50
-    - _EmissiveStrenght: 0
+    - _EmissiveStrenght: 1.59
     - _EnvironmentReflections: 1
     - _FallOff1: 0.4
     - _Float0: 92.96
     - _Float1: 1
     - _Float2: 1.93
-    - _FlowmapIntensity: 0.9
+    - _FlowmapIntensity: 1
     - _FlowmapTime: 0
     - _FlowwMap: 1
     - _GrayscalePower: 13.53
@@ -98,21 +98,21 @@ Material:
     - _Tiling: 150
     - _Tiling1: 150
     - _Timescale: 0.38
-    - _VertexOffset: 0.33
+    - _VertexOffset: 0.78
     - __dirty: 0
     m_Colors:
     - _Color1: {r: 0.4528302, g: 0.0281261, b: 0, a: 1}
     - _Color2: {r: 1.5160017, g: 0.55738163, b: 0.03575475, a: 1}
-    - _Color_A: {r: 0.1981132, g: 0, b: 0, a: 0}
-    - _Color_B: {r: 0.62352943, g: 0.24053457, b: 0, a: 0}
-    - _DepthColor: {r: 0.9339623, g: 0.50145924, b: 0.15419187, a: 1}
-    - _Direction: {r: 0, g: 0, b: 0, a: 0}
+    - _Color_A: {r: 0.0754717, g: 0, b: 0, a: 0}
+    - _Color_B: {r: 0.41509432, g: 0.15925002, b: 0, a: 0}
+    - _DepthColor: {r: 0.4716981, g: 0.066369586, b: 0, a: 1}
+    - _Direction: {r: 0, g: 0.03, b: 0, a: 0}
     - _DirectionPanner: {r: 1, g: 1, b: 0, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _MetallicSmoothness: {r: 0, g: 0, b: 0, a: 0}
     - _Tiling: {r: 0.25, g: 0.25, b: 0, a: 0}
     - _TillingAlbedo: {r: 1, g: 1, b: 0, a: 0}
-    - _TopColor: {r: 1, g: 0.65739936, b: 0, a: 0}
+    - _TopColor: {r: 1, g: 0.65882355, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &752777737456304894
 MonoBehaviour:

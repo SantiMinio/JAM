@@ -63,6 +63,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Flowmap:
+        m_Texture: {fileID: 2800000, guid: ddeaa52be50776e4bba0e2cb1dba44f5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -119,10 +123,14 @@ Material:
     - _Cull: 2
     - _Cutoff: 0.5
     - _DITHERING: 0
+    - _DepthPower: 1
+    - _DepthRange: 1
     - _DetailNormalMapScale: 1
     - _DitheringRange: 1
     - _DstBlend: 0
+    - _EmissiveStrenght: 0.5
     - _Float0: 0
+    - _FlowmapIntensity: 0
     - _Gloss: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.132
@@ -144,6 +152,7 @@ Material:
     - _SrcBlend: 1
     - _Surface: 0
     - _UVSec: 0
+    - _VertexOffset: 6.44
     - _WorkflowMode: 1
     - _ZTest: 4
     - _ZWrite: 1
@@ -151,8 +160,15 @@ Material:
     - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 0.93468606, b: 0.7877358, a: 1}
+    - _Color_A: {r: 0.6603774, g: 0.4908676, b: 0.1837843, a: 0}
+    - _Color_B: {r: 0.41509432, g: 0.08419366, b: 0.3765984, a: 0}
+    - _DepthColor: {r: 0, g: 0, b: 0, a: 0}
+    - _Direction: {r: 0, g: 0.29, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Tint: {r: 1, g: 1, b: 1, a: 0}
+    - _MetallicSmoothness: {r: 0, g: 0, b: 0, a: 0}
+    - _Tiling: {r: 0.1, g: 0.1, b: 0, a: 0}
+    - _Tint: {r: 0.6631729, g: 0.5707547, b: 1, a: 0}
     - _Tint_Emissive: {r: 0, g: 0, b: 0, a: 0}
+    - _TopColor: {r: 0.5377358, g: 0.24242188, b: 0, a: 0}
     - _lightCOlor: {r: 0.5, g: 0.16795273, b: 0.11084905, a: 0}
   m_BuildTextureStacks: []
