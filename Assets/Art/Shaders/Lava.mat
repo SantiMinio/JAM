@@ -73,7 +73,7 @@ Material:
     - _DepthPower: 1
     - _DepthRange: 0.61
     - _EdgeLength: 50
-    - _EmissiveStrenght: -0.12
+    - _EmissiveStrenght: 0.06
     - _EnvironmentReflections: 1
     - _FallOff1: 0.4
     - _Float0: 92.96
@@ -103,7 +103,7 @@ Material:
     m_Colors:
     - _Color1: {r: 0.4528302, g: 0.0281261, b: 0, a: 1}
     - _Color2: {r: 1.5160017, g: 0.55738163, b: 0.03575475, a: 1}
-    - _Color_A: {r: 67.793495, g: 26.68007, b: 0, a: 0}
+    - _Color_A: {r: 11.181761, g: 4.4005723, b: 0, a: 0}
     - _Color_B: {r: 0.4433962, g: 0.038544912, b: 0, a: 0}
     - _DepthColor: {r: 0.7735849, g: 0.13969246, b: 0, a: 1}
     - _Direction: {r: 0, g: 0.02, b: 0, a: 0}

@@ -24,7 +24,7 @@ public class ChangeMyLight : MonoBehaviour
 
     [Header("Timeline")]
     public PlayableDirector timelineToPlay;
-
+    public AudioSource au;
     private Color originalLightColor;
     private float originalLightIntensity;
     private Color originalAmbientColor;
@@ -32,7 +32,7 @@ public class ChangeMyLight : MonoBehaviour
     public CameraFollow cam;
 
     private void Start()
-    {
+    {       
         if (directionalLight != null)
         {
             originalLightColor = directionalLight.color;
@@ -50,6 +50,8 @@ public class ChangeMyLight : MonoBehaviour
     {
         if (other.CompareTag(playerTag) && directionalLight != null)
         {
+            au.Play();
+            cam.TriggerShake(3, 0.7f);
             cam.offset = new Vector3(0, 15.7f, -8);
             cam.smoothTime = 1;
             StopAllCoroutines();
@@ -61,10 +63,19 @@ public class ChangeMyLight : MonoBehaviour
             ));
             if (timelineToPlay != null)
             {
-                timelineToPlay.Play();
+                StartCoroutine(StartTimelineWithDelay());
             }
         }
     }
+
+    IEnumerator StartTimelineWithDelay()
+    {
+        yield return new WaitForSeconds(2);
+
+        timelineToPlay.Play();
+
+    }
+
 
     private System.Collections.IEnumerator TransitionLighting(
           Color fromLightColor, Color toLightColor,
